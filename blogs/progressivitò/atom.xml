@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[progressivitò | Giuseppe Ragusa]]></title>
-  <link href="http://gragusa.github.com/blogs/progressivitò/atom.xml" rel="self"/>
-  <link href="http://gragusa.github.com/"/>
-  <updated>2011-10-27T15:38:05+02:00</updated>
-  <id>http://gragusa.github.com/</id>
+  <link href="http://gragusa.org/blogs/progressivitò/atom.xml" rel="self"/>
+  <link href="http://gragusa.org/"/>
+  <updated>2011-11-03T09:30:42+01:00</updated>
+  <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Quante tasse pagano i ricchi? Confronto Italia USA]]></title>
-    <link href="http://gragusa.github.com/blog/quante-tasse-pagano-i-ricchi/"/>
+    <link href="http://gragusa.org/blog/quante-tasse-pagano-i-ricchi/"/>
     <updated>2011-09-12T07:37:39+02:00</updated>
-    <id>http://gragusa.github.com/blog/quante-tasse-pagano-i-ricchi</id>
+    <id>http://gragusa.org/blog/quante-tasse-pagano-i-ricchi</id>
     <content type="html"><![CDATA[<p><em>Qual è il grado di <a href="http://tinyurl.com/3ugaplm">progressività</a> dell'imposizione fiscale sul reddito in Italia rispetto a quella di altri paesi? Dall'analisi presentata in questo post risulta che la nostra tassazione è molto meno progressiva di quella degli Stati Uniti---il paese dove <a href="http://www.ilsole24ore.com/art/finanza-e-mercati/2011-08-17/warren-buffett-giusto-tassare-100920.shtml?uuid=AaM4LtwD">qualche super ricco</a> si offre pubblicamente di pagare più tasse.</em></p>
 
 <p>Greg Mankiw solleva sul suo <a href="http://gregmankiw.blogspot.com/2011/09/warren-buffetts-taxes-again.html">blog</a> il tema dell'imposizione fiscale e della sua progressività riproponendo un suo

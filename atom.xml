@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Giuseppe Ragusa]]></title>
-  <link href="http://gragusa.github.com/atom.xml" rel="self"/>
-  <link href="http://gragusa.github.com/"/>
-  <updated>2011-10-27T15:38:05+02:00</updated>
-  <id>http://gragusa.github.com/</id>
+  <link href="http://gragusa.org/atom.xml" rel="self"/>
+  <link href="http://gragusa.org/"/>
+  <updated>2011-11-03T09:30:42+01:00</updated>
+  <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[I Nobel defaultisti]]></title>
-    <link href="http://gragusa.github.com/blog/i-nobel-defaultisti/"/>
+    <link href="http://gragusa.org/blog/i-nobel-defaultisti/"/>
     <updated>2011-10-17T14:41:44+02:00</updated>
-    <id>http://gragusa.github.com/blog/i-nobel-defaultisti</id>
+    <id>http://gragusa.org/blog/i-nobel-defaultisti</id>
     <content type="html"><![CDATA[<p>Ho appena letto il <a href="http://www.liberacittadinanza.it/articoli/il-manifesto-degli-indignati-roma-15-ottobre">Manifesto degli Indignati</a>, che altro non è che una lettera al Presidente della Repubblica. Sono rimasto colpito dalla qualità della scrittura. Eccellente direi. Non voglio minimamente entrare nel merito delle rivendicazioni generazionali del testo, ma un passaggio del Manifesto lettera mi ha lasciato molto perplesso:</p>
 
 <blockquote><p>Caro Presidente, garantire e difendere la Costituzione oggi vuol dire
@@ -31,9 +31,9 @@ all&#8217;Italia di fare default. Mi sarò perso qualcosa?</p>
   
   <entry>
     <title type="html"><![CDATA[Letture]]></title>
-    <link href="http://gragusa.github.com/blog/letture/"/>
+    <link href="http://gragusa.org/blog/letture/"/>
     <updated>2011-09-28T12:11:01+02:00</updated>
-    <id>http://gragusa.github.com/blog/letture</id>
+    <id>http://gragusa.org/blog/letture</id>
     <content type="html"><![CDATA[<p><strong>Dal Financial Times, <a href="http://www.ft.com/intl/cms/s/0/69902e72-e926-11e0-af7b-00144feab49a.html">Split opens over Greek bail-out terms</a>.</strong></p>
 
 <blockquote><p>A split has opened in the eurozone over the terms of Greece’s second
@@ -107,9 +107,9 @@ Grilli sia con il presidente della Repubblica sia con Berlusconi.</p></blockquot
   
   <entry>
     <title type="html"><![CDATA[Stress test interattivi]]></title>
-    <link href="http://gragusa.github.com/blog/stress-test-bancari-e-interattivi/"/>
+    <link href="http://gragusa.org/blog/stress-test-bancari-e-interattivi/"/>
     <updated>2011-09-26T14:00:47+02:00</updated>
-    <id>http://gragusa.github.com/blog/stress-test-bancari-e-interattivi</id>
+    <id>http://gragusa.org/blog/stress-test-bancari-e-interattivi</id>
     <content type="html"><![CDATA[<p>Il Financial Times ha <a href="http://www.ft.com/intl/cms/s/0/c7d18246-ae12-11e0-a2ab-00144feabdc0.html#axzz1Z2yMylmL">realizzato</a> un applet che visualizza in modo utile e accattivante i risultati degli
 <a href="http://www.ft.com/cms/s/0/dc111364-aefa-11e0-bb89-00144feabdc0.html" title="FT.com - Nine banks fail Europe stress tests">stress test europei</a> dello scorso luglio.</p>
 
@@ -127,9 +127,9 @@ Grilli sia con il presidente della Repubblica sia con Berlusconi.</p></blockquot
   
   <entry>
     <title type="html"><![CDATA[L'Istat e i grafici del PIL]]></title>
-    <link href="http://gragusa.github.com/blog/istat-e-i-grafici-del-pil/"/>
+    <link href="http://gragusa.org/blog/istat-e-i-grafici-del-pil/"/>
     <updated>2011-09-26T10:33:10+02:00</updated>
-    <id>http://gragusa.github.com/blog/istat-e-i-grafici-del-pil</id>
+    <id>http://gragusa.org/blog/istat-e-i-grafici-del-pil</id>
     <content type="html"><![CDATA[<p><em>Su <a href="lavoce.info">lavoce.info</a> del 22 Settembre 2011 è stato pubblicato un <a href="http://www.lavoce.info/articoli/pagina1002563.html">articolo</a> a firma di Ludovico Poggi dal titolo &#8220;L&#8217;ISTAT si (rifà) il trucco&#8221;. Il titolo gioca sulla rinnovata veste grafica del sito Istat per puntare l&#8217;indice contro un presunto trucco statistico perpetrato dall&#8217;Istituto di Statistica.</em></p>
 
 <p>Il nuovo www.istat.it è stato lanciato qualche settimana fa. La vesta grafica è moderna e rappresenta un notevole salto di qualità rispetto al vecchio sito. Una delle funzioni del nuovo sito permette di ottenere grafici temporali <em>on-demand</em> di alcune variabili macroeconomiche di particolare importanza. Queste variabili sono:</p>
@@ -150,7 +150,7 @@ Grilli sia con il presidente della Repubblica sia con Berlusconi.</p></blockquot
 
 <hr />
 
-<p><img class="center" src="http://gragusa.github.com/img/Screen-shot-2011-09-22-at-9.54.42-PM.png"></p>
+<p><img class="center" src="http://gragusa.org/img/Screen-shot-2011-09-22-at-9.54.42-PM.png"></p>
 
 <p><em>Grafico del PIL come ottenuto dal sito www.istat.it [25 Settembre 2011&#8221;]</em></p>
 
@@ -158,7 +158,7 @@ Grilli sia con il presidente della Repubblica sia con Berlusconi.</p></blockquot
 
 <p><strong>Dove sta il trucco?</strong> Il grafico potrebbe dare l&#8217;impressione che il PIL sia tornato ai livelli pre-crisi dopo aver toccato il minimo nel primo trimestre 2009. Questa interpretazione della rappresentazione grafica è errata. Un rapido sguardo all&#8217;andamento del Pil in livelli è sufficiente per accorgersi che il Pil è ancora ben lungi dall&#8217;essere tornato ai livelli pre-crisi. Per esempio, il valore del Pil nel secondo trimestre 2011 era di circa il 5% più basso rispetto al suo valore nel primo trimestre 2008.</p>
 
-<p><img class="center" src="http://gragusa.github.com/img/pil-lavoce.jpg" title="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;" alt="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/pil-lavoce.jpg" title="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;" alt="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;"></p>
 
 <p><em>Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.</em></p>
 
@@ -183,7 +183,7 @@ percentuali congiunturali.</p>
 
 <p><strong>Il tasso di variazione trimestrale congiunturale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il valore della stessa <em>nel trimestre immediatamente precedente</em>. Molto probabilmente è questo il tasso a cui molto sono più abituati a pensare. Visto che né lavoce.info né l&#8217;Istat hanno pubblicato un grafico delle variazioni congiunturali del Pil, ho provveduto a crearne uno che allego qui di seguito.</p>
 
-<p><img class="center" src="http://gragusa.github.com/img/pil_cong.png"></p>
+<p><img class="center" src="http://gragusa.org/img/pil_cong.png"></p>
 
 <p><em>Pil trimestrale a valori concatenati e destagionalizzati. variazioni % congiunturali</em></p>
 
@@ -205,9 +205,9 @@ in variazioni tendenziali e variazioni congiunturali. (Valori concatenati a prez
   
   <entry>
     <title type="html"><![CDATA[Il default nella storia]]></title>
-    <link href="http://gragusa.github.com/blog/il-default-nella-storia/"/>
+    <link href="http://gragusa.org/blog/il-default-nella-storia/"/>
     <updated>2011-09-20T15:18:42+02:00</updated>
-    <id>http://gragusa.github.com/blog/il-default-nella-storia</id>
+    <id>http://gragusa.org/blog/il-default-nella-storia</id>
     <content type="html"><![CDATA[<p><em>Il default (controllato o meno) della Grecia sembra essere dietro l&#8217;angolo. Il default di un paese non è un evento raro. Negli ultimo 200 anni molti paesi hanno scelto (o sono stati costretti a scegliere) di non onorare più le lore obbligazioni.</em></p>
 
 <p>Questo grafico è tratto da un
@@ -233,9 +233,9 @@ Borensztein and Ugo Panizza.</p>
   
   <entry>
     <title type="html"><![CDATA[Quante tasse pagano i ricchi? Confronto Italia USA]]></title>
-    <link href="http://gragusa.github.com/blog/quante-tasse-pagano-i-ricchi/"/>
+    <link href="http://gragusa.org/blog/quante-tasse-pagano-i-ricchi/"/>
     <updated>2011-09-12T07:37:39+02:00</updated>
-    <id>http://gragusa.github.com/blog/quante-tasse-pagano-i-ricchi</id>
+    <id>http://gragusa.org/blog/quante-tasse-pagano-i-ricchi</id>
     <content type="html"><![CDATA[<p><em>Qual è il grado di <a href="http://tinyurl.com/3ugaplm">progressività</a> dell&#8217;imposizione fiscale sul reddito in Italia rispetto a quella di altri paesi? Dall&#8217;analisi presentata in questo post risulta che la nostra tassazione è molto meno progressiva di quella degli Stati Uniti&#8212;il paese dove <a href="http://www.ilsole24ore.com/art/finanza-e-mercati/2011-08-17/warren-buffett-giusto-tassare-100920.shtml?uuid=AaM4LtwD">qualche super ricco</a> si offre pubblicamente di pagare più tasse.</em></p>
 
 <p>Greg Mankiw solleva sul suo <a href="http://gregmankiw.blogspot.com/2011/09/warren-buffetts-taxes-again.html">blog</a> il tema dell&#8217;imposizione fiscale e della sua progressività riproponendo un suo
@@ -371,27 +371,27 @@ tasse paghi la sua segretaria. Ma è più interessante <strong>confrontare</stro
 <p>Ancora più grande è la differenza fra i due sistemi quando si considera il quinto più povero e il quinto meno povero. In Italia la differenza è di 10,24 punti percentuali (19,74% contro 29,98%), negli Stati Uniti di 20,6 punti percentuali (4,5% verso 25,1%). Spero che questi semplici calcoli contribuiscano al dibattito su una riforma del fisco veramente equa.</p>
 
 <p>SEMPRE SULLE TASSE:
-[<a href="http://gragusa.github.com/blog/sulle-tasse-degli-italiani/">1</a>] e
-[<a href="http://gragusa.github.com/blog/sulle-tasse-dei-dipendenti-italiani/">2</a>]</p>
+[<a href="http://gragusa.org/blog/sulle-tasse-degli-italiani/">1</a>] e
+[<a href="http://gragusa.org/blog/sulle-tasse-dei-dipendenti-italiani/">2</a>]</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Sulle tasse dei dipendenti italiani]]></title>
-    <link href="http://gragusa.github.com/blog/sulle-tasse-dei-dipendenti-italiani/"/>
+    <link href="http://gragusa.org/blog/sulle-tasse-dei-dipendenti-italiani/"/>
     <updated>2011-09-08T12:39:59+02:00</updated>
-    <id>http://gragusa.github.com/blog/sulle-tasse-dei-dipendenti-italiani</id>
+    <id>http://gragusa.org/blog/sulle-tasse-dei-dipendenti-italiani</id>
     <content type="html"><![CDATA[<p>Mi è stato chiesto come cambierebbero <a href="http://www.gragusa.org/blog/2011/09/sulle-tasse-dei-dipendenti-italiani/">i grafici del post
 precedente</a> se invece di considerare tutti i contribuenti si considerassero solo i lavoratori dipendenti.</p>
 
 <p>Ecco qui i grafici che confrontano la distribuzione di tutti i contribuenti con la distribuzione dei dipendenti (Grafico 1) e la progressività del sistema di imposizione
 (Grafico 2). Ho poco da commentare se non il fatto che i lavoratori dipendenti che guadagnano relativamente poco sono tassati relativamente più dei non dipendenti che guadagnano poco. Questo ha a che fare con la non-linearità delle deduzioni e detrazioni per chi esercita attività in proprio. Bisogna anche considerare il diverso peso che hanno le contribuzione pensionistiche sui due tipi di contribuenti.</p>
 
-<p><img class="center" src="http://gragusa.github.com/img/Graph4.png" title="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph4.png" title="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
 
 <p>Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze</p>
 
-<p><img class="center" src="http://gragusa.github.com/img/Graph51.png" title="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph51.png" title="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
 
 <p>Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze</p>
 ]]></content>
@@ -399,9 +399,9 @@ precedente</a> se invece di considerare tutti i contribuenti si considerassero s
   
   <entry>
     <title type="html"><![CDATA[Sulle tasse degli italiani]]></title>
-    <link href="http://gragusa.github.com/blog/sulle-tasse-degli-italiani/"/>
+    <link href="http://gragusa.org/blog/sulle-tasse-degli-italiani/"/>
     <updated>2011-09-07T18:03:06+02:00</updated>
-    <id>http://gragusa.github.com/blog/sulle-tasse-degli-italiani</id>
+    <id>http://gragusa.org/blog/sulle-tasse-degli-italiani</id>
     <content type="html"><![CDATA[<script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -437,15 +437,15 @@ contribuenti ha dedotto spese per abitazione principale. Visto che in Italia son
 
 <p>Il <strong>Grafico 3</strong> mostra la frazione di contribuenti che chiede le deduzioni rispetto alla numerosità della classe.</p>
 
-<p><img class="center" src="http://gragusa.github.com/img/Graph12.png" title="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph12.png" title="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
 
 <p>Grafico 1. Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#8221;</p>
 
-<p><img class="center" src="http://gragusa.github.com/img/Graph21.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph21.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
 
 <p>Grafico 2. Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.</p>
 
-<p><img class="cenetr" src="http://gragusa.github.com/img/Graph3.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p><img class="cenetr" src="http://gragusa.org/img/Graph3.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
 
 <p>Grafico 3. Rapporto fra numero di deduzioni per abitazione principale e numerosità della classe. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.</p>
 ]]></content>
@@ -453,10 +453,10 @@ contribuenti ha dedotto spese per abitazione principale. Visto che in Italia son
   
   <entry>
     <title type="html"><![CDATA[Battaglia dei sessi: poveri uomini]]></title>
-    <link href="http://gragusa.github.com/blog/battaglia-dei-sessi-poveri-uomini/"/>
+    <link href="http://gragusa.org/blog/battaglia-dei-sessi-poveri-uomini/"/>
     <updated>2011-09-06T17:34:55+02:00</updated>
-    <id>http://gragusa.github.com/blog/battaglia-dei-sessi-poveri-uomini</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://gragusa.github.com/img/graph.png"></p>
+    <id>http://gragusa.org/blog/battaglia-dei-sessi-poveri-uomini</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://gragusa.org/img/graph.png"></p>
 
 <p><em>Andamento Occupazione, US</em></p>
 ]]></content>
@@ -464,9 +464,9 @@ contribuenti ha dedotto spese per abitazione principale. Visto che in Italia son
   
   <entry>
     <title type="html"><![CDATA[Investimenti Diretti]]></title>
-    <link href="http://gragusa.github.com/blog/investimenti-diretti/"/>
+    <link href="http://gragusa.org/blog/investimenti-diretti/"/>
     <updated>2011-09-02T06:56:41+02:00</updated>
-    <id>http://gragusa.github.com/blog/investimenti-diretti</id>
+    <id>http://gragusa.org/blog/investimenti-diretti</id>
     <content type="html"><![CDATA[<iframe width="400" height="325" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="http://www.google.com/publicdata/embed?ds=wb-wdi&amp;ctype=l&amp;strail=false&amp;nselm=h&amp;met_y=bx_klt_dinv_cd_wd&amp;scale_y=lin&amp;ind_y=false&amp;rdim=country&amp;idim=country:ITA:ESP:GBR:USA:FRA:CHN:MEX&amp;ifdim=country&amp;tstart=652226400000&amp;tend=1283378400000&amp;hl=en&amp;dl=en&amp;icfg&amp;uniSize=0.035&amp;iconSize=0.5">
     <br />
 </iframe>

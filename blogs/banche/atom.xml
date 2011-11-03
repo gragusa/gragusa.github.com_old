@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[banche | Giuseppe Ragusa]]></title>
-  <link href="http://gragusa.github.com/blogs/banche/atom.xml" rel="self"/>
-  <link href="http://gragusa.github.com/"/>
-  <updated>2011-10-27T15:38:05+02:00</updated>
-  <id>http://gragusa.github.com/</id>
+  <link href="http://gragusa.org/blogs/banche/atom.xml" rel="self"/>
+  <link href="http://gragusa.org/"/>
+  <updated>2011-11-03T09:30:42+01:00</updated>
+  <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Stress test interattivi]]></title>
-    <link href="http://gragusa.github.com/blog/stress-test-bancari-e-interattivi/"/>
+    <link href="http://gragusa.org/blog/stress-test-bancari-e-interattivi/"/>
     <updated>2011-09-26T14:00:47+02:00</updated>
-    <id>http://gragusa.github.com/blog/stress-test-bancari-e-interattivi</id>
+    <id>http://gragusa.org/blog/stress-test-bancari-e-interattivi</id>
     <content type="html"><![CDATA[<p>Il Financial Times ha <a href="http://www.ft.com/intl/cms/s/0/c7d18246-ae12-11e0-a2ab-00144feabdc0.html#axzz1Z2yMylmL">realizzato</a> un applet che visualizza in modo utile e accattivante i risultati degli
 <a href="http://www.ft.com/cms/s/0/dc111364-aefa-11e0-bb89-00144feabdc0.html" title="FT.com - Nine banks fail Europe stress tests">stress test europei</a> dello scorso luglio.</p>
 

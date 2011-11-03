@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[istat | Giuseppe Ragusa]]></title>
-  <link href="http://gragusa.github.com/blogs/istat/atom.xml" rel="self"/>
-  <link href="http://gragusa.github.com/"/>
-  <updated>2011-10-27T15:38:05+02:00</updated>
-  <id>http://gragusa.github.com/</id>
+  <link href="http://gragusa.org/blogs/istat/atom.xml" rel="self"/>
+  <link href="http://gragusa.org/"/>
+  <updated>2011-11-03T09:30:42+01:00</updated>
+  <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[L'Istat e i grafici del PIL]]></title>
-    <link href="http://gragusa.github.com/blog/istat-e-i-grafici-del-pil/"/>
+    <link href="http://gragusa.org/blog/istat-e-i-grafici-del-pil/"/>
     <updated>2011-09-26T10:33:10+02:00</updated>
-    <id>http://gragusa.github.com/blog/istat-e-i-grafici-del-pil</id>
+    <id>http://gragusa.org/blog/istat-e-i-grafici-del-pil</id>
     <content type="html"><![CDATA[<p><em>Su <a href="lavoce.info">lavoce.info</a> del 22 Settembre 2011 è stato pubblicato un <a href="http://www.lavoce.info/articoli/pagina1002563.html">articolo</a> a firma di Ludovico Poggi dal titolo "L'ISTAT si (rifà) il trucco". Il titolo gioca sulla rinnovata veste grafica del sito Istat per puntare l'indice contro un presunto trucco statistico perpetrato dall'Istituto di Statistica.</em></p>
 
 <p>Il nuovo www.istat.it è stato lanciato qualche settimana fa. La vesta grafica è moderna e rappresenta un notevole salto di qualità rispetto al vecchio sito. Una delle funzioni del nuovo sito permette di ottenere grafici temporali <em>on-demand</em> di alcune variabili macroeconomiche di particolare importanza. Queste variabili sono:</p>

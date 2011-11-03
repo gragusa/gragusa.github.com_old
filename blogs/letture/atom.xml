@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[letture | Giuseppe Ragusa]]></title>
-  <link href="http://gragusa.github.com/blogs/letture/atom.xml" rel="self"/>
-  <link href="http://gragusa.github.com/"/>
-  <updated>2011-10-27T15:38:05+02:00</updated>
-  <id>http://gragusa.github.com/</id>
+  <link href="http://gragusa.org/blogs/letture/atom.xml" rel="self"/>
+  <link href="http://gragusa.org/"/>
+  <updated>2011-11-03T09:30:42+01:00</updated>
+  <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Letture]]></title>
-    <link href="http://gragusa.github.com/blog/letture/"/>
+    <link href="http://gragusa.org/blog/letture/"/>
     <updated>2011-09-28T12:11:01+02:00</updated>
-    <id>http://gragusa.github.com/blog/letture</id>
+    <id>http://gragusa.org/blog/letture</id>
     <content type="html"><![CDATA[<p><strong>Dal Financial Times, <a href="http://www.ft.com/intl/cms/s/0/69902e72-e926-11e0-af7b-00144feab49a.html">Split opens over Greek bail-out terms</a>.</strong></p>
 
 <blockquote><p>A split has opened in the eurozone over the terms of Greece’s second
