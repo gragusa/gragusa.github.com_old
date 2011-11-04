@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[evasione | Giuseppe Ragusa]]></title>
+  <link href="http://gragusa.org/blogs/evasione/atom.xml" rel="self"/>
+  <link href="http://gragusa.org/"/>
+  <updated>2011-11-04T09:30:47+01:00</updated>
+  <id>http://gragusa.org/</id>
+  <author>
+    <name><![CDATA[Giuseppe Ragusa]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[L'economia sommersa nel PIL]]></title>
+    <link href="http://gragusa.org/blog/pil-ed-economia-sommersa/"/>
+    <updated>2011-09-14T17:23:35+02:00</updated>
+    <id>http://gragusa.org/blog/pil-ed-economia-sommersa</id>
+    <content type="html"><![CDATA[<p><em>L'impatto dell'economia sommersa sui conti pubblici è importante per le scelte di politica economica. Il dato dell'ISTAT secondo cui circa il 17% del nostro PIL è "sommerso" e quindi sfugge all'erario è spesso male interpretato. Infatti, il PIL ufficiale italiano comprende già la quota
+di prodotto derivante dall'economia sommersa.</em></p>
+
+<p>Quando si parla di evasione fiscale si citano spesso i recenti dati ISTAT per i quali il valore dell'economia sommersa è stimato per il 2008 fra 255 e 275 miliardi (Fonte:
+<a href="http://www.istat.it/it/files/2011/01/testointegrale20100713.pdf?title=La+misura+dell'economia+sommersa+-+13/lug/2010+-+testointegrale20100713.pdf">ISTAT</a>).</p>
+
+<p>Un altro modo di mettere esporre questi dati è di dire che l'economia sommersa rappresenta circa il 17% del PIL. Per esempio, Antonio Vanuzzo di linkiesta <a href="http://www.linkiesta.it/nella-lotta-all-evasione-i-numeri-non-tornano#ixzz1XvwvTUaq">scrive</a> recentemente che</p>
+
+<blockquote><p>...<strong>le <a href="http://www.istat.it/salastampa/comunicati/non_calendario/20100713_00/testointegrale20100713.pdf">ultime cifre</a></strong>dell’ISTAT
+sull'economia sommersa stimano che, nel 2008, "il valore aggiunto
+prodotto nell'area del sommerso economico risulta compreso tra un
+minimo di 255 miliardi di euro e un massimo di 275 miliardi di euro,
+pari rispettivamente al 16,3 per cento e al 17,5 per cento del Pil".</p></blockquote>
+
+<p>E' facile essere tratti in inganno e concludere che questo 17% non faccia parte del PIL e che di conseguenza l'eliminazione del sommerso genererebbe meccanicamente un aumento del PIL di 17 punti percentuali.</p>
+
+<p>Non è così. Infatti, quello che l'ISTAT intende dire è che circa il 17% del PIL ufficiale è attribuibile al sommerso. Per chiarezza:</p>
+
+<ul>
+<li>Il <strong>PIL 2008, il dato ufficiale rilasciato dall'ISTAT,</strong>è stato di
+<strong>1.567</strong> <strong>miliardi di euro</strong> (per la precisione 1.567.761.400
+euro).</li>
+<li>La parte del <strong>PIL ufficiale attribuibile all'economia sommersa</strong> è
+compresa fra 250 e 275 miliardi.</li>
+<li>250 miliardi rappresentano il <strong>16.3%</strong> di 1.567.761.400</li>
+<li>275 miliardi sono il <strong>17.5%</strong> di 1.567.761.400.</li>
+</ul>
+
+
+<p>Del PIL italiano fa parte il sommerso da molti anni---la prima revisione dei dati in questo senso avvenne nel 1987. E non è solo l'ISTAT a compiere questi aggiustamenti. Il metodo con cui il sommerso è calcolato dall'ISTAT segue standard internazionali seguiti da tutti i centri di statistica di tutti i paesi OCSE.</p>
+
+<p>Un recupero del sommerso, almeno fino alla quota calcolata dall'ISTAT, non avrebbe alcun effetto diretto sulla contabilità nazionale. L'emersione del sommerso avrebbe un effetto sulle
+grandezze macroeconomiche per mezzo della riduzione del deficit e dell'eventuale aumento del gettito. E se il gettito derivante dall'emersione fosse utilizzato per alleggerire la pressione fiscale, ci
+si potrebbe anche aspettare un aumento (indiretto) del PIL. Come stimato dalla <a href="http://www.lavoce.info/articoli/pagina1002540.html">lavoce.info</a> a seguito della manovra, la pressione fiscale salirà al 44.5%. La pressione fiscale sul PIL al netto della componente economia sommersa potrebbe arrivare al 52%.</p>
+
+<p>P.S.: Ho trovato questa bella <a href="http://www.felicebelisario.it/2011/08/19/con-la-lotta-seria-all´evasione-fiscale-si-puo´-uscire-dalla-crisi/">dichiarazione</a> del Senatore dell'IdV <a href="http://www.senato.it/leg/16/BGT/Schede/Attsen/00022864.htm">Felice Belisario</a> che mostra come sia facile equivocare:</p>
+
+<blockquote><p>La Corte dei Conti, il 28 giugno scorso, aveva ripreso un dato
+dell'Istat secondo il quale, nel 2008, ultimo dato disponibile,
+l´evasione fiscale valeva oltre il 17 per cento dei Pil. Con la crisi
+e il ridimensionamento del Pil, probabilmente, questa cifra oggi è
+ulteriormente aumentata. So che un po' di evasione è fisiologica in
+tutti i Paesi, ma se solo riuscissimo a raggiungere i livelli europei
+porteremmo a casa almeno una decina di punti di Pil. Con quei miliardi
+si potrebbero evitare ulteriori tagli agli enti locali, si potrebbe
+rilanciare la produzione e l'occupazione con strumenti come la
+fiscalità di vantaggio, si potrebbe addirittura ridurre il debito
+pubblico che è la vera sciagura economica del Paese.</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>
