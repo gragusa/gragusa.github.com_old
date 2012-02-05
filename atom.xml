@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2011-12-27T13:10:03+01:00</updated>
+  <updated>2012-02-05T23:08:53+01:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Deposit facility BCE]]></title>
+    <link href="http://gragusa.org/blog/deposit-facility-bce/"/>
+    <updated>2012-02-05T22:42:00+01:00</updated>
+    <id>http://gragusa.org/blog/deposit-facility-bce</id>
+    <content type="html"><![CDATA[<p><img src="img/deposit.png" title="ECB deposit" alt="ECB deposit"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Euro: è passato il tempo per provare a provare.]]></title>
