@@ -9,7 +9,7 @@
   <meta name="author" content="Giuseppe Ragusa">
 
   
-  <meta name="description" content="    Applied Statistics and Econometrics[Description] [Syllabus]AnnouncementMonday, February 6The syllabus is now posted.                           ...">
+  <meta name="description" content="    Applied Statistics and EconometricsDescriptionThe aim of this course is to provide an introduction to the practice ofeconometrics. While both t...">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -25,7 +25,16 @@
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Giuseppe Ragusa" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  jQuery.noConflict();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
+<link href="/css/jquery-ui-theme/jquery-ui-1.8.17.custom.css" media="screen" rel="stylesheet" type="text/css">
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href=’http://fonts.googleapis.com/css?family=Droid+Sans’ rel=’stylesheet’ type=’text/css’>
@@ -79,25 +88,70 @@
   
   <h2>Applied Statistics and Econometrics</h2>
 
-<p>[<a href="description.html">Description</a>] [<a href="syllabus.html">Syllabus</a>]</p>
+<h2>Description</h2>
+
+<p><a href="files/ase-syllabus.pdf"><img class="left" src="files/ase-syllabus.png" title="'Syllabus'" ></a>
+The aim of this course is to provide an introduction to the practice of
+econometrics. While both theoretical and practical aspects of econometrics will
+be covered, emphasis will be on intuitive understanding. Concepts will be
+illustrated with real world applications on real world data.</p>
+
+<p>Please for further details about the structure of the course download the <a href="syllabus.html">syllabus</a>.</p>
+
+<h2>Textbook</h2>
+
+<p><img class="left" src="img/stockwatson.jpg" title="'Stock and Watson'" ></p>
+
+<p>The textbook we’ll be using is Stock and Watson’s Introduction to Econometrics
+(3rd edition) [check it out at <a href="http://www.amazon.it/Introduction-Econometrics-James-H-Stock/dp/1408264331/ref=sr_1_3?ie=UTF8&amp;qid=1329485768&amp;sr=8-3">amazon</a>]</p>
+
+<ul>
+<li><strong>Stock, James H. and Mark W. Watson, Introduction to Econometrics, Addison Wesley; 3rd edition, ISBN: 1408264331</strong></li>
+</ul>
+
+
+<p>Stock and Watson&#8217;s Introduction to Econometrics is nicely organized and easy to
+read. However, no book is a perfect fit for everyone, and there are many other
+books you can look at for reference. [A good example is Jeffrey Wooldridge&#8217;s
+Introduction to Econometrics (South Western, 4th ed.).]</p>
+
+<h2>Lectures</h2>
+
+<p>Below is an outline of topics which will be covered in class, in the order in
+which we will cover. Especially in earlier classes, these topics may take
+longer than indicated to complete.</p>
+
+<pre>
+  n.   date                       topic                              
+ --------------------------------------------------------------------------
+  01   M  27 February 2012        Introduction and review of statistics      
+  02   T  28 February 2012        Review of statistics                       
+  03   M      5 March 2012        Bivariate regression I                     
+  04   Tu     6 March 2012        Bivariate regression II                    
+  05   M     12 March 2013        Multiple regression I                      
+  06   Tu    13 March 2012        Multiple regression II                     
+  07   M     19 March 2012        Multiple regression III                    
+  08   Tu    20 March 2012        Multiple regression VI                     
+  09   M     26 March 2012        Nonlinear regression models I              
+  10   Tu    27 March 2012        Nonlinear regression models II             
+  11   M      2 April 2012        Econometrics in action                     
+  12   Tu     3 April 2012        Assessing regression studies I             
+  13   M     16 April 2012        TBA                                        
+  14   Tu    17 April 2012        Midterm                                   
+  15   M     23 April 2012        Assessing regression studies II            
+  16   Tu    24 April 2012        Panel Data I                               
+  17   M     30 April 2012        Panel Data II                              
+  18   M        7 May 2012        Binary dependent variable I                
+  19   Tu       8 May 2012        Binary dependent variable II               
+  20   M       14 May 2012        Instrumental variable regression I         
+  21   Tu      15 May 2012        Instrumental variable regression II        
+  22   M       21 May 2012        IV regression III - Program evaluation I  
+  23   Tu      22 May 2012        Program evaluation II                      
+ -----------------------------------------------------------------------------
+</pre>
+
 
 <h2>Announcement</h2>
-
-<figure class='code'><figcaption><span>Monday, February 6</span></figcaption>
-<div class="highlight">
-<table>
-<tr>
-<td class='code'><pre><code class='r'>
-<span class='line'>The syllabus is now posted.
-</span></code></pre>
-</td>
-</tr>
-</table>
-</div>
-</figure>
-
-
-
 
   
     <footer>
@@ -191,6 +245,15 @@
   </script>
 
 
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  // Put a TOC right before the entry content.
+  generateTOC('.entry-content', 'Table of Contents');
+});
+</script>
 
 
 
