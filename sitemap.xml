@@ -69,6 +69,18 @@
         <lastmod>2012-02-05T23:12:43+01:00</lastmod>
     </url>
     <url>
+        <loc>http://gragusa.org/</loc>
+        <lastmod>2012-02-18T01:55:59+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gragusa.org/research/</loc>
+        <lastmod>2012-02-18T01:55:59+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gragusa.org/teaching/aemosec/</loc>
+        <lastmod>2012-04-03T10:51:56+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://gragusa.org/teaching/ase/calendar.html</loc>
         <lastmod>2012-02-18T01:55:59+01:00</lastmod>
     </url>
@@ -85,14 +97,6 @@
         <lastmod>2012-02-18T01:55:59+01:00</lastmod>
     </url>
     <url>
-        <loc>http://gragusa.org/teaching/aemosec/</loc>
-        <lastmod>2012-04-03T10:51:56+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gragusa.org/teaching/</loc>
-        <lastmod>2012-02-18T01:55:59+01:00</lastmod>
-    </url>
-    <url>
         <loc>http://gragusa.org/teaching/etmosec/description.html</loc>
         <lastmod>2012-02-18T01:55:59+01:00</lastmod>
     </url>
@@ -105,11 +109,7 @@
         <lastmod>2012-02-18T01:55:59+01:00</lastmod>
     </url>
     <url>
-        <loc>http://gragusa.org/</loc>
-        <lastmod>2012-02-18T01:55:59+01:00</lastmod>
-    </url>
-    <url>
-        <loc>http://gragusa.org/research/</loc>
+        <loc>http://gragusa.org/teaching/</loc>
         <lastmod>2012-02-18T01:55:59+01:00</lastmod>
     </url>
 </urlset>
