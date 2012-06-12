@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2012-06-13T00:37:43+02:00</updated>
+  <updated>2012-06-13T00:40:47+02:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -18,7 +18,7 @@
     <link href="http://gragusa.org/blog/distribuzione-delle-nascite/"/>
     <updated>2012-06-13T00:31:00+02:00</updated>
     <id>http://gragusa.org/blog/distribuzione-delle-nascite</id>
-    <content type="html"><![CDATA[<p>{% imgpopup http://andrewgelman.com/wp-content/uploads/2012/06/heatmapbirthdays1.jpg 40% Distribuzione nascite per giorni dell&#8217;anno%}</p>
+    <content type="html"><![CDATA[<p>Liquid error: No such file or directory - /Users/gragusa/Dropbox/web/octopress/source/http://andrewgelman.com/wp-content/uploads/2012/06/heatmapbirthdays1.jpg</p>
 ]]></content>
   </entry>
   
