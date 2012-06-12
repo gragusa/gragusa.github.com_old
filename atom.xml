@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2012-06-13T00:46:34+02:00</updated>
+  <updated>2012-06-13T00:47:48+02:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -18,7 +18,7 @@
     <link href="http://gragusa.org/blog/distribuzione-delle-nascite/"/>
     <updated>2012-06-13T00:31:00+02:00</updated>
     <id>http://gragusa.org/blog/distribuzione-delle-nascite</id>
-    <content type="html"><![CDATA[<p>Liquid error: No such file or directory - /Users/gragusa/Dropbox/web/octopress/img/heatmapbirthdays1.jpg</p>
+    <content type="html"><![CDATA[<p><img src="../img/heatmapbirthdays1.jpg"></p>
 ]]></content>
   </entry>
   
