@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2012-06-13T00:43:55+02:00</updated>
+  <updated>2012-06-13T00:46:34+02:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -18,44 +18,7 @@
     <link href="http://gragusa.org/blog/distribuzione-delle-nascite/"/>
     <updated>2012-06-13T00:31:00+02:00</updated>
     <id>http://gragusa.org/blog/distribuzione-delle-nascite</id>
-    <content type="html"><![CDATA[<div class="imgpopup screen">
-  <div class="caption">Click the image for a larger view.</div>
-  <a href='javascript:void(0)' style="text-decoration: none" id="image-1">
-    <img src="img/heatmapbirthdays1.jpg"
-         width="244" height="354"
-         alt="Click me."/>
-  </a>
-  <div id="image-dialog-1" style="display:none">
-    <img src="img/heatmapbirthdays1.jpg"
-         width="610" height="885"/>
-    <br clear="all"/>
-  </div>
-</div>
-<script type="text/javascript">
-  jQuery(document).ready(function() {
-    jQuery("#image-dialog-1").hide();
-    jQuery("#image-dialog-1").dialog({
-      autoOpen:  false,
-      modal:     true,
-      draggable: false,
-      minWidth:  650,
-      minHeight: 925,
-      title:     "Distribuzione nascite per giorni dell'anno",
-      show:      'scale',
-      hide:      'scale'
-    });
-
-    jQuery("#image-1").click(function() {
-      jQuery("#image-dialog-1").dialog('open');
-    });
-
-  });
-</script>
-<div class="illustration print">
-  <img src="img/heatmapbirthdays1.jpg" width="610" height="885"/>
-</div>
-
-
+    <content type="html"><![CDATA[<p>Liquid error: No such file or directory - /Users/gragusa/Dropbox/web/octopress/img/heatmapbirthdays1.jpg</p>
 ]]></content>
   </entry>
   
