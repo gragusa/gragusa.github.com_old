@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2012-06-07T00:16:46+02:00</updated>
+  <updated>2012-06-13T00:32:47+02:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Distribuzione delle nascite]]></title>
+    <link href="http://gragusa.org/blog/distribuzione-delle-nascite/"/>
+    <updated>2012-06-13T00:31:00+02:00</updated>
+    <id>http://gragusa.org/blog/distribuzione-delle-nascite</id>
+    <content type="html"><![CDATA[<p><img src="http://andrewgelman.com/wp-content/uploads/2012/06/heatmapbirthdays1.jpg"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Deposit facility BCE]]></title>
