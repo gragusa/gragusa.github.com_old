@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2013-01-22T10:28:27+01:00</updated>
+  <updated>2013-01-30T22:47:24+01:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Retribuzioni contrattuali]]></title>
+    <link href="http://gragusa.org/blog/retribuzioni-contrattuali/"/>
+    <updated>2013-01-30T22:04:00+01:00</updated>
+    <id>http://gragusa.org/blog/retribuzioni-contrattuali</id>
+    <content type="html"><![CDATA[<p>L&#8217;ISTAT ha <a href="http://www.istat.it/it/archivio/80769">annunciato</a> il rilascio
+degli indici che misurano le variazioni delle retribuzioni contrattuali.</p>
+
+<p>Di seguito parte del comunicato ISTAT:</p>
+
+<p><em>Nel mese di dicembre l&#8217;indice delle retribuzioni contrattuali orarie registra un incremento dello 0,1% rispetto al mese precedente e dell&#8217;1,7% rispetto a dicembre 2011. Nella media del 2012 la retribuzione oraria è cresciuta dell&#8217;1,5% rispetto all&#8217;anno precedente.</em></p>
+
+<p><em>Con riferimento ai principali macrosettori, a dicembre le retribuzioni orarie contrattuali registrano un incremento tendenziale del 2,2% per i dipendenti del settore privato e una variazione nulla per quelli della pubblica amministrazione.</em></p>
+
+<p>La stampa ha dato un risalto negativo alla dinamica delle retribuzioni contrattuali che viene fuori dall&#8217;analisi dei dati. Si è fatto notare che <em>(a)</em> l&#8217;1,5% su base anuale è il calo più consistente dal 1995 (primo anno di disponibilità dell&#8217;indice); <em>(b)</em>
+<a href="http://www.ilfattoquotidiano.it/2013/01/28/istat-nel-2012-crescita-prezzi-doppia-rispetto-salari/481953/">la crescità dei prezzi nel periodo di riferimento è stata superiore alla crescita delle retribuzioni</a>.</p>
+
+<p>Come al solito, la verità è un pò complessa.</p>
+
+<p><img src="http://gragusa.org/img/retribuzioni.png" title="Retribuzioni contrattuali" alt="Retribuzioni contrattuali"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Distribuzione delle nascite nei giorni dell'anno]]></title>
