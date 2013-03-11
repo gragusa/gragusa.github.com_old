@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2013-02-27T01:18:01+01:00</updated>
+  <updated>2013-03-11T03:46:22+01:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Elezioni Papa - Quote]]></title>
+    <link href="http://gragusa.org/blog/elezioni-papa-quote/"/>
+    <updated>2013-03-11T03:39:00+01:00</updated>
+    <id>http://gragusa.org/blog/elezioni-papa-quote</id>
+    <content type="html"><![CDATA[<p>From: <a href="http://www.dataparadigms.com/">dataparadigm</a></p>
+
+<iframe src="http://glimmer.rstudio.com/dataparadigm/pope/" width=640 height=660></iframe>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sondaggi elettorali]]></title>
