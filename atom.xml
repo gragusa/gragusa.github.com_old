@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2013-03-11T23:58:15+01:00</updated>
+  <updated>2013-03-12T00:43:22+01:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -18,13 +18,11 @@
     <link href="http://gragusa.org/blog/elezioni-papa-quote/"/>
     <updated>2013-03-11T03:39:00+01:00</updated>
     <id>http://gragusa.org/blog/elezioni-papa-quote</id>
-    <content type="html"><![CDATA[<p>From: <a href="http://www.dataparadigms.com/">dataparadigm</a></p>
+    <content type="html"><![CDATA[
 
+<p>From: <a href="http://www.dataparadigms.com/">dataparadigm</a></p>
 
-
-
-
-<iframe id="IDNAME" src="http://glimmer.rstudio.com/dataparadigm/pope/" width=640 height=660></iframe>
+<iframe id="IDNAME" src="http://glimmer.rstudio.com/dataparadigm/pope/" width=820 height=750 style="zoom:75%"></iframe>
 
 
 <p>Seleziondo il numero di &#8220;papabili&#8221; si ottine la probabilita&#8217; di elezione implicata dalla quotazioni dei bookmakers.</p>
