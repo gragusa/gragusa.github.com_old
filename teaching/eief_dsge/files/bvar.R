@@ -78,7 +78,7 @@ vlag <-
 BVARBGR <- function(Y, p, lambda, coefsum = FALSE, constant = TRUE, direct = FALSE, h = 1, 
                     predictive, ngibbs = 1000, repfor = 10, h.max = 8) {
     
-  out <- grbvar:::setbvar(Y = Y, p = p, h = h, is.direct = direct, constant=constant)
+  out <- setbvar(Y = Y, p = p, h = h, is.direct = direct, constant=constant)
   
   T <- out$data$T
   k <- out$data$k
