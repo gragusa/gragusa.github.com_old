@@ -25,7 +25,7 @@ confint.rob <- function (object, parm, level = 0.95) {
   a <- (1 - level)/2
   a <- c(a, 1 - a)
   fac <- qnorm(a)
-  pct <- format.perc(a, 3)
+  pct <- paste(format(100 * a, trim = TRUE, scientific = FALSE, digits = 3), "%")
   ci <- array(NA, dim = c(length(parm), 2L), dimnames = list(parm, 
                                                              pct))
   ses <- sqrt(diag(vcovHC(object)))[parm]
