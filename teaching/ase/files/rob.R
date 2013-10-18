@@ -18,10 +18,12 @@ summary_rob <- function(object, alpha = 0.05) {
 
 print.summary_rob <-
   function (x, digits = max(3L, getOption("digits") - 3L), symbolic.cor = x$symbolic.cor, 
-    signif.stars = FALSE, ...) 
+    signif.stars = FALSE, call=FALSE, ...) 
 {
-    ## cat("\nCall:\n", paste(deparse(x$call), sep = "\n", collapse = "\n"), 
-    ##     "\n\n", sep = "")
+  if(call) {
+    cat("\nCall:\n", paste(deparse(x$call), sep = "\n", collapse = "\n"), 
+        "\n\n", sep = "")
+  }
     resid <- x$residuals
     df <- x$df
     rdf <- df[2L]
@@ -31,9 +33,9 @@ print.summary_rob <-
     }
     else {
         if (nsingular <- df[3L] - df[1L]) 
-            cat("Coefficients: (", nsingular, " not defined because of singularities)\n", 
+            cat("\nCoefficients: (", nsingular, " not defined because of singularities)\n", 
                 sep = "")
-        else cat("Coefficients:\n")
+        else cat("\nCoefficients:\n")
         coefs <- x$coefficients
         if (!is.null(aliased <- x$aliased) && any(aliased)) {
             cn <- names(aliased)
@@ -43,6 +45,7 @@ print.summary_rob <-
         }
         printCoefmat(coefs, digits = digits, signif.stars = signif.stars, 
             na.print = "NA", ...)
+        cat("---\nHeteroskadasticity robust standard errors used\n")
     }
     cat("\nResidual standard error:", format(signif(x$sigma, 
         digits)), "on", rdf, "degrees of freedom")
@@ -74,7 +77,8 @@ print.summary_rob <-
                 print(correl[-1, -p, drop = FALSE], quote = FALSE)
             }
         }
-    }   
+    }
+    
     cat("\n")
     invisible(x)
 }
