@@ -75,7 +75,8 @@ print.summary_rob <-
             }
         }
     }
-    cat("Robust standard errors \n")
+    
+    cat("---\nHeteroskadasticity robust standard errors\n")
     cat("\n")
     invisible(x)
 }
