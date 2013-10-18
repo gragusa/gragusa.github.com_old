@@ -9,8 +9,8 @@ rob <- function(object, alpha = 0.05) {
   for (i  in  1:k) {
     cii[i,]<-  c(b[i,1] + qnorm(alpha/2)*b[i,2] , b[i,1] - qnorm(alpha/2)*b[i,2])
   }
-  colnames(cii) <- c(paste("c.i.",alpha/2*100 ,"%"),
-                     paste("c.i.",100 - alpha/2*100 ,"%"))
+  colnames(cii) <- c(paste("",alpha/2*100 ,"%"),
+                     paste("",100 - alpha/2*100 ,"%"))
   cbind(b,cii)
 }
 
