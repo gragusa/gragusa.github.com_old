@@ -2,6 +2,18 @@ require(sandwich)
 require(lmtest)
 
 
+
+lmrob <- function(object, alpha = 0.05) {
+  b <- coeftest(object, vcov = vcovHC) 
+  sobj <- summary(object)
+  sobj$coefficients <- b
+  f <- waldtest(object, vcov=vcovHC, test = 'Chisq')
+  sobj$fstatistic <- c(value=f$Chisq[2], numdf = abs(f$Df[2]), dendf = Inf)
+  sobj
+}
+
+
+
 rob <- function(object, alpha = 0.05) {
   b <- coeftest(object, vcov = vcovHC)
   k <- nrow(b)
