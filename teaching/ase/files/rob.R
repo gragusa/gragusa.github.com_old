@@ -3,7 +3,9 @@ require(lmtest)
 
 
 
-lmrob <- function(object, alpha = 0.05) {
+summary_rob <- function(object, alpha = 0.05) {
+  if(class(object)!="lm")
+    stop("'summary_rob' only works on object of class 'lm'")
   b <- coeftest(object, vcov = vcovHC) 
   sobj <- summary(object)
   sobj$coefficients <- b
