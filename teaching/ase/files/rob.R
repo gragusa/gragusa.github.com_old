@@ -3,6 +3,41 @@ require(lmtest)
 
 
 
+ftest <- function(object, testcoef = NULL, null, vcov = vcovHC) {
+  
+  cobj <- coef(object)
+  
+  if(is.null(testcoef))
+    testcoef <- names(cobj <- coef(object))
+  
+  if(missing(null))
+    null <- rep(0, length(testcoef))
+  
+  betahat <- cobj[testcoef]
+  
+  q <- length(betahat)
+  
+  V <- vcov(object)[testcoef, testcoef]
+  
+  Ft <- t(betahat-null)%*%solve(V)%*%(betahat-null)
+  
+  pvalue <- pchisq(Ft, q, lower.tail = FALSE)
+  
+  out <- structure(data.frame(
+          q = q, 
+          Fstat = Ft, 
+          pvalue = pvalue))
+  
+  cat('F test\n\n')
+  cat("Null hypothesis:\n")
+  cat(paste(testcoef, null, sep=" = "), sep='\n')
+  cat('\n')
+  
+  print(format(out), row.names=FALSE)
+  
+}
+
+
 summary_rob <- function(object, alpha = 0.05) {
   if(class(object)!="lm")
     stop("'summary_rob' only works on object of class 'lm'")
