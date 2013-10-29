@@ -3,7 +3,7 @@ require(lmtest)
 
 
 
-ftest <- function(object, testcoef = NULL, null, vcov = vcovHC) {
+wtest <- function(object, testcoef = NULL, null, vcov = vcovHC) {
   
   cobj <- coef(object)
   
@@ -25,10 +25,10 @@ ftest <- function(object, testcoef = NULL, null, vcov = vcovHC) {
   
   out <- structure(data.frame(
           q = q, 
-          Fstat = Ft, 
+          W = Ft, 
           pvalue = pvalue))
   
-  cat('F test\n\n')
+  cat('Wald test\n\n')
   cat("Null hypothesis:\n")
   cat(paste(testcoef, null, sep=" = "), sep='\n')
   cat('\n')
@@ -44,6 +44,8 @@ summary_rob <- function(object, alpha = 0.05) {
   b <- coeftest(object, vcov = vcovHC) 
   sobj <- summary(object)
   sobj$coefficients <- b
+  ind <- is.na(b)
+  
   f <- waldtest(object, vcov=vcovHC, test = 'Chisq')
   sobj$fstatistic <- c(value=f$Chisq[2], numdf = abs(f$Df[2]), dendf = Inf)
   class(sobj) <- "summary_rob"
