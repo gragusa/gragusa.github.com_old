@@ -3,7 +3,7 @@ require(lmtest)
 
 
 
-wtest <- function(object, testcoef = NULL, null, vcov = vcovHC) {
+wtest <- function(object, testcoef = NULL, null, vcov = vcovHC, ...) {
   
   cobj <- coef(object)
   
@@ -14,10 +14,13 @@ wtest <- function(object, testcoef = NULL, null, vcov = vcovHC) {
     null <- rep(0, length(testcoef))
   
   betahat <- cobj[testcoef]
-  
   q <- length(betahat)
-  
-  V <- vcov(object)[testcoef, testcoef]
+    
+  if(is.function(vcov)) {
+    V <- vcov(object, ...)[testcoef, testcoef]
+  } else {
+    V <- vcov[testcoef, testcoef]
+  }
   
   Ft <- t(betahat-null)%*%solve(V)%*%(betahat-null)
   
@@ -34,6 +37,7 @@ wtest <- function(object, testcoef = NULL, null, vcov = vcovHC) {
   cat('\n')
   
   print(format(out), row.names=FALSE)
+  invisible(out)
   
 }
 
