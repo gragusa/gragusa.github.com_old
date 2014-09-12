@@ -4,7 +4,7 @@
   <title><![CDATA[tasse | Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/blogs/tasse/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2014-09-09T12:13:06+02:00</updated>
+  <updated>2014-09-12T14:04:13+02:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -169,11 +169,11 @@ precedente</a> se invece di considerare tutti i contribuenti si considerassero s
 <p>Ecco qui i grafici che confrontano la distribuzione di tutti i contribuenti con la distribuzione dei dipendenti (Grafico 1) e la progressività del sistema di imposizione
 (Grafico 2). Ho poco da commentare se non il fatto che i lavoratori dipendenti che guadagnano relativamente poco sono tassati relativamente più dei non dipendenti che guadagnano poco. Questo ha a che fare con la non-linearità delle deduzioni e detrazioni per chi esercita attività in proprio. Bisogna anche considerare il diverso peso che hanno le contribuzione pensionistiche sui due tipi di contribuenti.</p>
 
-<p><img class="center" src="/img/Graph4.png" title="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
+<p>{% img center /img/Graph4.png "Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze" %}</p>
 
 <p>Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze</p>
 
-<p><img class="center" src="/img/Graph51.png" title="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
+<p>{% img center /img/Graph51.png "Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze" %}</p>
 
 <p>Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze</p>
 ]]></content>
@@ -219,15 +219,15 @@ contribuenti ha dedotto spese per abitazione principale. Visto che in Italia son
 
 <p>Il <strong>Grafico 3</strong> mostra la frazione di contribuenti che chiede le deduzioni rispetto alla numerosità della classe.</p>
 
-<p><img class="center" src="/img/Graph12.png" title="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p>{% img center /img/Graph12.png "Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze." %}</p>
 
 <p>Grafico 1. Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze."</p>
 
-<p><img class="center" src="/img/Graph21.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p>{% img center /img/Graph21.png "Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze." %}</p>
 
 <p>Grafico 2. Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.</p>
 
-<p><img class="cenetr" src="/img/Graph3.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p>{% img cenetr /img/Graph3.png "Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze." %}</p>
 
 <p>Grafico 3. Rapporto fra numero di deduzioni per abitazione principale e numerosità della classe. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.</p>
 ]]></content>

@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Using R - Giuseppe Ragusa</title>
+  <meta name="author" content="Giuseppe Ragusa">
+
+  
+  <meta name="description" content="  What is RR is an integrated suite of software facilities for data manipulation,calculation and graphical display. Among other things it has an ef...">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://gragusa.org/teaching/ase/R-primer.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Giuseppe Ragusa" type="application/atom+xml">
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  jQuery.noConflict();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/javascripts/generate-toc.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.tableofcontents.min.js" type="text/javascript"></script>
+<link href="/css/jquery-ui-theme/jquery-ui-1.8.17.custom.css" media="screen" rel="stylesheet" type="text/css">
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href=’http://fonts.googleapis.com/css?family=Droid+Sans’ rel=’stylesheet’ type=’text/css’>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-78069-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Giuseppe Ragusa</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:gragusa.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/research">Research</a></li>
+    <li><a href="/teaching">Teaching</a></li>
+  <li><a href="/resources">Resources</a></li>
+  <li><a href="/blog">Blog</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Using R</h1>
+    <p class="meta">
+
+
+
+
+  
+
+<time datetime="2014-09-11T18:04:00+02:00" pubdate></time></p>
+  </header>
+  
+  <div class="entry-content">
+  <h1>What is R</h1>
+
+<p><img class="left" src="http://cran.r-project.org/Rlogo.jpg"></p>
+
+<p><code>R</code> is an integrated suite of software facilities for data manipulation,
+calculation and graphical display. Among other things it has an effective data
+handling and storage facility, a suite of operators for calculations on arrays,
+in particular matrices,a large, coherent, integrated collection of intermediate
+tools for data analysis, graphical facilities for data analysis and display
+either directly at the computer or on hardcopy, and a well developed, simple
+and effective programming language (called <code>S</code>). which includes conditionals,
+loops, user defined recursive functions and input and output
+facilities. (Indeed most of the system supplied functions are themselves
+written in the <code>S</code> language.)</p>
+
+<p>The term <code>environment</code> is intended to characterize it as a fully planned and
+coherent system, rather than an incremental accretion of very specific and
+inflexible tools, as is frequently the case with other data analysis software.
+<code>R</code> is very much a vehicle for newly developing methods of interactive data
+analysis. It has developed rapidly, and has been extended by a large collection
+of packages. However, most programs written in <code>R</code> are essentially ephemeral,
+written for a single piece of data analysis.</p>
+
+<h1>Why we use <code>R</code>?</h1>
+
+<p>A very nice discussion of the reasons we will use <code>R</code> can be found <a href="http://www.inside-r.org/why-use-r">here</a>.</p>
+
+<p>Also, there is a high demand for people that posses <code>R</code> language skill. Two
+recent salary surveys have shown that <code>R</code> language skills attract median
+salaries in excess of $110,000 in the United States. Of course, <code>R</code> skills need
+to be complemented by other skill&#8212;knowing <code>R</code> and econometrics is a perfect
+combination for a good job market outcome after graduation.</p>
+
+<h1>Where Can I get R?</h1>
+
+<p><code>R</code> is installed in the computer labs here at Luiss. However, you should
+install a copy on your laptop or desktop. This will make it easier work on
+problem sets even if you are away from campus.</p>
+
+<p>The beauty of R is that it&#8217;s open-source, which in practice it means that it is
+free to use. R can be downloaded from <a href="http://www.r-project.org">CRAN</a>, the Comprehensive R
+Archive Network.</p>
+
+<h2>Install on a Windows computer</h2>
+
+<p>To install <code>R</code> on your Windows computer, follow these steps:</p>
+
+<ol>
+<li>Go to http://ftp.heanet.ie/mirrors/cran.r-project.org.</li>
+<li>Under “Download and Install R”, click on the “Windows” link.</li>
+<li>Under “Subdirectories”, click on the “base” link.</li>
+<li>On the next page, you should see a link saying something like “Download R
+3.11.1 for Windows” (or R X.X.X, where X.X.X gives the version of R). Click
+on this link.</li>
+<li>You may be asked if you want to save or run a file
+“<a href="http://cran.r-project.org/bin/windows/base/R-3.1.1-win.exe">R-3.1.1-win.exe</a>”. Choose
+“Save” and save the file on the Desktop. Then double-click on the icon for
+the file to run it.</li>
+<li>You will be asked what language to install it in - choose English.</li>
+<li>The R Setup Wizard will appear in a window. Click “Next” at the bottom of the R Setup wizard window.</li>
+<li>The next page says “Information” at the top. Click “Next” again.</li>
+<li>The next page says “Information” at the top. Click “Next” again.</li>
+<li>The next page says “Select Destination Location” at the top. By default, it will suggest to install R in “C:\Program Files” on your computer.</li>
+<li>Click “Next” at the bottom of the R Setup wizard window.</li>
+<li>The next page says “Select components” at the top. Click “Next” again.</li>
+<li>The next page says “Startup options” at the top. Click “Next” again.</li>
+<li>The next page says “Select start menu folder” at the top. Click “Next” again.</li>
+<li>The next page says “Select additional tasks” at the top. Click “Next” again.</li>
+<li>R should now be installed. This will take about a minute. When R has
+finished, you will see “Completing the R for Windows Setup Wizard”
+appear. Click “Finish”.</li>
+<li><p>To start R, you can either follow step A, or B:</p>
+
+<ol type="a">
+<li><p>Check if there is an “R” icon on the desktop of the computer that you
+are using. If so, double-click on the “R” icon to start R. If you cannot
+find an “R” icon, try step B instead.</p></li>
+<li><p>Click on the “Start” button at the bottom left of your computer screen,
+and then choose “All programs”, and start R by selecting “R” (or R X.X.X,
+where X.X.X gives the version of R, eg. R 3.1.1) from the menu of programs.</p></li>
+</ol>
+</li>
+<li><p>The R console (a rectangle) should pop up.</p></li>
+</ol>
+
+
+<h2>Install on MAC OSX</h2>
+
+<ol>
+<li>Go to <a href="http://cran.r-project.org/bin/macosx/">http://cran.r-project.org/bin/macosx/</a></li>
+<li>Choose and download the binary according to the OSX version installed on
+your MAC. There are two versions available, once for OSX 10.6 (Snow Leopard)
+and one for OSX 10.9 (Maverick). If you are unsure which is your OSX version
+read <a href="http://support.apple.com/kb/ht1633">here</a>.</li>
+<li>Click on the downloaded file</li>
+<li>Follow the instructions</li>
+</ol>
+
+
+<h2>R Studio</h2>
+
+<p><code>R</code> is a command line driven program. The user enters commands at the prompt (>
+by default) and each command is executed one at a time.</p>
+
+<p>This is what you will see when you start <code>R</code> on your MAC:</p>
+
+<p><img class="left" src="img/Rterminal.png" title="'R running on a terminal'" ></p>
+
+<p>There have been a number of attempts to create a more graphical interface,
+ranging from code editors that interact with <code>R</code>, to full-blown GUIs that
+present the user with menus and dialog boxes. For instance, there is an
+officvial GUI (Graphic User Interface) for MAC, but it is not particularly
+usable when compared with the GUI of other statistical software.</p>
+
+<p><img class="left" src="http://shiny.rstudio.com/tutorial/lesson2/www/bigorb.png" title="'RStudio logo'" ></p>
+
+<p><a href="http://www.rstudio.com/products/RStudio/">RStudio</a> is an integrated
+development environment (IDE) for R. It includes a console, syntax-highlighting
+editor that supports direct code execution, as well as tools for plotting,
+history, debugging and workspace management.</p>
+
+<p>RStudio is available in open source and commercial editions and runs on
+Windows, Mac, and Linux.</p>
+
+<p><code>RStudio</code> can be downloaded <a href="http://www.rstudio.com/products/RStudio/#Desk">here</a>.</p>
+
+<p><img class="left" src="http://www.rstudio.com/wp-content/uploads/2014/04/rstudio-windows.png"></p>
+
+<p>Installan is pretty straightforward (but remember, in order to install
+<code>RStudio</code> you need to have installed <code>R</code> on your machine).</p>
+
+<h1>Help system</h1>
+
+<p>R has an inbuilt help facility similar to the man facility of UNIX.
+To get more information on any specific named function, for example
+<code>mean</code>, the command is</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'>help<span class="p">(</span><span class="kp">mean</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>A shorter alternative is</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="o">?</span><span class="kp">mean</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>For a feature specified by special characters, the argument must be
+enclosed in double or single quotes, making it a character string: This
+is also necessary for a few words with syntactic meaning including <code>if</code>,
+<code>for</code> and functions.\</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'>help<span class="p">(</span><span class="s">&quot;[&quot;</span><span class="p">)</span>
+</span><span class='line'>help<span class="p">(</span><span class="s">&#39;[&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Either form of quote mark may be used to escape the other, as in the string <code>"It’s important"</code>. Our convention is to use double quote marks.</p>
+
+<p>The <code>help.search</code> command (alternatively <code>??</code>) allows searching for documentation matching a given character string in the (file) name, alias, title, concept or keyword entries (or any combination thereof), using either fuzzy matching or regular expression matching. Names and titles of the matched help entries are displayed nicely formatted. For example,</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="o">??</span><span class="s">&quot;linear model&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>[Detailed course calendar] calendar.html</p>
+
+  </div>
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+  
+
+<time datetime="2014-09-11T18:04:00+02:00" pubdate></time>
+        
+      </p>
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+		<h2>Giuseppe Ragusa</h2>
+		<p><code>gragusa@luiss.it</code></p>
+
+</section>
+ <section>
+     <h1>Twitter</h1>
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/giuragusa" data-widget-id="509004037799174144">Tweets by @giuragusa</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ </section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Giuseppe Ragusa -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  // Put a TOC right before the entry content.
+  generateTOC('.entry-content', 'Table of Contents');
+});
+</script>
+
+
+
+</body>
+</html>
