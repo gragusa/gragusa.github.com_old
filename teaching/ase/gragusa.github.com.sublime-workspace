@@ -1,0 +1,542 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Float",
+				"float64"
+			],
+			[
+				"spb",
+				"sprandbool"
+			],
+			[
+				"Dp50",
+				"Dp5010"
+			],
+			[
+				"p90",
+				"p9050"
+			],
+			[
+				"Dp9",
+				"Dp9050"
+			],
+			[
+				"julia",
+				"julia-readline"
+			],
+			[
+				"foot",
+				"footnote	tex"
+			],
+			[
+				"vartheta",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"varthet",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"varthe",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"varth",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"ups",
+				"upsilon	latex-mathsymbols"
+			],
+			[
+				"vart",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"empty",
+				"emptyset	latex-mathsymbols"
+			],
+			[
+				"usepa",
+				"usepackage{package}	latex-document"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.markdown",
+			"settings":
+			{
+				"buffer_size": 12013,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nMarkdownEditing:\n---------------\n\n  # MarkdownEditing\n  \n  Markdown plugin for Sublime Text. Provides a decent Markdown color scheme (light and dark) with more __robust__ syntax highlighting and useful Markdown editing features for Sublime Text. 3 flavors are supported: Standard Markdown, __GitHub flavored Markdown__, MultiMarkdown.\n  \n  ![MarkdownEditing][github]\n  \n  [Dark][github 2] and [yellow][github 3] theme available.\n  \n  > Your kind donations will help [me](https://github.com/maliayas) pause my daily job and put more serious effort into the development of this plugin for the next 2 milestones ([2.0.5](https://github.com/SublimeText-Markdown/MarkdownEditing/issues?milestone=1&state=open) and [2.2.0](https://github.com/SublimeText-Markdown/MarkdownEditing/issues?milestone=2&state=open)). When they are completed, donation button will be removed. Thanks.\n  > \n  > <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=W2NXRPD43YSCU&amp;lc=TR&amp;item_name=Ali%20Ayas&amp;item_number=Open%20Source&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\"><img src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\" alt=\"[paypal]\" /></a>\n  \n  ## Overview\n  \n  * [Features](#features)\n  * [Key Bindings](#key-bindings)\n  * [GFM Specific Features](#gfm-specific-features)\n  * [Commands for Command Palette](#commands-for-command-palette)\n  * [Installation](#installation)\n  * [Configuration](#configuration)\n  * [Tips](#tips)\n  * [Similar Plugins](#similar-plugins)\n  * [Known Bugs](#known-bugs)\n  * [Contributing](#contributing)\n  * [Credits](#credits)\n  * [License](#license)\n  \n  ## Features\n  \n  * Asterisks and underscores are autopaired and will wrap selected text\n      - If you start an empty pair and hit backspace, both elements are deleted\n      - If you start an empty pair and hit space, the right element is deleted\n  * Backticks are paired\n  * At the end of a list item, pressing <kbd>Enter</kbd> will automatically insert the new list item bullet.\n      - Pressing <kbd>Tab</kbd> on the blank list item will indent it and switch the list bullet to another one (Order is `*`, `-`, `+` in a cycle).\n      - Pressing <kbd>Shift</kbd> <kbd>Tab</kbd> on the blank list item will unindent it in the same way as above.\n      - Sequential <kbd>Tab</kbd> s or <kbd>Shift</kbd> <kbd>Tab</kbd> s are supported.\n      - You can disable automatic bullet switching or choose which bullets to be used, in your settings file.\n      - If a list item contains a [GFM task][GFM], pressing <kbd>Enter</kbd> at the end of the line will continue with a new blank task.\n  * At the end of a blockquote line, pressing <kbd>Enter</kbd> will automatically extend blockquote.\n  * Selecting some text and pressing <kbd>&gt;</kbd> will convert it to blockquote. The first and the last line don't have to be fully selected; partial select works, too.\n  * Left bracket pairing is modified to eliminate the selection and leave the cursor at a point where you can insert a `[]` or `()` pair for a link\n  * Displays Markdown headers in the Project Symbol List (<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>R</kbd>). They will start with `#`, so you will know they belong to markdown files at a glance. Also they will be on top of the list because of the presedence of `#`.\n  * <kbd>~</kbd> wraps selected text with `~~` (strikethrough).\n  * Typing `#` when there's a selection will surround it with `#` to make it a headline. Multiple presses add additional hashes, increasing the level of the header. Once you hit 6 hashes, it will reset to 0 on the next press. The `mde.match_header_hashes` will determine if the `#` are mirrored on both sides or just at the beginning of the line.\n  * Typing return at the end of a line that begins with hashmarks will insert closing hashmarks on the headline. They're not required for Markdown, it's just aesthetics, and you can change the `mde.match_header_hashes` option in your settings to disable.\n  * Setext-style headers can be completed with `Tab`. That is, typing `Tab` on a line containing only `=` or `-` characters will add or remove enough characters to it to match the length of the line above.\n  \n  ## Key Bindings\n  \n  | OS X | Windows/Linux | Description |\n  |------|---------------|-------------|\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>V</kbd> | <kbd>Ctrl</kbd><kbd>Win</kbd><kbd>V</kbd> | Pastes the contents of the clipboard as an inline link on selected text.\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>R</kbd> | <kbd>Ctrl</kbd><kbd>Win</kbd><kbd>R</kbd> | Pastes the contents of the clipboard as a reference link.\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>K</kbd> | <kbd>Ctrl</kbd><kbd>Win</kbd><kbd>K</kbd> | Inserts a standard inline link.\n  | <kbd>⌘</kbd><kbd>⇧</kbd><kbd>K</kbd> | <kbd>Shift</kbd><kbd>Win</kbd><kbd>K</kbd> | Inserts an inline image.\n  | <kbd>⌘</kbd><kbd>⌥</kbd><kbd>B</kbd> <kbd>⌘</kbd><kbd>⌥</kbd><kbd>I</kbd> | <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>B</kbd> <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>I</kbd> | These are bound to bold and italic. They work both with and without selections. If there is no selection, they will just transform the word under the cursor. These keybindings will unbold/unitalicize selection if it is already bold/italic.\n  | <kbd>⌘</kbd><kbd>^</kbd><kbd>1...6</kbd> | <kbd>Ctrl</kbd><kbd>1...6</kbd> | These will add the corresponding number of hashmarks for headlines. Works on blank lines and selected text in tandem with the above headline tools. If you select an entire existing headline, the current hashmarks will be removed and replaced with the header level you requested. This command respects the `mde.match_header_hashes` preference setting.\n  | <kbd>⌘</kbd><kbd>⇧</kbd><kbd>6</kbd> | <kbd>Ctrl</kbd><kbd>⇧</kbd><kbd>6</kbd> | Inserts a footnote and jump to its definition. If your cursor is in a definition, it will jump back to the marker.\n  | <kbd>⌥</kbd><kbd>⇧</kbd><kbd>F</kbd> | <kbd>Alt</kbd><kbd>Shift</kbd><kbd>F</kbd> | Locates footnote markers without definitions and inserts their markers for the definition.\n  | <kbd>⌥</kbd><kbd>⇧</kbd><kbd>G</kbd> | <kbd>Alt</kbd><kbd>Shift</kbd><kbd>G</kbd> | Locates link references without definitions and inserts their labels at the bottom for the definition.\n  \n  ## GFM Specific Features\n  \n  Underscores in words doesn't mess with bold or italic style:\n  \n  ![underscore-in-words][github 5]\n  \n  Fenced code blocks gets syntax highlighting inside:\n  \n  ![fenced-code-block][github 6]\n  \n  Keyboard shortcuts gets highlighted like in GitHub:\n  \n  ![keyboard-shortcut][github 7]\n  \n  Strikethrough is supported:\n  \n  ![strikethrough][github 8]\n  \n  ## Commands for Command Palette\n  \n  ### Fix Underlined Headers\n  \n  Adjusts every setext-style header to add or remove `=` or `-` characters as needed to match the lengths of their header text.\n  \n  ### Convert Underlined Headers to ATX\n  \n  Converts every setext-style header into an ATX style header. If something is selected only the headers in the selections will be converted, otherwise the conversion will be applied to the whole view.\n  \n  ### Add Missing Link Labels\n  \n  Scans document for referenced link usages (`[some link][some_ref]` and `[some link][]`) and checks if they are all defined. If there are undefined link references, command will automatically create their definition snippet at the bottom of the file.\n  \n  ## Installation\n  \n  _Note_: Sublime text has a native tiny package for Markdown. However, when MarkdownEditing is enabled, native package causes some conflicts. For this reason, MarkdownEditing will automatically disable it. Since it doesn't bring anything new over MarkdownEditing, this is not a loss. But remember, when you disable MarkdownEditing, you have to reenable the native one manually (if you want).\n  \n  If you are using Sublime Text 2, you have to disable the native package _manually_. To do that, add `Markdown` to your `ignored_packages` list in ST user settings:\n  \n      \"ignored_packages\": [..., \"Markdown\"],\n  \n  ### [Package Control][wbond]\n  \n  The preferred method of installation is via [Sublime Package Control][wbond].\n  \n  1. [Install Sublime Package Control][wbond 2]\n  2. From inside Sublime Text, open Package Control's Command Pallet: <kbd>CTRL</kbd> <kbd>SHIFT</kbd> <kbd>P</kbd> (Windows, Linux) or <kbd>CMD</kbd> <kbd>SHIFT</kbd> <kbd>P</kbd> on Mac.\n  3. Type `install package` and hit Return. A list of available packages will be displayed.\n  4. Type `MarkdownEditing` and hit Return. The package will be downloaded to the appropriate directory.\n  5. Restart Sublime Text to complete installation. Open a Markdown file and this custom theme. The features listed above should now be available.\n  \n  ### Manual Installation\n  \n  1. Download or clone this repository to a directory `MarkdownEditing` in the Sublime Text Packages directory for your platform:\n      * Mac: `git clone https://github.com/SublimeText-Markdown/MarkdownEditing.git ~/Library/Application\\ Support/Sublime\\ Text\\ 2/Packages/MarkdownEditing`\n      * Windows: `git clone https://github.com/SublimeText-Markdown/MarkdownEditing.git %APPDATA%\\Sublime/ Text/ 2/\\MarkdownEditing`\n      * Linux: `git clone https://github.com/SublimeText-Markdown/MarkdownEditing.git ~/.Sublime\\ Text\\ 2/Packages/MarkdownEditing`\n  2. Restart Sublime Text to complete installation. Open a Markdown file and this custom theme. The features listed above should now be available.\n  \n  ## Configuration\n  \n  The plugin contains 3 different Markdown flavors: Standard Markdown, GitHub flavored Markdown, MultiMarkdown. Default is GitHub flavored Markdown. If you want to set another one as default, open a Markdown file and select your flavor from the menu: `View > Syntax > Open all with current extension as`. You're done.\n  \n  You may want to have a look at the default settings files. They are located at:\n  \n      Packages/MarkdownEditing/Markdown.sublime-settings         [GitHub flavored Markdown]\n      Packages/MarkdownEditing/Markdown (Standard).sublime-settings\n      Packages/MarkdownEditing/MultiMarkdown.sublime-settings\n  \n  If you want to override any of the default settings, you can open the appropriate user settings file using the `Preferences > Package Settings > Markdown Editing` menu. Each flavor has a different settings file.\n  \n  Bold and italic markers are configurable through ST shell variables. You can use `Preferences > Package Settings > Markdown Editing` menu to see the default settings file. In order to override it, copy & paste its content into the user settings file (`Packages/User/Bold and Italic Markers.tmPreferences`) from the menu and make your edits. It is pretty straightforward.\n  \n  In order to activate the dark or the yellow theme, put one of these lines to your user settings file of the flavor (`Packages/User/[flavor].sublime-settings`):\n  \n      \"color_scheme\": \"Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme\",\n      \"color_scheme\": \"Packages/MarkdownEditing/MarkdownEditor-Yellow.tmTheme\",\n  \n  If you want to go with your already existing theme, you can reenable it with the same method as above. Keep in mind that, that theme may not cover all the parts of the Markdown syntax that this plugin defines.\n  \n  By default, when you install the plugin, files with these extensions will be assigned to Markdown syntax: \"md\", \"txt\", \"mdown\", \"markdown\", \"markdn\". If you want to prevent any of these extensions to be opened as Markdown, follow these steps:\n  \n  1. Click on the language menu at bottom right\n  2. Select \"Open all with current extension as\"\n  3. Choose your preferred syntax for that extension\n  \n  ## Tips\n  \n  We are maintaining a [tips section][tips] in our [Wiki][]. Jump there to learn from others or share your experiences with others.\n  \n  ## Similar Plugins\n  \n  * [Knockdown][]\n  \n       Knockdown offers useful Markdown features and a custom Markdown theme. All of its unique features except its theme are ported to MarkdownEditing and some of them are actually improved further in MarkdownEditing.\n  * [Sublime Markdown Extended][]\n  * [SmartMarkdown][]\n  \n  ## Known Bugs\n  \n  * Setext-style headers (`===` and `---`) do not show up in the symbol list. This is due to a Sublime Text limitation (see [#158][]). However, we are able to put a placeholder to indicate the existence of the header. We encourage you to use Atx-style headers (`#`).\n  \n  ## Contributing\n  \n  See `CONTRIBUTING.md` file.\n  \n  ## Credits\n  \n  MarkdownEditing was originally created by [Brett Terpstra][brettterpstra] and has become a community project with the goal of consolidating the best features from the varied collection of Markdown packages for Sublime Text. Current development is headed up by [Ali Ayas][github 9].\n  \n  Related blog posts from Brett:\n  * http://brettterpstra.com/2012/05/17/markdown-editing-for-sublime-text-2-humble-beginnings/\n  * http://brettterpstra.com/2013/11/23/markdownediting-for-sublime-text-updates/\n  \n  This plugin contains portions of code from [Knockdown][].\n  \n  Footnote commands were submitted by [J. Nicholas Geist][github 4] and originated at [geekabouttown][geekabouttown].\n  \n  ## License\n  \n  MarkdownEditing is released under the [MIT License][opensource].\n  \n  [TableEditor]:                 https://github.com/vkocubinsky/SublimeTableEditor\n  [Knockdown]:                   https://github.com/aziz/knockdown/\n  [Sublime Markdown Extended]:   https://github.com/jonschlinkert/sublime-markdown-extended\n  [SmartMarkdown]:               https://github.com/demon386/SmartMarkdown\n  [Typewriter]:                  https://github.com/alehandrof/Typewriter\n  [OpenUrl]:                     https://github.com/noahcoad/open-url\n  [brettterpstra]: http://brettterpstra.com\n  [geekabouttown]: http://geekabouttown.com/posts/sublime-text-2-markdown-footnote-goodness\n  [github]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/light.png\n  [github 2]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/dark.png\n  [github 3]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/yellow.png\n  [github 4]: https://github.com/jngeist\n  [github 5]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/underscore-in-words.png\n  [github 6]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/fenced-code-block.png\n  [github 7]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/keyboard-shortcut.png\n  [github 8]: https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/strikethrough.png\n  [github 9]: https://github.com/maliayas\n  [opensource]: http://www.opensource.org/licenses/MIT\n  [wbond]: http://wbond.net/sublime_packages/package_control\n  [wbond 2]: http://wbond.net/sublime_packages/package_control/installation\n  [FullScreenStatus]: https://github.com/maliayas/SublimeText_FullScreenStatus\n  [macstories]: http://www.macstories.net/roundups/sublime-text-2-and-markdown-tips-tricks-and-links/\n  [tips]: https://github.com/SublimeText-Markdown/MarkdownEditing/wiki/Tips\n  [Wiki]: https://github.com/SublimeText-Markdown/MarkdownEditing/wiki\n  [GFM]: https://help.github.com/articles/github-flavored-markdown\n  [#158]: https://github.com/SublimeText-Markdown/MarkdownEditing/issues/158\n  \n",
+			"settings":
+			{
+				"buffer_size": 15386,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"synta:ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"latexing:cl",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"latexing: ",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"latext",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"togll",
+				"Toggle Block Comment"
+			],
+			[
+				"iju",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"IJULI",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"ijuli",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"open i",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"updat",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"fold",
+				"LaTeXing: Fold Section"
+			],
+			[
+				"LaT",
+				"LaTeXing: Fold Section"
+			],
+			[
+				"snippet n",
+				"Snippet: New Article"
+			],
+			[
+				"pdf ",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"snippet f",
+				"Snippet: Figure"
+			],
+			[
+				"fra",
+				"Snippet: Beamer: Frame Two Columns (Figure and Table)"
+			],
+			[
+				"chun",
+				"Snippet: Insert knitr Rnw chunk"
+			],
+			[
+				"frame",
+				"Snippet: Beamer: Frame Two Columns (Figure and List)"
+			],
+			[
+				"set kni",
+				"Set Syntax: LaTeXing Beamer (Knitr)"
+			],
+			[
+				"bib",
+				"Set Syntax: BibTeX"
+			],
+			[
+				"maker",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"pdf",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"R app",
+				"R Application Switch"
+			],
+			[
+				"LaTeXing: ",
+				"LaTeXing: Changelog"
+			],
+			[
+				"fram",
+				"Snippet: Beamer: Simple Frame"
+			],
+			[
+				"snippet ",
+				"Snippet: Insert knitr Rnw chunk"
+			],
+			[
+				"snippet:n",
+				"Snippet: New Beamer"
+			],
+			[
+				"app",
+				"R Application Switch"
+			],
+			[
+				"origami ri",
+				"Origami: Create Pane with File on the Right"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"n",
+				"ANF: New File"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"prev",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gragusa/Dropbox/web/octopress3/source"
+	],
+	"file_history":
+	[
+		"/Users/gragusa/Dropbox/scratch/readme.md",
+		"/Users/gragusa/advanced_econometrics.sublime-project",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/advanced_econometrics.sublime-project",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/bookadv.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap6.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap3-linmod.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap1-meas.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap2-asym.tex",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/Sublime-IJulia.sublime-settings",
+		"/Users/gragusa/Dropbox/mypapers/wishart/code/myplot.svg",
+		"/Users/gragusa/Dropbox/scratch/README.md",
+		"/Users/gragusa/Dropbox/scratch/configure_flags",
+		"/Users/gragusa/Dropbox/scratch/Ipopt-3.11.7/Ipopt/contrib/RInterface/src/Makevars",
+		"/Users/gragusa/Google Drive/Ipopt-3.11.5/ThirdParty/HSL/INSTALL.HSL",
+		"/Users/gragusa/scratch/beamerexample-lecture-print-version.tex",
+		"/Users/gragusa/scratch/pavia-article.tex",
+		"/Users/gragusa/scratch/Rep/replication_employment/R/create-dta-files.R",
+		"/Users/gragusa/Downloads/citations.enw",
+		"/Users/gragusa/Dropbox/mypapers/projection/projectionET-revision-140314.tex",
+		"/Users/gragusa/Downloads/mise.csv",
+		"/Users/gragusa/scratch/uu.jl",
+		"/Users/gragusa/Dropbox/Extract_Government",
+		"/Volumes/OS X 10.9 Install Disk - 10.9.1/DataRescueWorkspace/Recovered Files/T33842.txt",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/IJulia/Sublime-IJulia.sublime-settings",
+		"/Users/gragusa/Dropbox/mypapers/projection/projectionET-revision-140126.tex",
+		"/Users/gragusa/Dropbox/mypapers/projection/projectionET-revision-140120.tex",
+		"/Users/gragusa/Dropbox/mypapers/projection/sect.tex",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/SublimeJulia/SublimeJulia.sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/sublimerepl.py",
+		"/Users/gragusa/Documents/Package Control Messages.mdown",
+		"/Users/gragusa/scratch/junk.rnw",
+		"/Users/gragusa/scratch/untitled.R",
+		"/Users/gragusa/scratch/junk.R",
+		"/Users/gragusa/Documents/st3.mdown",
+		"/Users/gragusa/scratch/jex.tex",
+		"/Users/gragusa/scratch/junk.tex",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/Enhanced-R/Enhanced-R.sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/User/ggp.sublime-snippet",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/User/Markdown (Standard).sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"MAT",
+			"Ê",
+			"the ex",
+			"the existence",
+			"orliczb",
+			"orlicz",
+			"gragusa",
+			"gutter",
+			"reader.que",
+			"start",
+			"\\n >",
+			"_loop",
+			"output",
+			".write",
+			"begin",
+			"empty",
+			"filter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5435,
+								5435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown (Standard).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2510.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15386,
+								15386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"project": "gragusa.github.com.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
