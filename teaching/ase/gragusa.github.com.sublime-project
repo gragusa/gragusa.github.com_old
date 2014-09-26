@@ -4,6 +4,14 @@
 		{
 			"follow_symlinks": true,
 			"path": "/Users/gragusa/Dropbox/web/octopress3/source"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/gragusa/Dropbox/web/octopress3/sass"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/gragusa/Dropbox/web/octopress3/sass.old"
 		}
 	]
 }
