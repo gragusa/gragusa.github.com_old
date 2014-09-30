@@ -4,7 +4,7 @@
   <title><![CDATA[pil | Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/blogs/pil/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2014-09-29T14:23:37+02:00</updated>
+  <updated>2014-09-30T17:39:40+02:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -38,7 +38,7 @@
 
 <hr />
 
-<p><img class="center" src="/img/Screen-shot-2011-09-22-at-9.54.42-PM.png"></p>
+<p>{% img center /img/Screen-shot-2011-09-22-at-9.54.42-PM.png %}</p>
 
 <p><em>Grafico del PIL come ottenuto dal sito www.istat.it [25 Settembre 2011"]</em></p>
 
@@ -46,7 +46,7 @@
 
 <p><strong>Dove sta il trucco?</strong> Il grafico potrebbe dare l'impressione che il PIL sia tornato ai livelli pre-crisi dopo aver toccato il minimo nel primo trimestre 2009. Questa interpretazione della rappresentazione grafica è errata. Un rapido sguardo all'andamento del Pil in livelli è sufficiente per accorgersi che il Pil è ancora ben lungi dall'essere tornato ai livelli pre-crisi. Per esempio, il valore del Pil nel secondo trimestre 2011 era di circa il 5% più basso rispetto al suo valore nel primo trimestre 2008.</p>
 
-<p><img class="center" src="/img/pil-lavoce.jpg" title="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;" alt="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;"></p>
+<p>{% img center /img/pil-lavoce.jpg "Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro." %}</p>
 
 <p><em>Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.</em></p>
 
@@ -71,7 +71,7 @@ percentuali congiunturali.</p>
 
 <p><strong>Il tasso di variazione trimestrale congiunturale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il valore della stessa <em>nel trimestre immediatamente precedente</em>. Molto probabilmente è questo il tasso a cui molto sono più abituati a pensare. Visto che né lavoce.info né l'Istat hanno pubblicato un grafico delle variazioni congiunturali del Pil, ho provveduto a crearne uno che allego qui di seguito.</p>
 
-<p><img class="center" src="/img/pil_cong.png"></p>
+<p>{% img center /img/pil_cong.png %}</p>
 
 <p><em>Pil trimestrale a valori concatenati e destagionalizzati. variazioni % congiunturali</em></p>
 
