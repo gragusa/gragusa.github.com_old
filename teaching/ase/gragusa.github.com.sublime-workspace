@@ -71,7 +71,7 @@
 	"build_system": "Packages/LaTeXing/LaTeX.sublime-build",
 	"command_palette":
 	{
-		"height": 27.0,
+		"height": 287.0,
 		"selected_items":
 		[
 			[
@@ -291,7 +291,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 521.0
 	},
 	"console":
 	{
@@ -313,10 +313,17 @@
 	"expanded_folders":
 	[
 		"/Users/gragusa/Dropbox/web/octopress3/source",
-		"/Users/gragusa/Dropbox/web/octopress3/source/teaching"
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et"
 	],
 	"file_history":
 	[
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase/index.markdown",
+		"/Users/gragusa/Dropbox/teaching/et/problem_set/ps_2.tex",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/index.markdown",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/thesis.markdown",
 		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
 		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/Enhanced-R/Enhanced-R.sublime-settings",
@@ -331,9 +338,7 @@
 		"/Users/gragusa/Dropbox/web/octopress3/sass/custom/_screen.scss",
 		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/eief_review/index.markdown",
 		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/index.markdown",
-		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase/index.markdown",
 		"/Users/gragusa/Dropbox/web/octopress3/source/_includes/custom/head.html",
-		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/index.markdown",
 		"/Users/gragusa/Dropbox/scratch/readme.md",
 		"/Users/gragusa/advanced_econometrics.sublime-project",
 		"/Users/gragusa/Dropbox/teaching/books/advanced/advanced_econometrics.sublime-project",
@@ -394,6 +399,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"angino",
 			"MAT",
 			"Ê",
 			"the ex",
