@@ -67,17 +67,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "---\nlayout: page\ntitle: Econometric Theory a.y. 2014-2015\ndate: 2014-09-09 12:04\ncomments: false\nsharing: false\nfooter: true\nsidebar: true\ntoc: true\n---\n\n## Important announcements\n\n\n[Problem Set #2](http://docenti.luiss.it/protected-uploads/580/2014/10/20141006122606-ps_2.pdf) is now posted. It is due back on Friday, October 10 at 9 a.m..  The `matlab` part must be emailed to `sangino at luiss dot it` with subject line reading `etps02`. [Updated Monday, October 6 2014]\n\n## Course description\n\n\nEconometric Theory is a year-long course. The course can be thought as composed of two parts.\n\nThe **first part** focuses on the specification and estimation of the linear\nregression model. The course departs from the standard Gauss-Markov assumptions\nto include heteroskedasticity, serial correlation, and errors in\nvariables. Advanced topics include generalized least squares, instrumental\nvariables, generalized method of moments, and limited dependent variable models. \n\nThe **second part** focuses on the theory and the applications of time series\nmethods in econometrics, including spectral analysis, estimation with\nstationary and non-stationary processes, VARs, factor models, unit roots,\ncointegration, estimation of DSGE models, Bayesian methods.\n\nFor both partss there will be a number of problem sets using real data sets and\napplying methods similar to those studied in class. They will all require\nanalysis of data sets on computers. The recommended software package is `Matlab`.\n\n## Course objectives\n\nThe course main objective is to provide students with a solid grasp of the\nprobabilistic and statistical underpinnings of the most common econometric\ntechniques.  The topics studied will be of practical use to any student who plans on\nconfronting data in their thesis or wishes to read and precisely understand the\neconometrics typically used in empirical research published in academic journals.\n\n\n## Textbook\n\nLectures of the first part of the course will be mostly based on the following two graduate textbooks:\n\n- Wooldridge, Jeffrey M. Econometric analysis of cross section and panel data. MIT press, 2010.\n- Cameron, A. Colin, and Pravin K. Trivedi. Microeconometrics: methods and applications. Cambridge university press, 2005.\n\nA third textbook is Bruce E. Hansen's \"Econometrics\" which can be freely downloaded [here](http://www.ssc.wisc.edu/~bhansen/econometrics/). \n\n\nLectures of the second part will be based on the following textbooks:\n\n- J.D. Hamilton. Time Series Analysis. Princeton University Press, 1994\n\n- P.J. Brockwell and R.A. Davis. Time Series: Theory and Methods. Springer series in statistics. Springer, 1986\n\n- A. Zellner. An introduction to Bayesian inference in econometrics. Wiley series in probability and mathematical statistics: Applied probability and statistics. J. Wiley, 1971\n\n## Lecture Notes\n\n[Lecture Notes](http://docenti.luiss.it/protected-uploads/580/2014/09/20140930185936-notes.pdf) [Last updated: 09/30/14]\n\n[Algebra of the linear regression model](http://docenti.luiss.it/protected-uploads/580/2014/10/20141006152928-matrix_notes.pdf) [Last updated: 10/06/14]\n\n## Other resources\n\nThese more advanced references may prove also useful:\n\n- Serfling (1980), Approximation Theorems of Mathematical Statistics, Wiley\n- Lehmann (2004) Elements of Large Sample Theory, Springer\n- White (2001), Asymptotic Theory for Econometricians, Academic Press\n- Newey and McFadden (1994), Large Sample Estimation and Hypothesis Testing, in Handbook of Econometrics, Volume IV, Engle and McFadden, editors\n\n\n## Matlab resources\n\nThere are many resources on-line that you can use to get acquainted with this powerful computer language. I suggest you to check the following:\n\n- [MATLAB Tutorials](http://www.mathworks.it/academia/student_center/tutorials/launchpad.html), from MathWorks the maker of Matlab;\n- [Matlab at MIT](http://web.mit.edu/afs/athena.mit.edu/software/matlab/www/home.html); full of useful resources\n\nMatlab is proprietary software. Alternatively you can use [Octave](http://www.gnu.org/software/octave/), an open source programming language mostly compatible with Matlab.\n\n\n## Problem Set\n\n- Problem Set #1 \n\n- [Problem Set #2](http://docenti.luiss.it/protected-uploads/580/2014/10/20141006122606-ps_2.pdf) [Updated Monday, October 6 2014]\n\n## Computer Session Material\n\n- [Practice 1](files/Practice_1.pdf)\n    + [randraw.m](files/randraw.m)\n\n__Note: Exercise 2 and Exercise 3 of the practice constitute the first problem set. The first problem set is due back on Friday, October 3rd.__ Please, email the problem set to `sangino at luiss dot it` with subject line reading `etps01`.. \n\n \n\n\n\n",
-			"file": "/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/index.markdown",
-			"file_size": 4655,
-			"file_write_time": 130570702530000000,
-			"settings":
-			{
-				"buffer_size": 4655,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/LaTeXing/LaTeX.sublime-build",
 	"command_palette":
@@ -324,19 +313,16 @@
 	"expanded_folders":
 	[
 		"/Users/gragusa/Dropbox/web/octopress3/source",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase",
 		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et"
 	],
 	"file_history":
 	[
-		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/index.markdown",
-		"/Users/gragusa/Dropbox/web/octopress3/source/_posts/2011-09-02-investimenti-diretti.markdown",
-		"/Users/gragusa/Dropbox/web/octopress3/source/_posts/2011-09-20-il-default-nella-storia.markdown",
-		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/files/weak_instrument.m",
-		"/Users/gragusa/Dropbox/web/octopress3/source/index.html",
-		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase/index.markdown",
-		"/Users/gragusa/Dropbox/teaching/et/problem_set/ps_2.tex",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/index.markdown",
 		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/thesis.markdown",
 		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
 		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/Enhanced-R/Enhanced-R.sublime-settings",
@@ -448,96 +434,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/index.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4655,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								181,
-								181
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 38.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
