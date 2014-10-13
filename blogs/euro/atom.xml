@@ -4,7 +4,7 @@
   <title><![CDATA[euro | Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/blogs/euro/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2014-10-09T17:52:01+02:00</updated>
+  <updated>2014-10-13T11:21:46+02:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -18,7 +18,7 @@
     <link href="http://gragusa.org/blog/euro/"/>
     <updated>2011-11-01T17:27:00+01:00</updated>
     <id>http://gragusa.org/blog/euro</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/img/spread.png">
+    <content type="html"><![CDATA[<p>{% img left /img/spread.png %}
 Le borse di tutto il continente sono crollate, il rendimento del BTP decennale al 6.19% e uno spread BTP/Bund che ha toccato i 459 punti base.</p>
 
 <p>A scatenare l'inferno è stata la Grecia. Il primo ministro greco George Papandreou ha condizionato la ratifica dell'accordo ad un referendum popolare da tenersi il prossimo Gennaio. Il terzo piano di salvataggio studiato da Francia, Germania e l'Institute of International Finance con il quale si doveva estinguere il fuoco della crisi ha finito per esserne il principale propellente.</p>
