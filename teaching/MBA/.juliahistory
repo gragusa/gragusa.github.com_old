@@ -1,0 +1,202 @@
+help(evaluate)
+help(eval)
+methods(eval)
+methods(Base.eval)
+Pkg.generate("ModelsGenerators","MIT")
+Pkg.generate("ModelsGenerators","MIT")
+Pkg.generate("ModelsGenerators","MIT")
+Pkg.generate("ModelsGenerators","MIT")
+Pkg.generate("ModelsGenerators","MIT")
+Pkg.stash("ModelsGenerators")
+Pkg.generate("ModelsGenerators","MIT")
+Pkg.generate("ModelsGenerators","MIT")
+using DataFrames
+DataFrame(X = randn(10), Y = randn(10), Z = randn(10))
+DataFrame(X = randn(10), Y = randn(10), Z = sparse(randn(10))
+Pkg.add("MatrixMarket")
+Pkg.update()
+int32
+typeof(1)
+head1
+rep
+files
+filed
+field
+entries
+flds
+close(filename)
+help(close)
+close(mmfile)
+close(mmfile)
+close(mmfile)
+close(mmfile)
+close(mmfile)
+close(mmfile)
+close(mmfile)
+close(mmfile)
+rep
+close(mmfile)
+help(readcsv)
+methods(A_ldiv_B)
+methods(A_ldiv_B!)
+size(e)
+size(A)
+j = 10000
+names(A)
+z.m
+Z1.m
+float64(A.nzval)
+sparse
+methods(sparse)
+help(sparse)
+x = X1;
+z = Z1;
+dim(Hpl)
+size(Hpl)
+j = 2
+@time -x.*z[:,j]
+@time -numericMult(x, z[:,j])
+@time -x.*z[:,j]
+@time -numericMult(x, z[:,j])
+A = z
+B = x[:,1]
+size(A.nzval,1)
+j = 1095885
+C.nzval[j]
+methods(numericMult)
+@time -numericMult(x, z[:,j])
+@time numericMult(x, z[:,j])
+typeof(x[:,1])
+size(x[:,1],2)
+size(x[:,1],1)
+@time numericMult(x, z[:,j])
+typeof(x)
+@time numericMult(x, z[:,j])
+@time numericMult(x, z[:,1])
+@time numericMult(x, z[:,2])
+@time numericMult(x, z[:,3])
+x.*z[:,1]
+x.*z[:,1:2]
+dim(x)
+size(x)
+size(z)
+B.nzval[A.rowval]
+A.nzval[A.rowval]
+@time numericMult(x, z[:,1])
+@time numericMult(x, z[:,2])
+@time numericMult(x, z[:,2])
+@time numericMult(x, z[:,1])
+sparse(10,10,10)
+spzero
+Array{SparseMatrixCSC,1}
+U = Array{SparseMatrixCSC,1}
+U[1]
+U[1] = sprand(10,10,.4)
+ {{sprand(10,10,.4)}}
+ U = {{sprand(10,10,.4)}}
+typeof(U)
+push!(U, sprand(10,10,.4))
+U[1]
+U[2]
+typeof(U)
+typeof(U[[1]])
+typeof(U[1])
+U[1]
+U[1][1]
+U[2][1]
+U[1][2]
+U
+ U = {sprand(10,10,.4)}
+push!(U, sprand(10,10,.4))
+typeof(U[1]))
+typeof(U[1])
+x[,1].*z[,1]
+x[:,1].*z[:,1]
+x[:,2].*z[:,1]
+x[:,3].*z[:,1]
+A = z;
+B = x[:,2]
+B = x[:,3]
+typeof(A)
+typeof(B)
+Ti = Int64
+Array(1,1)
+Array(Int64,1)
+Tv = Int64
+col
+col = 1
+stopA
+exit()
+u::Int
+ls()
+cd("~")
+cd("/Users/gragusa")
+cd("/Users/gragusa/Dropbox/scratch")
+numericMult(x,z[:,2])
+numericMult(X1,Z1[:,2])
+numericMult(X1,Z1[:,2])
+numericMult(X1,Z1[:,2])
+numericMult(X1,Z1[:,2])
+@time numericMult(X1,Z1[:,2])
+@time numericMult(X1,Z1[:,2])
+@time numericMult(X1,Z1[:,3])
+@time numericMult(X1,Z1[:,4])
+x = X1;
+z = Z1;
+2:1
+[2:1]
+Hpl[1]
+Hpl[2]
+Hpl[3]
+Hpl[13]
+size(Hpl)
+Hpl[41]
+Hpl
+numericMult(-x, z[:,j])
+j = 1
+numericMult(-x, z[:,j])
+numericMult(-x, z[:,4])
+z[:,4]
+cd("/Users/gragusa/Dropbox/scratch")
+x = X1;
+z = Z1;
+size(Hpp)
+nfill(Hpp)
+nfilled(Hpp)
+Hpp[:,1]
+Hpp[:,2]
+Hpp[:,3]
+Hpp[:,4]
+Hlp[1]
+Hpl[1]
+Hpl[1]*hessian_lambda[1]
+size(Hpl[1]*hessian_lambda[1])
+size(x)
+size(Hpl[j]'*hessian_lambda[j])
+j = 1
+size(Hpl[j]'*hessian_lambda[j])
+H
+H[1,:]
+H[10,:]
+sum(H[10,:])
+sum(H[11,:])
+typeof(x)
+Hpl[1]
+typeof(Hpl[1].nzval)
+typeof(Hpl[1].nzval[1])
+H
+eltype(Hlp[1])
+eltype(Hpl[1])
+whos
+names(Main)
+ESS
+whose()
+whos()
+getnbyt
+getnbytes
+getnbyte
+H.nzval
+@time Hpt = sparse(H)
+vcat
+methods(vcat)
+@time vcat(Hpp, H)

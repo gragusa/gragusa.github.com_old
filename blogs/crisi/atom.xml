@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[crisi | Giuseppe Ragusa]]></title>
+  <link href="http://gragusa.org/blogs/crisi/atom.xml" rel="self"/>
+  <link href="http://gragusa.org/"/>
+  <updated>2014-10-13T15:29:27+02:00</updated>
+  <id>http://gragusa.org/</id>
+  <author>
+    <name><![CDATA[Giuseppe Ragusa]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Euro: è passato il tempo per provare a provare.]]></title>
+    <link href="http://gragusa.org/blog/euro/"/>
+    <updated>2011-11-01T17:27:00+01:00</updated>
+    <id>http://gragusa.org/blog/euro</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/img/spread.png">
+Le borse di tutto il continente sono crollate, il rendimento del BTP decennale al 6.19% e uno spread BTP/Bund che ha toccato i 459 punti base.</p>
+
+<p>A scatenare l'inferno è stata la Grecia. Il primo ministro greco George Papandreou ha condizionato la ratifica dell'accordo ad un referendum popolare da tenersi il prossimo Gennaio. Il terzo piano di salvataggio studiato da Francia, Germania e l'Institute of International Finance con il quale si doveva estinguere il fuoco della crisi ha finito per esserne il principale propellente.</p>
+
+<p>Ma se l'inferno è stato ancora una volta scatenato dalla Grecia, nelle sue fiamme brucia più che mai l'Italia.</p>
+
+<p>Nessuno nel pieno delle proprie facoltà mentali può credere che i leader Europei possano effettivamente riuscire a domare il panico che sta investendo i mercati.</p>
+
+<p>Non basterebbe più un colpo di coda della classe politica italiana volto ad implementare quelle riforme strutturali, ormai pacchiano cliché di talk show di pessima qualità. Non fraintendetemi: molte delle riforme espresse in letterine e articoli di giornale sono necessarie affinché l'economia possa crescere a tassi più in linea con le nostre ambizioni. Ma siamo di fatto entrati in una nuova pericolosissima fase della crisi finanziaria.</p>
+
+<p>L'unico argine che si può frapporre al collasso dell'euro è la Banca Centrale Europe. Non la BCE versione tedesca, quella dell'inflazione al 2% °no matter what", ma la BCE versione bazooka---prestatore di ultima istanza. E non ci pare una grande pretesa quella di una Banca Centrale che faccia il suo mestiere.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Stress test interattivi]]></title>
+    <link href="http://gragusa.org/blog/stress-test-bancari-e-interattivi/"/>
+    <updated>2011-09-26T14:00:47+02:00</updated>
+    <id>http://gragusa.org/blog/stress-test-bancari-e-interattivi</id>
+    <content type="html"><![CDATA[<p>Il Financial Times ha <a href="http://www.ft.com/intl/cms/s/0/c7d18246-ae12-11e0-a2ab-00144feabdc0.html#axzz1Z2yMylmL">realizzato</a> un applet che visualizza in modo utile e accattivante i risultati degli
+<a href="http://www.ft.com/cms/s/0/dc111364-aefa-11e0-bb89-00144feabdc0.html" title="FT.com - Nine banks fail Europe stress tests">stress test europei</a> dello scorso luglio.</p>
+
+<p>I risultati sono stati pubblicati dall'<a href="http://www.eba.europa.eu/" title="European Banking Authority">European Banking</a>.</p>
+
+<p>E' necessario disporre di un abbonamento per poter utilizzare l'applet. Per chi ne fosse sprovvisto ecco uno screenshot che mostra l'indebitamento di una "celeberrima" banca italiana:</p>
+
+<p><a href="img/Screen-shot-2011-09-26-at-10.56.13.png"><img src="/img/Screen-shot-2011-09-26-at-10.56.13.png" title="Screen shot 2011-09-26 at 10.56.13" alt="image" /></a></p>
+
+<p>Titoli del debito pubblico italiano in possesso di <strong>Unicredit</strong>: 46.7 miliardi di euro.</p>
+
+<p>Capitalizzazione di <strong>Unicredit</strong> [ad oggi, Settembre 26 2011]: 12.96 miliardi di euro.</p>
+]]></content>
+  </entry>
+  
+</feed>
