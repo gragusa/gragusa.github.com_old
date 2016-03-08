@@ -429,7 +429,13 @@ Statistics and Econometrics).</p>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='R'><span class='line'>install.packages<span class="p">(</span><span class="s">&quot;devtools&quot;</span><span class="p">)</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='R'><span class='line'>update.packages<span class="p">(</span>ask<span class="o">=</span><span class="bp">F</span><span class="p">,</span> checkBuilt <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span> <span class="c1">## This will take same time</span>
+</span><span class='line'>and
+</span><span class='line'><span class="c1">## requires an internet connection </span>
+</span><span class='line'>install.packages<span class="p">(</span><span class="s">&quot;devtools&quot;</span><span class="p">)</span>
 </span><span class='line'><span class="kn">library</span><span class="p">(</span>devtools<span class="p">)</span>
 </span><span class='line'>devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">&quot;gragusa/ase&quot;</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
