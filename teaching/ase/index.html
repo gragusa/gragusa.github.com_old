@@ -418,6 +418,72 @@ Giuseppe Brandi    Monday         11:30-12:30
 </ul>
 
 
+<h1>Installing <code>ase</code></h1>
+
+<p>This class uses extensively <code>ase</code>. <code>ase</code> is an <code>R</code> package that is
+useful for this class (hint: <code>ase</code> stands for Applied Statistics and
+Econometrics).</p>
+
+<p>These are the steps to install <code>ase</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='R'><span class='line'>install.packages<span class="p">(</span><span class="s">&quot;devtools&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="kn">library</span><span class="p">(</span>devtools<span class="p">)</span>
+</span><span class='line'>devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">&quot;gragusa/ase&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If all the above steps were successful, you should be able to load the
+package and do the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='R'><span class='line'><span class="kn">library</span><span class="p">(</span>ase<span class="p">)</span>
+</span><span class='line'>data<span class="p">(</span>CASchools<span class="p">)</span>
+</span><span class='line'>lm_1 <span class="o">&lt;-</span> lm<span class="p">(</span>testscore <span class="o">~</span> str<span class="p">,</span> data <span class="o">=</span> CASchools<span class="p">)</span>
+</span><span class='line'>summary_rob<span class="p">(</span>lm_1<span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and you should be able to see:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='R'><span class='line'>Coefficients<span class="o">:</span>
+</span><span class='line'>            Estimate Std. Error z value Pr<span class="p">(</span><span class="o">&gt;|</span>z<span class="o">|</span><span class="p">)</span>
+</span><span class='line'><span class="p">(</span>Intercept<span class="p">)</span> <span class="m">698.9329</span>    <span class="m">10.3644</span>  <span class="m">67.436</span>  <span class="o">&lt;</span> <span class="m">2e-16</span>
+</span><span class='line'>str          <span class="m">-2.2798</span>     <span class="m">0.5195</span>  <span class="m">-4.389</span> <span class="m">1.14e-05</span>
+</span><span class='line'><span class="o">---</span>
+</span><span class='line'>Heteroskadasticity robust standard errors used
+</span><span class='line'>
+</span><span class='line'>Residual standard error<span class="o">:</span> <span class="m">18.58</span> on <span class="m">418</span> degrees of freedom
+</span><span class='line'>Multiple R<span class="o">-</span>squared<span class="o">:</span>  <span class="m">0.05124</span><span class="p">,</span> Adjusted R<span class="o">-</span>squared<span class="o">:</span>  <span class="m">0.04897</span>
+</span><span class='line'><span class="bp">F</span><span class="o">-</span>statistic<span class="o">:</span> <span class="m">19.26</span> on <span class="m">1</span> and <span class="kc">Inf</span> DF<span class="p">,</span>  p<span class="o">-</span>value<span class="o">:</span> <span class="m">1.141e-05</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>`</p>
+
+<p>Many datasets frequently used during lectures and review sessions are in
+<code>ase</code>. To see all the dataset in <code>ase</code> you can use the <code>data</code> command</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='R'><span class='line'>data<span class="p">(</span>package<span class="o">=</span><span class="s">&quot;ase&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 <p>These are  datasets frequently used during lectures and review sessions</p>
 
 <ul>
