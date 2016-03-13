@@ -16,4 +16,4 @@ MathJax.Hub.Config({
     },
     "HTML-CSS": { availableFonts: ["TeX"] }
 });
-MathJax.Ajax.loadComplete("http://gragusa.org/javascripts/MathJaxLocal.js");
+MathJax.Ajax.loadComplete("http://www.gragusa.org/javascripts/MathJaxLocal.js");
