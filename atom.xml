@@ -4,7 +4,7 @@
   <title><![CDATA[Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2016-03-13T18:28:33+01:00</updated>
+  <updated>2016-03-13T18:36:43+01:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -47,20 +47,21 @@
   </style>
 </div>
 
+<p>Paolo Franchi sul Corriere ha scritto ieri un articolo critico nei confronti dei partiti e della loro incapacità di comprendere la realtà che li circonda. Partiti che sempre più spesso si affidano a sondaggisti invece che al “nasometro”. Nell’articolo, Franchi non risparmi anche una bordata ai “sondaggisti”</p>
 
-<p>Paolo Franchi sul Corriere ha scritto ieri un articolo critico nei confronti dei partiti e della loro incapacità di comprendere la realtà che li circonda. Partiti che sempre più spesso si affidano a sondaggisti invece che al &#8220;nasometro&#8221;. Nell&#8217;articolo, Franchi non risparmi anche una bordata ai &#8220;sondaggisti&#8221;</p>
+<blockquote>
+  <p>I sondaggi, nel cui uso è maestro, dicono di sì, anche se (specie quando, come in questo caso, i sondaggisti già anticipano sui giornali i risultati delle loro rivelazioni) non è facile stabilire in quale misura si limitino a registrare una tendenza effettiva degli elettori, o almeno del campione di elettori intervistato, e in quale invece (di fatto) concorrano a promuoverla.</p>
+</blockquote>
 
-<blockquote><p>I sondaggi, nel cui uso è maestro, dicono di sì, anche se (specie quando, come in questo caso, i sondaggisti già anticipano sui giornali i risultati delle loro rivelazioni) non è facile stabilire in quale misura si limitino a registrare una tendenza effettiva degli elettori, o almeno del campione di elettori intervistato, e in quale invece (di fatto) concorrano a promuoverla.</p></blockquote>
+<p>Avendo letto l’articolo di Franco, mi sono chiesto se alcune dinamiche sondaggi elettorali giustificano le critiche di condotte “strategiche” da parte dei sondaggisti. Esiste cioè una una sistematica propensione di alcuni istituti di sondaggi a prevedere quote di voto più alte per alcuni schieramenti politici piuttosto che altri? </p>
 
-<p>Avendo letto l&#8217;articolo di Franco, mi sono chiesto se alcune dinamiche sondaggi elettorali giustificano le critiche di condotte &#8220;strategiche&#8221; da parte dei sondaggisti. Esiste cioè una una sistematica propensione di alcuni istituti di sondaggi a prevedere quote di voto più alte per alcuni schieramenti politici piuttosto che altri?</p>
+<p>Per rispondere a questa domanda, abbiamo bisogno di dati. Dati sui sondaggi. Fortunatamente, <a href="http://termpometropolitico.it">Termometropolitico.it</a> ha raccolto e “digitalizzato” i sondaggi elettorali effettuati dall’Ottobre 2006 al 29 Gennaio 2013. Sono 32 gli istituti di sondaggio presenti nel dataset di Termometro Politico. In totale, abbiamo a disposizione 684 sondaggi. Termometro Politico non ha ancora incluso gli ultimi sondaggi, quelli dal 30 Gennaio al 9 Febbraio (Dal 9 Febbraio i sondaggi non potranno essere piu’ diffusi per via della (Legge 22 Febbraio 2000, n. 28)[http://www.camera.it/parlam/leggi/00028l.htm]).</p>
 
-<p>Per rispondere a questa domanda, abbiamo bisogno di dati. Dati sui sondaggi. Fortunatamente, <a href="http://termpometropolitico.it">Termometropolitico.it</a> ha raccolto e &#8220;digitalizzato&#8221; i sondaggi elettorali effettuati dall&#8217;Ottobre 2006 al 29 Gennaio 2013. Sono 32 gli istituti di sondaggio presenti nel dataset di Termometro Politico. In totale, abbiamo a disposizione 684 sondaggi. Termometro Politico non ha ancora incluso gli ultimi sondaggi, quelli dal 30 Gennaio al 9 Febbraio (Dal 9 Febbraio i sondaggi non potranno essere piu&#8217; diffusi per via della (Legge 22 Febbraio 2000, n. 28)[http://www.camera.it/parlam/leggi/00028l.htm]).</p>
+<p>Per rendere l’analisi centrata alla campagna elettorale che si sta svolgendo, considererò’ soltanto i dati dal Gennaio 2012 e scarterò’ dal campione gli istituti che hanno effettuato meno di 10 sondaggi nel periodo considerato. Di seguito riporto il numero di sondaggi per ciascun istituto di ricerca presente nel campione. </p>
 
-<p>Per rendere l&#8217;analisi centrata alla campagna elettorale che si sta svolgendo, considererò&#8217; soltanto i dati dal Gennaio 2012 e scarterò&#8217; dal campione gli istituti che hanno effettuato meno di 10 sondaggi nel periodo considerato. Di seguito riporto il numero di sondaggi per ciascun istituto di ricerca presente nel campione.</p>
-
-<center><table class = "ztab1">
+<center><table class="ztab1">
 <tr>
-<td></td><td>societa</td><td>n.sondaggi</td></tr>
+<td /><td>societa</td><td>n.sondaggi</td></tr>
 <tr>
 <td>1  </td><td> IPSOS</td><td>100</td></tr>
 <tr>
@@ -96,48 +97,47 @@
 </table>
 </center>
 
+<h1 id="andamento-dinamico-delle-previsioni">Andamento dinamico delle previsioni</h1>
 
-<h1>Andamento dinamico delle previsioni</h1>
+<p>Il grafico seguente illustra il trend dei cinque maggiori partiti politici nel periodo Gennaio 2012-Gennaio 2013. </p>
 
-<p>Il grafico seguente illustra il trend dei cinque maggiori partiti politici nel periodo Gennaio 2012-Gennaio 2013.</p>
+<p>Ciascun punto rappresenta un sondaggio elettorale. Il colore del punto identifica l’istituto che ha rilasciato il sondaggio. La linea continua indica un’approssimazione locale dell’andamento dei sondaggi. Tecnicamente è la linea di regressione polinomiale pesata localmente; in pratica, ci aiuta a comprendere l’andamento del quota elettorale prevista dai sondaggi di un dato partito politico nel tempo. </p>
 
-<p>Ciascun punto rappresenta un sondaggio elettorale. Il colore del punto identifica l&#8217;istituto che ha rilasciato il sondaggio. La linea continua indica un&#8217;approssimazione locale dell&#8217;andamento dei sondaggi. Tecnicamente è la linea di regressione polinomiale pesata localmente; in pratica, ci aiuta a comprendere l&#8217;andamento del quota elettorale prevista dai sondaggi di un dato partito politico nel tempo.</p>
+<p><img src="http://gragusa.org/img/sondaggi_graph1.png" alt="plot of chunk sondaggi_graph1" /> </p>
 
-<p><img src="http://gragusa.org/img/sondaggi_graph1.png" alt="plot of chunk sondaggi_graph1" /></p>
+<p>Dalla figura è possibile rintracciare dei trend elettorali che sono ben noti: l’aumento dei consensi del Movimento Cinque Stelle nel periodo Gennaio 2012-Luglio 2012 e la loro relativa flessione nel periodo Dicembre 2012-Febbraio 2013. La caduta di consensi del PDL fino al Dicembre 2012 e la rimonta berlusconiana di Gennaio. La costante flessione dei partiti minori, UDC e SEL, la costante crescita del PD che si arresta e si inverte nel periodo che coincide con la rimonta del PDL. </p>
 
-<p>Dalla figura è possibile rintracciare dei trend elettorali che sono ben noti: l&#8217;aumento dei consensi del Movimento Cinque Stelle nel periodo Gennaio 2012-Luglio 2012 e la loro relativa flessione nel periodo Dicembre 2012-Febbraio 2013. La caduta di consensi del PDL fino al Dicembre 2012 e la rimonta berlusconiana di Gennaio. La costante flessione dei partiti minori, UDC e SEL, la costante crescita del PD che si arresta e si inverte nel periodo che coincide con la rimonta del PDL.</p>
+<p>E’ interessante notare come alcuni sondaggisti tendano a sopravvalutare o sottovalutare sistematicamente il consenso di alcuni partiti. Questa tendenza è molto evidente nel caso del movimento Scelta Civica Monti (SCM). Il prossimo grafico mostra la linea di regressione locale e i sondaggi nel periodo Dicembre 2012 - Gennaio 2012.</p>
 
-<p>E&#8217; interessante notare come alcuni sondaggisti tendano a sopravvalutare o sottovalutare sistematicamente il consenso di alcuni partiti. Questa tendenza è molto evidente nel caso del movimento Scelta Civica Monti (SCM). Il prossimo grafico mostra la linea di regressione locale e i sondaggi nel periodo Dicembre 2012 - Gennaio 2012.</p>
+<p><img src="http://gragusa.org/img/sondaggi_graph2.png" alt="plot of chunk sondaggi_graph2" /> </p>
 
-<p><img src="http://gragusa.org/img/sondaggi_graph2.png" alt="plot of chunk sondaggi_graph2" /></p>
+<p>Come si vede chiaramente nel grafico, IPSOS e LORIEN tendono a stimare una frazione di voto per SCM molto più alta rispetto a SWG e SPINCON. Per il caso di SCM abbiamo pochi sondaggi a disposizione visto che il movimento SCM è nato alla fine del 2012. E’ possibile individuare delle sistematicità di questo tipo anche per altri partiti/sondaggisti? Si. </p>
 
-<p>Come si vede chiaramente nel grafico, IPSOS e LORIEN tendono a stimare una frazione di voto per SCM molto più alta rispetto a SWG e SPINCON. Per il caso di SCM abbiamo pochi sondaggi a disposizione visto che il movimento SCM è nato alla fine del 2012. E&#8217; possibile individuare delle sistematicità di questo tipo anche per altri partiti/sondaggisti? Si.</p>
+<p>Usando tecniche di regressione possiamo isolare la tendenza di certi sondaggisti a attribuire una proporzione di voto più alta ad alcuni partiti “controllando” per il periodo in cui è stato rilasciato il sondaggio. Il grafico seguente ordina gli istituti di sondaggio in base alla loro tendenza a “sovrastimare” o “sottostimare” certi partiti. </p>
 
-<p>Usando tecniche di regressione possiamo isolare la tendenza di certi sondaggisti a attribuire una proporzione di voto più alta ad alcuni partiti &#8220;controllando&#8221; per il periodo in cui è stato rilasciato il sondaggio. Il grafico seguente ordina gli istituti di sondaggio in base alla loro tendenza a &#8220;sovrastimare&#8221; o &#8220;sottostimare&#8221; certi partiti.</p>
-
-<p><img src="http://gragusa.org/img/sondaggi_graph3.png" alt="plot of chunk sondaggi_graph3" /></p>
+<p><img src="http://gragusa.org/img/sondaggi_graph3.png" alt="plot of chunk sondaggi_graph3" /> </p>
 
 <p>Il grafico può essere interpretato nel seguente modo. Gli istituti di sandaggi sono ordinati, per ciascun partito, in base alla loro tendenza ad attribuire una quota di voto più alta relativamente agli altri sondaggisti. Quanto maggiore è il valore rappresentato nel grafico per un sondaggista (per un dato partito) tanto maggiore è la propensione a sovrastimare la quota di voto (per quel partito e per il dato sondaggista).</p>
 
-<p>Bisogno comunque essere cauti nell&#8217;interpretazione del grafico. I valori attribuito a ciascun sondaggista possono solo essere interpretati in maniera relativa essendo infatti la differenza della media dei sondaggi dell&#8217;istituto rispetto alla media dei sondaggi degli altri istituti nel mese di riferimento. Il grafico ha pertanto soltanto valore ordinale e non cardinale.</p>
+<p>Bisogno comunque essere cauti nell’interpretazione del grafico. I valori attribuito a ciascun sondaggista possono solo essere interpretati in maniera relativa essendo infatti la differenza della media dei sondaggi dell’istituto rispetto alla media dei sondaggi degli altri istituti nel mese di riferimento. Il grafico ha pertanto soltanto valore ordinale e non cardinale. </p>
 
-<h2>Differenze fra sondaggisti</h2>
+<h2 id="differenze-fra-sondaggisti">Differenze fra sondaggisti</h2>
 
-<p>SPINCON tende ad attribuire alla LEGA quote più elevate rispetto agli altri sondaggisti, TECNE al contrario attribuisce al carroccio, in media, quote di voto più basse. SWG stima quote in media più elevate per il M5S, mentre SPINCON quote in media più basse. LORIEN &#8220;premia&#8221; il PDL che invece viene mediamente &#8220;penalizzato&#8221; da IPSOS. Da notare che per quanto riguarda il PD, 6 degli otto istituti considerati attribuiscono quote molto simili con SPINCON e SWG i due istituti che tendono a &#8220;sottovalutare&#8221; il voto al Partito Democratico.</p>
+<p>SPINCON tende ad attribuire alla LEGA quote più elevate rispetto agli altri sondaggisti, TECNE al contrario attribuisce al carroccio, in media, quote di voto più basse. SWG stima quote in media più elevate per il M5S, mentre SPINCON quote in media più basse. LORIEN “premia” il PDL che invece viene mediamente “penalizzato” da IPSOS. Da notare che per quanto riguarda il PD, 6 degli otto istituti considerati attribuiscono quote molto simili con SPINCON e SWG i due istituti che tendono a “sottovalutare” il voto al Partito Democratico. </p>
 
-<p>Non è corretto concludere però che queste differenze siano da attribuire ad un atteggiamento strategico. Le differenze possono essere spiegate dall&#8217;errore di campionamento e, in particolare, dalle correzioni che i sondaggisti applicano al dato &#8220;crudo&#8221; che ottengono dal campione.</p>
+<p>Non è corretto concludere però che queste differenze siano da attribuire ad un atteggiamento strategico. Le differenze possono essere spiegate dall’errore di campionamento e, in particolare, dalle correzioni che i sondaggisti applicano al dato “crudo” che ottengono dal campione. </p>
 
-<h1>Performance: il caso del 2008</h1>
+<h1 id="performance-il-caso-del-2008">Performance: il caso del 2008</h1>
 
 <p>Concludo analizzando le performance dei sondaggisti alle ultime elezioni politiche, quelle del 13 Aprile del 2008.</p>
 
-<p>Il seguente grafico mostra per ciascun istituto di sondaggi (fra quelli che hanno rilasciato sondaggi nel periodo febbraio/marzo 20008) la quota di voto attribuita al PD, PDL, UDC, LEGA e Sinistra L&#8217;Arcobaleno (SA) (<em>punto BLUE</em>) e la quota di voto effettivamente ottenuta alle elezioni (<em>punto ROSSO</em>).</p>
+<p>Il seguente grafico mostra per ciascun istituto di sondaggi (fra quelli che hanno rilasciato sondaggi nel periodo febbraio/marzo 20008) la quota di voto attribuita al PD, PDL, UDC, LEGA e Sinistra L’Arcobaleno (SA) (<em>punto BLUE</em>) e la quota di voto effettivamente ottenuta alle elezioni (<em>punto ROSSO</em>).</p>
 
-<p><img src="http://gragusa.org/img/sondaggi_graph4.png" alt="plot of chunk sondaggi_graph4" /></p>
+<p><img src="http://gragusa.org/img/sondaggi_graph4.png" alt="plot of chunk sondaggi_graph4" /> </p>
 
-<p>La tabelle che segue riporta la media dei sondaggi (ottenuta calcolando la media delle predizioni fra i diversi istituti) e il dato effettivo.</p>
+<p>La tabelle che segue riporta la media dei sondaggi (ottenuta calcolando la media delle predizioni fra i diversi istituti) e il dato effettivo. </p>
 
-<center><table class = "ztab1">
+<center><table class="ztab1">
 <tr>
 <td>partito</td><td>media % voto pred.</td><td>% voto effetivo</td></tr>
 <tr>
@@ -153,20 +153,17 @@
 </table>
 </center>
 
+<p>Tutti gli istituti di sondaggi hanno sbagliato la predizione per la Sinistra Arcobeleno. Gli undici istituti di sondaggi attribuivano una quota superiore di consenso di quella effettivamente ottenuta. La media calcolata fra tutti gli istituti è del 7.1%, mentre la percentuale raggiunta dal SEL è stata del 3.1%. </p>
 
-<p></p>
+<p>Al contrario, i sondaggisti hanno sottostimato il voto per la LEGA. Hanno attribuito in media il 5.1% mentre il carrocci ha ottenuto l’8.3% dei voti. </p>
 
-<p>Tutti gli istituti di sondaggi hanno sbagliato la predizione per la Sinistra Arcobeleno. Gli undici istituti di sondaggi attribuivano una quota superiore di consenso di quella effettivamente ottenuta. La media calcolata fra tutti gli istituti è del 7.1%, mentre la percentuale raggiunta dal SEL è stata del 3.1%.</p>
+<p>Il voto per il PDL è stato leggermente sovrastimato. Una media del 39.2% contro il 37.4% effettivamente ottenuto. Anche per l’UDC la tendenza è stata quella di sovrastimare il voto (6.33% la media fra i sondaggisti, 5.6% la frazione di voti effettivamente ottenuta). Anche la quota di voto del PD è stata leggermente sovrastimata, ma la differenze sono minime (33.56% la media dei sondaggisti contro il 33.1% effettivamente ottenuto).  </p>
 
-<p>Al contrario, i sondaggisti hanno sottostimato il voto per la LEGA. Hanno attribuito in media il 5.1% mentre il carrocci ha ottenuto l&#8217;8.3% dei voti.</p>
+<h2 id="valutazione-sintetica">Valutazione sintetica</h2>
 
-<p>Il voto per il PDL è stato leggermente sovrastimato. Una media del 39.2% contro il 37.4% effettivamente ottenuto. Anche per l&#8217;UDC la tendenza è stata quella di sovrastimare il voto (6.33% la media fra i sondaggisti, 5.6% la frazione di voti effettivamente ottenuta). Anche la quota di voto del PD è stata leggermente sovrastimata, ma la differenze sono minime (33.56% la media dei sondaggisti contro il 33.1% effettivamente ottenuto).</p>
+<p>Per concludere, riportiamo una misura di qualità aggregata dell’istituto basata sulla performance nel 2008. La tavola che segue riporta il Mean Square Forecasting Error (MSE) per ciascun istituto. Un valore più elevato del MSE corrisponde ad una performance peggiore. Si noti che la misura di qualità è calcolata soltanto per i cinque partiti già considerati nel grafico. Qualora si considerassero gli altri partiti il ranking fra istituti potrebbe subire delle variazioni. </p>
 
-<h2>Valutazione sintetica</h2>
-
-<p>Per concludere, riportiamo una misura di qualità aggregata dell&#8217;istituto basata sulla performance nel 2008. La tavola che segue riporta il Mean Square Forecasting Error (MSE) per ciascun istituto. Un valore più elevato del MSE corrisponde ad una performance peggiore. Si noti che la misura di qualità è calcolata soltanto per i cinque partiti già considerati nel grafico. Qualora si considerassero gli altri partiti il ranking fra istituti potrebbe subire delle variazioni.</p>
-
-<center><table class = "ztab1">
+<center><table class="ztab1">
 <tr>
 <td>Istituto</td><td>MSE</td></tr>
 <tr>
@@ -194,8 +191,6 @@
 </table>
 </center>
 
-
-
 ]]></content>
   </entry>
   
@@ -204,21 +199,21 @@
     <link href="http://gragusa.org/blog/retribuzioni-contrattuali/"/>
     <updated>2013-01-30T22:04:00+01:00</updated>
     <id>http://gragusa.org/blog/retribuzioni-contrattuali</id>
-    <content type="html"><![CDATA[<p>L&#8217;ISTAT ha <a href="http://www.istat.it/it/archivio/80769">annunciato</a> il rilascio
+    <content type="html"><![CDATA[<p>L’ISTAT ha <a href="http://www.istat.it/it/archivio/80769">annunciato</a> il rilascio
 degli indici che misurano le variazioni delle retribuzioni contrattuali.</p>
 
 <p>Di seguito parte del comunicato ISTAT:</p>
 
-<p><em>Nel mese di dicembre l&#8217;indice delle retribuzioni contrattuali orarie registra un incremento dello 0,1% rispetto al mese precedente e dell&#8217;1,7% rispetto a dicembre 2011. Nella media del 2012 la retribuzione oraria è cresciuta dell&#8217;1,5% rispetto all&#8217;anno precedente.</em></p>
+<p><em>Nel mese di dicembre l’indice delle retribuzioni contrattuali orarie registra un incremento dello 0,1% rispetto al mese precedente e dell’1,7% rispetto a dicembre 2011. Nella media del 2012 la retribuzione oraria è cresciuta dell’1,5% rispetto all’anno precedente.</em></p>
 
 <p><em>Con riferimento ai principali macrosettori, a dicembre le retribuzioni orarie contrattuali registrano un incremento tendenziale del 2,2% per i dipendenti del settore privato e una variazione nulla per quelli della pubblica amministrazione.</em></p>
 
-<p>La stampa ha dato un risalto negativo alla dinamica delle retribuzioni contrattuali che viene fuori dall&#8217;analisi dei dati. Si è fatto notare che <em>(a)</em> l&#8217;1,5% su base anuale è il calo più consistente dal 1995 (primo anno di disponibilità dell&#8217;indice); <em>(b)</em>
+<p>La stampa ha dato un risalto negativo alla dinamica delle retribuzioni contrattuali che viene fuori dall’analisi dei dati. Si è fatto notare che <em>(a)</em> l’1,5% su base anuale è il calo più consistente dal 1995 (primo anno di disponibilità dell’indice); <em>(b)</em> 
 <a href="http://www.ilfattoquotidiano.it/2013/01/28/istat-nel-2012-crescita-prezzi-doppia-rispetto-salari/481953/">la crescità dei prezzi nel periodo di riferimento è stata superiore alla crescita delle retribuzioni</a>.</p>
 
-<p>Come al solito, la verità è un pò complessa.</p>
+<p>Come al solito, la verità è un pò complessa. </p>
 
-<p><img src="http://gragusa.org/img/retribuzioni.png" title="Retribuzioni contrattuali" alt="Retribuzioni contrattuali"></p>
+<p><img src="http://gragusa.org/img/retribuzioni.png" title="Retribuzioni contrattuali" alt="Retribuzioni contrattuali" /></p>
 ]]></content>
   </entry>
   
@@ -227,7 +222,7 @@ degli indici che misurano le variazioni delle retribuzioni contrattuali.</p>
     <link href="http://gragusa.org/blog/distribuzione-delle-nascite/"/>
     <updated>2012-06-13T00:31:00+02:00</updated>
     <id>http://gragusa.org/blog/distribuzione-delle-nascite</id>
-    <content type="html"><![CDATA[<p><img src="http://gragusa.org/img/heatmapbirthdays1.jpg" width="550" height="800"></p>
+    <content type="html"><![CDATA[<p><img src="http://gragusa.org/img/heatmapbirthdays1.jpg" width="550" height="800" /></p>
 ]]></content>
   </entry>
   
@@ -236,7 +231,7 @@ degli indici che misurano le variazioni delle retribuzioni contrattuali.</p>
     <link href="http://gragusa.org/blog/deposit-facility-bce/"/>
     <updated>2012-02-05T22:42:00+01:00</updated>
     <id>http://gragusa.org/blog/deposit-facility-bce</id>
-    <content type="html"><![CDATA[<p><img src="http://gragusa.org/img/deposit.png" title="ECB deposit" alt="ECB deposit"></p>
+    <content type="html"><![CDATA[<p><img src="http://gragusa.org/img/deposit.png" title="ECB deposit" alt="ECB deposit" /></p>
 ]]></content>
   </entry>
   
@@ -247,12 +242,14 @@ degli indici che misurano le variazioni delle retribuzioni contrattuali.</p>
     <id>http://gragusa.org/blog/i-nobel-defaultisti</id>
     <content type="html"><![CDATA[<p>Ho appena letto il <a href="http://www.liberacittadinanza.it/articoli/il-manifesto-degli-indignati-roma-15-ottobre">Manifesto degli Indignati</a>, che altro non è che una lettera al Presidente della Repubblica. Sono rimasto colpito dalla qualità della scrittura. Eccellente direi. Non voglio minimamente entrare nel merito delle rivendicazioni generazionali del testo, ma un passaggio del Manifesto lettera mi ha lasciato molto perplesso:</p>
 
-<blockquote><p>Caro Presidente, garantire e difendere la Costituzione oggi vuol dire
+<blockquote>
+  <p>Caro Presidente, garantire e difendere la Costituzione oggi vuol dire
 rifiutarsi di pagare il debito, così come consigliano diversi premi
-Nobel per l’Economia;</p></blockquote>
+Nobel per l’Economia;</p>
+</blockquote>
 
 <p>Addirittura non uno, ma diversi premi Nobel avrebbero consigliato
-all&#8217;Italia di fare default. Mi sarò perso qualcosa?</p>
+all’Italia di fare default. Mi sarò perso qualcosa?</p>
 ]]></content>
   </entry>
   
@@ -263,23 +260,28 @@ all&#8217;Italia di fare default. Mi sarò perso qualcosa?</p>
     <id>http://gragusa.org/blog/letture</id>
     <content type="html"><![CDATA[<p><strong>Dal Financial Times, <a href="http://www.ft.com/intl/cms/s/0/69902e72-e926-11e0-af7b-00144feab49a.html">Split opens over Greek bail-out terms</a>.</strong></p>
 
-<blockquote><p>A split has opened in the eurozone over the terms of Greece’s second
+<blockquote>
+  <p>A split has opened in the eurozone over the terms of Greece’s second
 €109bn bail-out with as many as seven of the bloc’s 17 members arguing
-for private creditors to swallow a bigger writedown [&#8230;] While
+for private creditors to swallow a bigger writedown […] While
 hardliners in Germany and the Netherlands are leading the calls for
 more losses to be imposed on the private sector, France and the
-European Central Bank are fiercely resisting any such move.</p></blockquote>
+European Central Bank are fiercely resisting any such move.</p>
+</blockquote>
 
 <p><strong>Questa divisione sembra essere la causa delle perdite sui listini europei. Da Bloomberg, <a href="http://www.bloomberg.com/news/2011-09-28/european-stock-futures-drop-on-greek-concern-u-s-futures-little-changed.html">European Stocks Slide as Man Group Tumbles</a>:</strong></p>
 
-<blockquote><p>European stocks fell, snapping the biggest three-day rally in 16
+<blockquote>
+  <p>European stocks fell, snapping the biggest three-day rally in 16
 months, after a report that some countries are demanding private
 creditors take bigger writedowns on Greek bonds. Asian shares rose and
-U.S. futures fluctuated.</p></blockquote>
+U.S. futures fluctuated.</p>
+</blockquote>
 
-<p><strong>Barroso, su Tobin Tax e Eurobond, dalla Stampa, Barroso: <a href="http://www3.lastampa.it/economia/sezioni/articolo/lstp/422387/">Si a eurobond e Tobin Tax Basta con l&#8217;unanimità nell&#8217;Ue</a>&#8221;</strong></p>
+<p><strong>Barroso, su Tobin Tax e Eurobond, dalla Stampa, Barroso: <a href="http://www3.lastampa.it/economia/sezioni/articolo/lstp/422387/">Si a eurobond e Tobin Tax Basta con l’unanimità nell’Ue</a>”</strong></p>
 
-<blockquote><p>Sì a eurobond e Tobin Tax, stop all&#8217;unanimità a tutti i costi:
+<blockquote>
+  <p>Sì a eurobond e Tobin Tax, stop all’unanimità a tutti i costi:
 l’Unione europea deve modificare i Trattati per andare oltre questa
 regola. Lo ha detto il presidente della Commissione europea nel
 Discorso sullo stato dell’Unione alla plenaria di Strasburgo. Per Josè
@@ -287,11 +289,13 @@ Manuel Barroso, «Il passo non può essere dettato dal più lento».
 Barroso ha annunciato che la Commissione Ue ha adottato ufficialmente
 oggi la proposta per introdurre un sistema comune di tassazione sulle
 transazioni finanziarie: la Tobin tax, se adottata dal 2014, potrà
-dare un gettito annuo di 55 miliardi.</p></blockquote>
+dare un gettito annuo di 55 miliardi.</p>
+</blockquote>
 
-<p><strong>Martin Wolf, sul Financial Times, <a href="http://www.ft.com/intl/cms/s/0/ca44b0bc-e61a-11e0-960c-00144feabdc0.html#axzz1%20Ek3KKMA">Fear and loathing in the eurozone</a>. Articolo tradotto in Italiano sul ilsole24ore.it, <a href="http://www.ilsole24ore.com/art/notizie/2011-09-28/leuro-ultima-spiaggia-064633.shtml?uuid=Aaz2U97D">L&#8217;euro all&#8217;ultima spiaggia</a>:</strong></p>
+<p><strong>Martin Wolf, sul Financial Times, <a href="http://www.ft.com/intl/cms/s/0/ca44b0bc-e61a-11e0-960c-00144feabdc0.html#axzz1 Ek3KKMA">Fear and loathing in the eurozone</a>. Articolo tradotto in Italiano sul ilsole24ore.it, <a href="http://www.ilsole24ore.com/art/notizie/2011-09-28/leuro-ultima-spiaggia-064633.shtml?uuid=Aaz2U97D">L’euro all’ultima spiaggia</a>:</strong></p>
 
-<blockquote><p>[Wolf cita l&#8217;ultimo rapporto del Fondo Monetario che descrive il
+<blockquote>
+  <p>[Wolf cita l’ultimo rapporto del Fondo Monetario che descrive il
 processo per cui crisi finanziarie innescano spesso crisi del debito
 pubblico] Gli effetti di diffusione dei problemi degli Stati della
 zona euro hanno colpito i sistemi bancari locali, ma si sono estesi
@@ -303,32 +307,37 @@ passività dei bilanci delle banche, perché le garanzie statali hanno
 perso implicitamente valore, si è ridotto il valore dei titoli di
 Stato usati come garanzia, sono aumentati i margini di garanzia e il
 declassamento del rating degli Stati si è portato dietro un
-declassamento del rating delle banche</p></blockquote>
+declassamento del rating delle banche</p>
+</blockquote>
 
-<p><strong>Da linkiesta.it, <a href="http://www.linkiesta.it/bruxelles-l-italia-vota-con-gli-speculatori">A Bruxelles l&#8217;Italia vota “con gli speculatori”</a>,</strong></p>
+<p><strong>Da linkiesta.it, <a href="http://www.linkiesta.it/bruxelles-l-italia-vota-con-gli-speculatori">A Bruxelles l’Italia vota “con gli speculatori”</a>,</strong></p>
 
-<blockquote><p>Settembre doveva essere il mese decisivo, quello in cui l&#8217;Unione
+<blockquote>
+  <p>Settembre doveva essere il mese decisivo, quello in cui l’Unione
 europea prendeva una decisione sulla vendita allo scoperto dei Credit
 default swap, i prodotti che assicurano contro il fallimento degli
 Stati. Londra si oppone ma - apparentemente a sorpresa - anche
-l&#8217;Italia è contraria. Dietro la mossa di Roma alcune paure: compresa
+l’Italia è contraria. Dietro la mossa di Roma alcune paure: compresa
 quella che possa calare la propensione al rischio, allargando
-ulteriormente gli spread.</p></blockquote>
+ulteriormente gli spread.</p>
+</blockquote>
 
 <p><strong>Si riapre il dibattito sul successore di Draghi a Via Nazionale. Dal
 ilsole24ore.it, <a href="http://www.ilsole24ore.com/art/notizie/2011-09-27/governo-diviso-duello-bankitalia-224057.shtml?uuid=AaGA277D&amp;fromSearch">Governo diviso, duello su
 Bankitalia</a>:</strong></p>
 
-<blockquote><p>Il candidato in pole position, peraltro, era e rimane il direttore
-generale di via Nazionale, Fabrizio Saccomanni [&#8230;] [&#8230;] da un punto
-di vista formale non ha potere d&#8217;iniziativa sulla nomina [&#8230;]. Ma va
-da sè che il parere del responsabile di via XX settembre conta [&#8230;]
+<blockquote>
+  <p>Il candidato in pole position, peraltro, era e rimane il direttore
+generale di via Nazionale, Fabrizio Saccomanni […] […] da un punto
+di vista formale non ha potere d’iniziativa sulla nomina […]. Ma va
+da sè che il parere del responsabile di via XX settembre conta […]
 la sua preferenza [cade su] Vittorio Grilli, attuale direttore
-generale del Tesoro insediato alla guida di via Nazionale. [&#8230;] Anche
+generale del Tesoro insediato alla guida di via Nazionale. […] Anche
 se in tutte le sedi istituzionali deputate a perfezionare la scelta le
 bocche sono rimaste cucite nella serata di ieri è trapelato che il
-ministro dell&#8217;Economia avrebbe spezzato una lancia per la nomina di
-Grilli sia con il presidente della Repubblica sia con Berlusconi.</p></blockquote>
+ministro dell’Economia avrebbe spezzato una lancia per la nomina di
+Grilli sia con il presidente della Repubblica sia con Berlusconi.</p>
+</blockquote>
 ]]></content>
   </entry>
   
@@ -338,13 +347,13 @@ Grilli sia con il presidente della Repubblica sia con Berlusconi.</p></blockquot
     <updated>2011-09-26T14:00:47+02:00</updated>
     <id>http://gragusa.org/blog/stress-test-bancari-e-interattivi</id>
     <content type="html"><![CDATA[<p>Il Financial Times ha <a href="http://www.ft.com/intl/cms/s/0/c7d18246-ae12-11e0-a2ab-00144feabdc0.html#axzz1Z2yMylmL">realizzato</a> un applet che visualizza in modo utile e accattivante i risultati degli
-<a href="http://www.ft.com/cms/s/0/dc111364-aefa-11e0-bb89-00144feabdc0.html" title="FT.com - Nine banks fail Europe stress tests">stress test europei</a> dello scorso luglio.</p>
+<a href="http://www.ft.com/cms/s/0/dc111364-aefa-11e0-bb89-00144feabdc0.html" title="FT.com - Nine banks fail Europe stress tests">stress test europei</a> dello scorso luglio. </p>
 
-<p>I risultati sono stati pubblicati dall&#8217;<a href="http://www.eba.europa.eu/" title="European Banking Authority">European Banking</a>.</p>
+<p>I risultati sono stati pubblicati dall’<a href="http://www.eba.europa.eu/" title="European Banking Authority">European Banking</a>.</p>
 
-<p>E&#8217; necessario disporre di un abbonamento per poter utilizzare l&#8217;applet. Per chi ne fosse sprovvisto ecco uno screenshot che mostra l&#8217;indebitamento di una &#8220;celeberrima&#8221; banca italiana:</p>
+<p>E’ necessario disporre di un abbonamento per poter utilizzare l’applet. Per chi ne fosse sprovvisto ecco uno screenshot che mostra l’indebitamento di una “celeberrima” banca italiana:</p>
 
-<p><a href="img/Screen-shot-2011-09-26-at-10.56.13.png"><img src="http://gragusa.org/img/Screen-shot-2011-09-26-at-10.56.13.png" title="Screen shot 2011-09-26 at 10.56.13" alt="image" /></a></p>
+<p><a href="img/Screen-shot-2011-09-26-at-10.56.13.png"><img src="http://gragusa.org/img/Screen-shot-2011-09-26-at-10.56.13.png" alt="image" title="Screen shot 2011-09-26 at 10.56.13" /></a></p>
 
 <p>Titoli del debito pubblico italiano in possesso di <strong>Unicredit</strong>: 46.7 miliardi di euro.</p>
 
@@ -357,73 +366,74 @@ Grilli sia con il presidente della Repubblica sia con Berlusconi.</p></blockquot
     <link href="http://gragusa.org/blog/istat-e-i-grafici-del-pil/"/>
     <updated>2011-09-26T10:33:10+02:00</updated>
     <id>http://gragusa.org/blog/istat-e-i-grafici-del-pil</id>
-    <content type="html"><![CDATA[<p><em>Su <a href="lavoce.info">lavoce.info</a> del 22 Settembre 2011 è stato pubblicato un <a href="http://www.lavoce.info/articoli/pagina1002563.html">articolo</a> a firma di Ludovico Poggi dal titolo &#8220;L&#8217;ISTAT si (rifà) il trucco&#8221;. Il titolo gioca sulla rinnovata veste grafica del sito Istat per puntare l&#8217;indice contro un presunto trucco statistico perpetrato dall&#8217;Istituto di Statistica.</em></p>
+    <content type="html"><![CDATA[<p><em>Su <a href="lavoce.info">lavoce.info</a> del 22 Settembre 2011 è stato pubblicato un <a href="http://www.lavoce.info/articoli/pagina1002563.html">articolo</a> a firma di Ludovico Poggi dal titolo “L’ISTAT si (rifà) il trucco”. Il titolo gioca sulla rinnovata veste grafica del sito Istat per puntare l’indice contro un presunto trucco statistico perpetrato dall’Istituto di Statistica.</em></p>
 
-<p>Il nuovo www.istat.it è stato lanciato qualche settimana fa. La vesta grafica è moderna e rappresenta un notevole salto di qualità rispetto al vecchio sito. Una delle funzioni del nuovo sito permette di ottenere grafici temporali <em>on-demand</em> di alcune variabili macroeconomiche di particolare importanza. Queste variabili sono:</p>
+<p>Il nuovo www.istat.it è stato lanciato qualche settimana fa. La vesta grafica è moderna e rappresenta un notevole salto di qualità rispetto al vecchio sito. Una delle funzioni del nuovo sito permette di ottenere grafici temporali <em>on-demand</em> di alcune variabili macroeconomiche di particolare importanza. Queste variabili sono: </p>
 
 <ol>
-<li>PIL;</li>
-<li>prezzi al consumo;</li>
-<li>prezzi alla produzione;</li>
-<li>produzione industriale;</li>
-<li>numero di occupati;</li>
-<li>tasso di disoccupazione;</li>
-<li>retribuzioni;</li>
-<li>indice vendite commerciali al dettaglio.</li>
+  <li>PIL; </li>
+  <li>prezzi al consumo; </li>
+  <li>prezzi alla produzione; </li>
+  <li>produzione industriale; </li>
+  <li>numero di occupati; </li>
+  <li>tasso di disoccupazione; </li>
+  <li>retribuzioni; </li>
+  <li>indice vendite commerciali al dettaglio.</li>
 </ol>
 
-
-<p>L&#8217;articolo de lavoce.info fa notare che se viene richiesto il grafico del prodotto interno lordo, il grafico prodotto mostra il Pil in variazioni percentuali tendenziali. [Il grafico del PIL come ottenuto dall&#8217;interfaccia Istat è riportato di seguito.]</p>
-
-<hr />
-
-<p><img class="center" src="http://gragusa.org/img/Screen-shot-2011-09-22-at-9.54.42-PM.png"></p>
-
-<p><em>Grafico del PIL come ottenuto dal sito www.istat.it [25 Settembre 2011&#8221;]</em></p>
+<p>L’articolo de lavoce.info fa notare che se viene richiesto il grafico del prodotto interno lordo, il grafico prodotto mostra il Pil in variazioni percentuali tendenziali. [Il grafico del PIL come ottenuto dall’interfaccia Istat è riportato di seguito.] </p>
 
 <hr />
 
-<p><strong>Dove sta il trucco?</strong> Il grafico potrebbe dare l&#8217;impressione che il PIL sia tornato ai livelli pre-crisi dopo aver toccato il minimo nel primo trimestre 2009. Questa interpretazione della rappresentazione grafica è errata. Un rapido sguardo all&#8217;andamento del Pil in livelli è sufficiente per accorgersi che il Pil è ancora ben lungi dall&#8217;essere tornato ai livelli pre-crisi. Per esempio, il valore del Pil nel secondo trimestre 2011 era di circa il 5% più basso rispetto al suo valore nel primo trimestre 2008.</p>
+<p><img class="center" src="http://gragusa.org/img/Screen-shot-2011-09-22-at-9.54.42-PM.png" /></p>
 
-<p><img class="center" src="http://gragusa.org/img/pil-lavoce.jpg" title="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;" alt="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;"></p>
+<p><em>Grafico del PIL come ottenuto dal sito www.istat.it [25 Settembre 2011”]</em></p>
+
+<hr />
+
+<p><strong>Dove sta il trucco?</strong> Il grafico potrebbe dare l’impressione che il PIL sia tornato ai livelli pre-crisi dopo aver toccato il minimo nel primo trimestre 2009. Questa interpretazione della rappresentazione grafica è errata. Un rapido sguardo all’andamento del Pil in livelli è sufficiente per accorgersi che il Pil è ancora ben lungi dall’essere tornato ai livelli pre-crisi. Per esempio, il valore del Pil nel secondo trimestre 2011 era di circa il 5% più basso rispetto al suo valore nel primo trimestre 2008. </p>
+
+<p><img class="center" src="http://gragusa.org/img/pil-lavoce.jpg" title="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;" alt="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;" /></p>
 
 <p><em>Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.</em></p>
 
-<p><strong>Ma è veramente un trucco?</strong> Iniziamo col dire il grafico riporta correttamente la dicitura &#8220;variazioni % tendenziali&#8221;. Infatti, se di trucco si tratta, riguarda la scelta di plottare le variazioni tendenziali e non i livelli. Enrico Giovannini, presidente dell&#8217;Istat, ha replicato in un <a href="http://www.lavoce.info/articoli/pagina1002568.html">post</a> sempre su lavoce.info lamentandosi dell&#8217;articolo di Poggi perchè &#8220;tende a far credere al lettore che l’Istat abbia scelto il grafico del tasso di variazione invece che quello in livello per fare <em>trucchi</em>&#8221;. Giovannini continua:</p>
+<p><strong>Ma è veramente un trucco?</strong> Iniziamo col dire il grafico riporta correttamente la dicitura “variazioni % tendenziali”. Infatti, se di trucco si tratta, riguarda la scelta di plottare le variazioni tendenziali e non i livelli. Enrico Giovannini, presidente dell’Istat, ha replicato in un <a href="http://www.lavoce.info/articoli/pagina1002568.html">post</a> sempre su lavoce.info lamentandosi dell’articolo di Poggi perchè “tende a far credere al lettore che l’Istat abbia scelto il grafico del tasso di variazione invece che quello in livello per fare <em>trucchi</em>”. Giovannini continua:</p>
 
-<blockquote><p>Dovendo scegliere un solo grafico riguardante il PIL per l’home page,
+<blockquote>
+  <p>Dovendo scegliere un solo grafico riguardante il PIL per l’home page,
 si è ritenuto opportuno concentrare l’attenzione sul dato sintetico
 più significativo, cioè sul tasso di variazione tendenziale, più che
-sul livello assoluto.</p></blockquote>
+sul livello assoluto.</p>
+</blockquote>
 
-<p>La scelta del tasso tendenziale è stata effettuata perché ritenuta migliore rispetto alle alternative. Bisogna allora chiedersi se la variazione tendenziale fornisca il dato sintetico più informativo.</p>
+<p>La scelta del tasso tendenziale è stata effettuata perché ritenuta migliore rispetto alle alternative. Bisogna allora chiedersi se la variazione tendenziale fornisca il dato sintetico più informativo. </p>
 
-<p><strong>Tassi e livelli.</strong> Prima di pronunciarci sull&#8217;<em>information content</em>, sarà bene spiegare cos&#8217;è la variazione tendenziale. Ho infatti il sospetto che pochi (parlo dei non addetti ai lavori) sappiano cosa &#8220;tendenziale&#8221; stia a significare.</p>
+<p><strong>Tassi e livelli.</strong> Prima di pronunciarci sull’<em>information content</em>, sarà bene spiegare cos’è la variazione tendenziale. Ho infatti il sospetto che pochi (parlo dei non addetti ai lavori) sappiano cosa “tendenziale” stia a significare. </p>
 
-<p><strong>Il tasso di variazione (trimestrale) tendenziale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il suo valore <em>nello stesso trimestre dell&#8217;anno precedente.</em> Quindi la diminuzione del 6.7% nel
+<p><strong>Il tasso di variazione (trimestrale) tendenziale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il suo valore <em>nello stesso trimestre dell’anno precedente.</em> Quindi la diminuzione del 6.7% nel
 primo trimestre 2009 non è rispetto al quarto trimestre 2008, ma al
-primo trimestre 2008. Nel primo trimestre 2010 il grafico è nell&#8217;area
+primo trimestre 2008. Nel primo trimestre 2010 il grafico è nell’area
 positiva, perché queste variazioni sono rispetto ai trimestri del 2009,
-l&#8217;anno nero della crisi. Si possono naturalmente considerare le
+l’anno nero della crisi. Si possono naturalmente considerare le
 variazioni trimestre su trimestre; in questo caso parliamo di variazioni
-percentuali congiunturali.</p>
+percentuali congiunturali. </p>
 
-<p><strong>Il tasso di variazione trimestrale congiunturale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il valore della stessa <em>nel trimestre immediatamente precedente</em>. Molto probabilmente è questo il tasso a cui molto sono più abituati a pensare. Visto che né lavoce.info né l&#8217;Istat hanno pubblicato un grafico delle variazioni congiunturali del Pil, ho provveduto a crearne uno che allego qui di seguito.</p>
+<p><strong>Il tasso di variazione trimestrale congiunturale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il valore della stessa <em>nel trimestre immediatamente precedente</em>. Molto probabilmente è questo il tasso a cui molto sono più abituati a pensare. Visto che né lavoce.info né l’Istat hanno pubblicato un grafico delle variazioni congiunturali del Pil, ho provveduto a crearne uno che allego qui di seguito. </p>
 
-<p><img class="center" src="http://gragusa.org/img/pil_cong.png"></p>
+<p><img class="center" src="http://gragusa.org/img/pil_cong.png" /></p>
 
 <p><em>Pil trimestrale a valori concatenati e destagionalizzati. variazioni % congiunturali</em></p>
 
 <p><strong>Quale dato sintetico contiene più informazione?</strong> Una statistica è più informativa se contiene più informazioni sui dati che si stanno analizzando. Per esempio, se abbiamo a disposizione un campione di osservazioni, la media campionaria è meno informativa della
 distribuzione di frequenza. La distribuzione di frequenza è un dato sintetico più ricco della media: possiamo sempre risalire alle media campionaria avendo a disposizione le frequenze, ma non è possibile fare il contrario.</p>
 
-<p>In modo analogo, il grafico delle variazioni, siano esse tendenziali o congiunturali, non ci permette di risalire ai livelli. Sapere che il Pil è cresciuto dell&#8217;1% fra il primo trimestre 2009 e il primo trimestre 2008 non fornisce alcuna informazione sul livello del Pil nei due trimestri in questione. Al contrario, la conoscenza dei livelli di una
-variabile nei trimestri consente di risalire alle variazioni (sia tendenziali sia congiunturali).</p>
+<p>In modo analogo, il grafico delle variazioni, siano esse tendenziali o congiunturali, non ci permette di risalire ai livelli. Sapere che il Pil è cresciuto dell’1% fra il primo trimestre 2009 e il primo trimestre 2008 non fornisce alcuna informazione sul livello del Pil nei due trimestri in questione. Al contrario, la conoscenza dei livelli di una
+variabile nei trimestri consente di risalire alle variazioni (sia tendenziali sia congiunturali). </p>
 
-<p><strong>Ne consegue che è il grafico in livelli ad essere il &#8220;dato sintetico più informativo&#8221;.</strong> (In realtà un grafico temporale non è di per sé un dato, ma una sua rappresentazione pittorica.) E&#8217; vero che la statistica è l&#8217;arte di sintetizzare dati complessi mediante indicatori facilmente intellegibili, ma è altrettanto vero che le possibilità odierne consentono di rilassare il <em>trade-off</em> fra sintesi e completezza.</p>
+<p><strong>Ne consegue che è il grafico in livelli ad essere il “dato sintetico più informativo”.</strong> (In realtà un grafico temporale non è di per sé un dato, ma una sua rappresentazione pittorica.) E’ vero che la statistica è l’arte di sintetizzare dati complessi mediante indicatori facilmente intellegibili, ma è altrettanto vero che le possibilità odierne consentono di rilassare il <em>trade-off</em> fra sintesi e completezza. </p>
 
-<p><strong>L&#8217;Istat dovrebbe consentire all&#8217;utente di scegliere le modalità di rappresentazione sintetica delle informazioni. In assenza di questa scelta, il grafico di
-<em>default</em> dovrebbe essere il grafico in livelli.</strong></p>
+<p><strong>L’Istat dovrebbe consentire all’utente di scegliere le modalità di rappresentazione sintetica delle informazioni. In assenza di questa scelta, il grafico di
+<em>default</em> dovrebbe essere il grafico in livelli.</strong> </p>
 
 <p>A proposito di completezza, allego qui sotto una tavola con i dati sul PIL in livelli,
 in variazioni tendenziali e variazioni congiunturali. (Valori concatenati a prezzi 2000).</p>
@@ -435,26 +445,26 @@ in variazioni tendenziali e variazioni congiunturali. (Valori concatenati a prez
     <link href="http://gragusa.org/blog/il-default-nella-storia/"/>
     <updated>2011-09-20T15:18:42+02:00</updated>
     <id>http://gragusa.org/blog/il-default-nella-storia</id>
-    <content type="html"><![CDATA[<p><em>Il default (controllato o meno) della Grecia sembra essere dietro l&#8217;angolo. Il default di un paese non è un evento raro. Negli ultimo 200 anni molti paesi hanno scelto (o sono stati costretti a scegliere) di non onorare più le lore obbligazioni.</em></p>
+    <content type="html"><![CDATA[<p><em>Il default (controllato o meno) della Grecia sembra essere dietro l’angolo. Il default di un paese non è un evento raro. Negli ultimo 200 anni molti paesi hanno scelto (o sono stati costretti a scegliere) di non onorare più le lore obbligazioni.</em> </p>
 
 <p>Questo grafico è tratto da un
 <a href="http://www.imf.org/external/pubs/ft/wp/2008/wp08238.pdf">report</a> del
 2008 realizzato per il Fondo Monetario Internazionale (IMF) da Eduardo
 Borensztein and Ugo Panizza.</p>
 
-<p>{&amp; img center images/panizza1-1024x732.jpg &#8220;IMF Report&#8221; &amp;}</p>
+<p>{&amp; img center images/panizza1-1024x732.jpg “IMF Report” &amp;}</p>
 
-<p>Dal 1800, 72 paesi hanno sperimentato 166 occorrenze di default o hanno dovuto rimodulare il debito.</p>
+<p>Dal 1800, 72 paesi hanno sperimentato 166 occorrenze di default o hanno dovuto rimodulare il debito. </p>
 
-<p>Con rimodulazione si intende una periodo in cui il debito viene riscadenzato. La dinamica dei default è molto eterogenea con intervalli di &#8220;quite&#8221; e pochi periodi con un numero elevato di default.</p>
+<p>Con rimodulazione si intende una periodo in cui il debito viene riscadenzato. La dinamica dei default è molto eterogenea con intervalli di “quite” e pochi periodi con un numero elevato di default. </p>
 
-<p>Questi periodi coincidono con momenti particolari della storia dell&#8217;economia. Il 70% dei default (o rimodulazioni) dei debiti sovrani è ascrivibile alle crisi finanziarie del 1820, del 1870, del 1930 e del 1980.</p>
+<p>Questi periodi coincidono con momenti particolari della storia dell’economia. Il 70% dei default (o rimodulazioni) dei debiti sovrani è ascrivibile alle crisi finanziarie del 1820, del 1870, del 1930 e del 1980. </p>
 
-<p>E&#8217; anche interessante notare che la perdita di credibilità successiva al default non perdura nel tempo. Infatti, molti paesi che oggi consideriamo solvibili&#8212;Austria, Germania, Giappone, Olanda&#8212;hanno in passato subito l&#8217;onta del default. Anche la <strong>Germania</strong> non onorò i suoi debiti nel 1932 e poi di nuovo durante la seconda guerra mondiale. L&#8217;<strong>Austria</strong>, altro paese AAA, ha avuto nel passato quattro periodi di default and rimodulazione dal 1802 al 1952. Il <strong>Giappone</strong> dovette rinnegare le obbligazioni finanziarie durante la seconda guerra mondiale. L&#8217;<strong>Olanda</strong> ha fatto default sul debito nel 1802 a cause delle guerre Napoleoniche.</p>
+<p>E’ anche interessante notare che la perdita di credibilità successiva al default non perdura nel tempo. Infatti, molti paesi che oggi consideriamo solvibili—Austria, Germania, Giappone, Olanda—hanno in passato subito l’onta del default. Anche la <strong>Germania</strong> non onorò i suoi debiti nel 1932 e poi di nuovo durante la seconda guerra mondiale. L’<strong>Austria</strong>, altro paese AAA, ha avuto nel passato quattro periodi di default and rimodulazione dal 1802 al 1952. Il <strong>Giappone</strong> dovette rinnegare le obbligazioni finanziarie durante la seconda guerra mondiale. L’<strong>Olanda</strong> ha fatto default sul debito nel 1802 a cause delle guerre Napoleoniche. </p>
 
-<p>Cosa ci dice invece la storia per i PIIGS?</p>
+<p>Cosa ci dice invece la storia per i PIIGS? </p>
 
-<p>La <strong>Grecia</strong> ha rinnegato le obbligazioni sovrane tre volte fra il 1826 e il 1964. L&#8217;ultima volta prima della salita al potere del Colonnello Papadopoulos. <strong>L&#8217;Italia</strong> ha fatto default sulla parte di debito estero durante la seconda guerra mondiale. Il <strong>Portogallo</strong> tre volte dal 1834 al 1901. La <strong>Spagna</strong> cinque volte dal 1820 al 1882.</p>
+<p>La <strong>Grecia</strong> ha rinnegato le obbligazioni sovrane tre volte fra il 1826 e il 1964. L’ultima volta prima della salita al potere del Colonnello Papadopoulos. <strong>L’Italia</strong> ha fatto default sulla parte di debito estero durante la seconda guerra mondiale. Il <strong>Portogallo</strong> tre volte dal 1834 al 1901. La <strong>Spagna</strong> cinque volte dal 1820 al 1882.</p>
 ]]></content>
   </entry>
   
@@ -463,15 +473,15 @@ Borensztein and Ugo Panizza.</p>
     <link href="http://gragusa.org/blog/confindustria-pil-2012-cresce-solo-dello-0-2/"/>
     <updated>2011-09-15T10:50:02+02:00</updated>
     <id>http://gragusa.org/blog/confindustria-pil-2012-cresce-solo-dello-0-2</id>
-    <content type="html"><![CDATA[<p><em>E&#8217; stato presentato questa mattina il rapporto Scenari Economici preparato dal Centro Studi di Confindustria. Le previsioni sulla crescita dell&#8217;economia sono nettamente più basse di quelle assunte dal governo. Diventa improbabile il raggiungimento del pareggio di bilancio per il 2014. La paura è che si innesti una pericolosa spirale recessiva.</em></p>
+    <content type="html"><![CDATA[<p><em>E’ stato presentato questa mattina il rapporto Scenari Economici preparato dal Centro Studi di Confindustria. Le previsioni sulla crescita dell’economia sono nettamente più basse di quelle assunte dal governo. Diventa improbabile il raggiungimento del pareggio di bilancio per il 2014. La paura è che si innesti una pericolosa spirale recessiva.</em> </p>
 
-<p>L&#8217;obiettivo della manovra appena approvata dal Parlamento è quello di portare il bilancio in pareggio per il 2014. In realtà, il documento a corredo della manovra finanziaria parla di <em>sostanziale</em> pareggio: l&#8217;indebitamento netto dovrebbe assestarsi allo 0,2% del PIL. I saldi considerati necessari per raggiungere il pareggio si basano su assunzioni di crescita a dir poco ottimistiche. Il Ministero del Tesoro ha infatti ipotizzato una crescita del PIL dell&#8217;1,1% nel 2011, dell&#8217;1,3% nel 2012, dell&#8217;1,5% nel 2013 e dell&#8217;1,6% nel 2014.</p>
+<p>L’obiettivo della manovra appena approvata dal Parlamento è quello di portare il bilancio in pareggio per il 2014. In realtà, il documento a corredo della manovra finanziaria parla di <em>sostanziale</em> pareggio: l’indebitamento netto dovrebbe assestarsi allo 0,2% del PIL. I saldi considerati necessari per raggiungere il pareggio si basano su assunzioni di crescita a dir poco ottimistiche. Il Ministero del Tesoro ha infatti ipotizzato una crescita del PIL dell’1,1% nel 2011, dell’1,3% nel 2012, dell’1,5% nel 2013 e dell’1,6% nel 2014. </p>
 
 <p>Le previsioni del <strong>Centro Studi di Confindustria</strong> (CSC) smontano le basi su cui è stata
 costruita la manovra. Il CSC prevede infatti <strong>una crescita del PIL dell0 0,7% per il 2011 e dello 0,2% per il 2012.</strong> La revisione al ribasso delle previsioni è dovuta alla peggiorata congiuntura
-internazionale e agli effetti recessivi della manovra finanziaria.</p>
+internazionale e agli effetti recessivi della manovra finanziaria. </p>
 
-<p>Qualora lo scenario delineato dal CSC dovesse prendere corpo, gli obiettivi del governo salterebbero e si potrebbe rendere quindi necessaria una nuova manovra per conseguire l&#8217;obiettivo del pareggio di
+<p>Qualora lo scenario delineato dal CSC dovesse prendere corpo, gli obiettivi del governo salterebbero e si potrebbe rendere quindi necessaria una nuova manovra per conseguire l’obiettivo del pareggio di
 bilancio. La paura è che si innesti una pericolosa spirale recessiva.</p>
 ]]></content>
   </entry>
@@ -481,54 +491,57 @@ bilancio. La paura è che si innesti una pericolosa spirale recessiva.</p>
     <link href="http://gragusa.org/blog/pil-ed-economia-sommersa/"/>
     <updated>2011-09-14T17:23:35+02:00</updated>
     <id>http://gragusa.org/blog/pil-ed-economia-sommersa</id>
-    <content type="html"><![CDATA[<p><em>L&#8217;impatto dell&#8217;economia sommersa sui conti pubblici è importante per le scelte di politica economica. Il dato dell&#8217;ISTAT secondo cui circa il 17% del nostro PIL è &#8220;sommerso&#8221; e quindi sfugge all&#8217;erario è spesso male interpretato. Infatti, il PIL ufficiale italiano comprende già la quota
-di prodotto derivante dall&#8217;economia sommersa.</em></p>
+    <content type="html"><![CDATA[<p><em>L’impatto dell’economia sommersa sui conti pubblici è importante per le scelte di politica economica. Il dato dell’ISTAT secondo cui circa il 17% del nostro PIL è “sommerso” e quindi sfugge all’erario è spesso male interpretato. Infatti, il PIL ufficiale italiano comprende già la quota
+di prodotto derivante dall’economia sommersa.</em>  </p>
 
-<p>Quando si parla di evasione fiscale si citano spesso i recenti dati ISTAT per i quali il valore dell&#8217;economia sommersa è stimato per il 2008 fra 255 e 275 miliardi (Fonte:
+<p>Quando si parla di evasione fiscale si citano spesso i recenti dati ISTAT per i quali il valore dell’economia sommersa è stimato per il 2008 fra 255 e 275 miliardi (Fonte:
 <a href="http://www.istat.it/it/files/2011/01/testointegrale20100713.pdf?title=La+misura+dell'economia+sommersa+-+13/lug/2010+-+testointegrale20100713.pdf">ISTAT</a>).</p>
 
-<p>Un altro modo di mettere esporre questi dati è di dire che l&#8217;economia sommersa rappresenta circa il 17% del PIL. Per esempio, Antonio Vanuzzo di linkiesta <a href="http://www.linkiesta.it/nella-lotta-all-evasione-i-numeri-non-tornano#ixzz1XvwvTUaq">scrive</a> recentemente che</p>
+<p>Un altro modo di mettere esporre questi dati è di dire che l’economia sommersa rappresenta circa il 17% del PIL. Per esempio, Antonio Vanuzzo di linkiesta <a href="http://www.linkiesta.it/nella-lotta-all-evasione-i-numeri-non-tornano#ixzz1XvwvTUaq">scrive</a> recentemente che</p>
 
-<blockquote><p>&#8230;<strong>le <a href="http://www.istat.it/salastampa/comunicati/non_calendario/20100713_00/testointegrale20100713.pdf">ultime cifre</a></strong>dell’ISTAT
-sull&#8217;economia sommersa stimano che, nel 2008, &#8220;il valore aggiunto
-prodotto nell&#8217;area del sommerso economico risulta compreso tra un
+<blockquote>
+  <p>…<strong>le <a href="http://www.istat.it/salastampa/comunicati/non_calendario/20100713_00/testointegrale20100713.pdf">ultime cifre</a></strong>dell’ISTAT
+sull’economia sommersa stimano che, nel 2008, “il valore aggiunto
+prodotto nell’area del sommerso economico risulta compreso tra un
 minimo di 255 miliardi di euro e un massimo di 275 miliardi di euro,
-pari rispettivamente al 16,3 per cento e al 17,5 per cento del Pil&#8221;.</p></blockquote>
+pari rispettivamente al 16,3 per cento e al 17,5 per cento del Pil”.</p>
+</blockquote>
 
-<p>E&#8217; facile essere tratti in inganno e concludere che questo 17% non faccia parte del PIL e che di conseguenza l&#8217;eliminazione del sommerso genererebbe meccanicamente un aumento del PIL di 17 punti percentuali.</p>
+<p>E’ facile essere tratti in inganno e concludere che questo 17% non faccia parte del PIL e che di conseguenza l’eliminazione del sommerso genererebbe meccanicamente un aumento del PIL di 17 punti percentuali. </p>
 
-<p>Non è così. Infatti, quello che l&#8217;ISTAT intende dire è che circa il 17% del PIL ufficiale è attribuibile al sommerso. Per chiarezza:</p>
+<p>Non è così. Infatti, quello che l’ISTAT intende dire è che circa il 17% del PIL ufficiale è attribuibile al sommerso. Per chiarezza: </p>
 
 <ul>
-<li>Il <strong>PIL 2008, il dato ufficiale rilasciato dall&#8217;ISTAT,</strong>è stato di
+  <li>Il <strong>PIL 2008, il dato ufficiale rilasciato dall’ISTAT,</strong>è stato di
 <strong>1.567</strong> <strong>miliardi di euro</strong> (per la precisione 1.567.761.400
 euro).</li>
-<li>La parte del <strong>PIL ufficiale attribuibile all&#8217;economia sommersa</strong> è
+  <li>La parte del <strong>PIL ufficiale attribuibile all’economia sommersa</strong> è
 compresa fra 250 e 275 miliardi.</li>
-<li>250 miliardi rappresentano il <strong>16.3%</strong> di 1.567.761.400</li>
-<li>275 miliardi sono il <strong>17.5%</strong> di 1.567.761.400.</li>
+  <li>250 miliardi rappresentano il <strong>16.3%</strong> di 1.567.761.400</li>
+  <li>275 miliardi sono il <strong>17.5%</strong> di 1.567.761.400.</li>
 </ul>
 
+<p>Del PIL italiano fa parte il sommerso da molti anni—la prima revisione dei dati in questo senso avvenne nel 1987. E non è solo l’ISTAT a compiere questi aggiustamenti. Il metodo con cui il sommerso è calcolato dall’ISTAT segue standard internazionali seguiti da tutti i centri di statistica di tutti i paesi OCSE. </p>
 
-<p>Del PIL italiano fa parte il sommerso da molti anni&#8212;la prima revisione dei dati in questo senso avvenne nel 1987. E non è solo l&#8217;ISTAT a compiere questi aggiustamenti. Il metodo con cui il sommerso è calcolato dall&#8217;ISTAT segue standard internazionali seguiti da tutti i centri di statistica di tutti i paesi OCSE.</p>
+<p>Un recupero del sommerso, almeno fino alla quota calcolata dall’ISTAT, non avrebbe alcun effetto diretto sulla contabilità nazionale. L’emersione del sommerso avrebbe un effetto sulle
+grandezze macroeconomiche per mezzo della riduzione del deficit e dell’eventuale aumento del gettito. E se il gettito derivante dall’emersione fosse utilizzato per alleggerire la pressione fiscale, ci
+si potrebbe anche aspettare un aumento (indiretto) del PIL. Come stimato dalla <a href="http://www.lavoce.info/articoli/pagina1002540.html">lavoce.info</a> a seguito della manovra, la pressione fiscale salirà al 44.5%. La pressione fiscale sul PIL al netto della componente economia sommersa potrebbe arrivare al 52%. </p>
 
-<p>Un recupero del sommerso, almeno fino alla quota calcolata dall&#8217;ISTAT, non avrebbe alcun effetto diretto sulla contabilità nazionale. L&#8217;emersione del sommerso avrebbe un effetto sulle
-grandezze macroeconomiche per mezzo della riduzione del deficit e dell&#8217;eventuale aumento del gettito. E se il gettito derivante dall&#8217;emersione fosse utilizzato per alleggerire la pressione fiscale, ci
-si potrebbe anche aspettare un aumento (indiretto) del PIL. Come stimato dalla <a href="http://www.lavoce.info/articoli/pagina1002540.html">lavoce.info</a> a seguito della manovra, la pressione fiscale salirà al 44.5%. La pressione fiscale sul PIL al netto della componente economia sommersa potrebbe arrivare al 52%.</p>
+<p>P.S.: Ho trovato questa bella <a href="http://www.felicebelisario.it/2011/08/19/con-la-lotta-seria-all´evasione-fiscale-si-puo´-uscire-dalla-crisi/">dichiarazione</a> del Senatore dell’IdV <a href="http://www.senato.it/leg/16/BGT/Schede/Attsen/00022864.htm">Felice Belisario</a> che mostra come sia facile equivocare:</p>
 
-<p>P.S.: Ho trovato questa bella <a href="http://www.felicebelisario.it/2011/08/19/con-la-lotta-seria-all%C2%B4evasione-fiscale-si-puo%C2%B4-uscire-dalla-crisi/">dichiarazione</a> del Senatore dell&#8217;IdV <a href="http://www.senato.it/leg/16/BGT/Schede/Attsen/00022864.htm">Felice Belisario</a> che mostra come sia facile equivocare:</p>
-
-<blockquote><p>La Corte dei Conti, il 28 giugno scorso, aveva ripreso un dato
-dell&#8217;Istat secondo il quale, nel 2008, ultimo dato disponibile,
+<blockquote>
+  <p>La Corte dei Conti, il 28 giugno scorso, aveva ripreso un dato
+dell’Istat secondo il quale, nel 2008, ultimo dato disponibile,
 l´evasione fiscale valeva oltre il 17 per cento dei Pil. Con la crisi
 e il ridimensionamento del Pil, probabilmente, questa cifra oggi è
-ulteriormente aumentata. So che un po&#8217; di evasione è fisiologica in
+ulteriormente aumentata. So che un po’ di evasione è fisiologica in
 tutti i Paesi, ma se solo riuscissimo a raggiungere i livelli europei
 porteremmo a casa almeno una decina di punti di Pil. Con quei miliardi
 si potrebbero evitare ulteriori tagli agli enti locali, si potrebbe
-rilanciare la produzione e l&#8217;occupazione con strumenti come la
+rilanciare la produzione e l’occupazione con strumenti come la
 fiscalità di vantaggio, si potrebbe addirittura ridurre il debito
-pubblico che è la vera sciagura economica del Paese.</p></blockquote>
+pubblico che è la vera sciagura economica del Paese.</p>
+</blockquote>
 ]]></content>
   </entry>
   
@@ -540,16 +553,18 @@ pubblico che è la vera sciagura economica del Paese.</p></blockquote>
     <content type="html"><![CDATA[<p><a href="http://www.ft.com/cms/s/0/fdb8cb90-ddf0-11e0-a391-00144feabdc0.html#ixzz1XudJg8D4">Nel suo articolo di oggi</a>
 [14 Settembre 2011] sul Financial Time, Martin Wolf scrive:</p>
 
-<blockquote><p>This is what I heard from an Italian policymaker: &#8220;We gave up the old
+<blockquote>
+  <p>This is what I heard from an Italian policymaker: “We gave up the old
 safety valves of inflation and devaluation in return for lower
-interest rates, but now we do not even have the low interest rates.&#8221;
-Then: &#8220;Some people seem to think we have joined a currency board, but
-Italy is not Latvia.&#8221; And, not least: &#8220;It would be better to leave
-than endure 30 years of pain.&#8221; These remarks speak of a loss of faith
-in both the project and the partners.</p></blockquote>
+interest rates, but now we do not even have the low interest rates.”
+Then: “Some people seem to think we have joined a currency board, but
+Italy is not Latvia.” And, not least: “It would be better to leave
+than endure 30 years of pain.” These remarks speak of a loss of faith
+in both the project and the partners.</p>
+</blockquote>
 
 <p>Chi sarà mai il policy-maker italiano in questione? Chissà se capisce
-una cosa importantissima: non si può lasciare l&#8217;euro senza fare default
+una cosa importantissima: non si può lasciare l’euro senza fare default
 sul debito.</p>
 ]]></content>
   </entry>
@@ -559,20 +574,23 @@ sul debito.</p>
     <link href="http://gragusa.org/blog/quante-tasse-pagano-i-ricchi/"/>
     <updated>2011-09-12T07:37:39+02:00</updated>
     <id>http://gragusa.org/blog/quante-tasse-pagano-i-ricchi</id>
-    <content type="html"><![CDATA[<p><em>Qual è il grado di <a href="http://tinyurl.com/3ugaplm">progressività</a> dell&#8217;imposizione fiscale sul reddito in Italia rispetto a quella di altri paesi? Dall&#8217;analisi presentata in questo post risulta che la nostra tassazione è molto meno progressiva di quella degli Stati Uniti&#8212;il paese dove <a href="http://www.ilsole24ore.com/art/finanza-e-mercati/2011-08-17/warren-buffett-giusto-tassare-100920.shtml?uuid=AaM4LtwD">qualche super ricco</a> si offre pubblicamente di pagare più tasse.</em></p>
+    <content type="html"><![CDATA[<p><em>Qual è il grado di <a href="http://tinyurl.com/3ugaplm">progressività</a> dell’imposizione fiscale sul reddito in Italia rispetto a quella di altri paesi? Dall’analisi presentata in questo post risulta che la nostra tassazione è molto meno progressiva di quella degli Stati Uniti—il paese dove <a href="http://www.ilsole24ore.com/art/finanza-e-mercati/2011-08-17/warren-buffett-giusto-tassare-100920.shtml?uuid=AaM4LtwD">qualche super ricco</a> si offre pubblicamente di pagare più tasse.</em> </p>
 
-<p>Greg Mankiw solleva sul suo <a href="http://gregmankiw.blogspot.com/2011/09/warren-buffetts-taxes-again.html">blog</a> il tema dell&#8217;imposizione fiscale e della sua progressività riproponendo un suo
-<a href="http://www.nytimes.com/2007/07/15/business/yourmoney/15view.html">articolo</a> apparso sul New York Times nel Luglio 2007. Nell&#8217;articolo si legge:</p>
+<p>Greg Mankiw solleva sul suo <a href="http://gregmankiw.blogspot.com/2011/09/warren-buffetts-taxes-again.html">blog</a> il tema dell’imposizione fiscale e della sua progressività riproponendo un suo
+<a href="http://www.nytimes.com/2007/07/15/business/yourmoney/15view.html">articolo</a> apparso sul New York Times nel Luglio 2007. Nell’articolo si legge:</p>
 
-<blockquote><p>The C.B.O.&#8217;s most recent calculations of federal tax rates show a
+<blockquote>
+  <p>The C.B.O.’s most recent calculations of federal tax rates show a
 highly progressive system. (The numbers are based on 2004 data, but
 the tax code has not changed much since then.) The poorest fifth of
 the population, with average annual income of $15,400, pays only 4.5
 percent of its income in federal taxes. The middle fifth, with income
 of $56,200, pays 13.9 percent. And the top fifth, with income of
-$207,200, pays 25.1 percent.</p>
+$207,200, pays 25.1 percent. </p>
+</blockquote>
 
-<p>[Traduzione] Secondo i calcoli più
+<blockquote>
+  <p>[Traduzione] Secondo i calcoli più
 recenti del Congressional Budget Office, le aliquote fiscali federali
 creano un sistema fortemente progressivo. (I calcoli si basano su dati
 del 2004, ma il il fisco americano non è cambiato molto da allora.)
@@ -580,116 +598,115 @@ del 2004, ma il il fisco americano non è cambiato molto da allora.)
 $15.400, <strong>paga solo 4,5% del proprio reddito in tasse federali</strong>. Il
 quinto centrale, con reddito di $56.200, paga il 13,9%. <strong>Il quinto
 superiore, con un reddito medio di $207.200, contribuisce al fisco il
-25,1% per cento.</strong></p></blockquote>
+25,1% per cento.</strong></p>
+</blockquote>
 
-<p><strong>Greg Mankiw</strong> ha rispolverato questo suo vecchio articolo molto probabilmente per &#8220;attaccare&#8221; Obama che durante il suo <a href="http://www.youtube.com/watch?v=DbT9FZAlWF8">discorso alle camere</a> unite di Giovedì 8 Settembre 2011 ha affermato che i ricchi contribuiscono poco alla fiscalità generale, pronunciando queste parole:</p>
+<p><strong>Greg Mankiw</strong> ha rispolverato questo suo vecchio articolo molto probabilmente per “attaccare” Obama che durante il suo <a href="http://www.youtube.com/watch?v=DbT9FZAlWF8">discorso alle camere</a> unite di Giovedì 8 Settembre 2011 ha affermato che i ricchi contribuiscono poco alla fiscalità generale, pronunciando queste parole:</p>
 
-<blockquote><p>Right now, Warren Buffett pays a lower tax rate than his secretary &#8211;
+<blockquote>
+  <p>Right now, Warren Buffett pays a lower tax rate than his secretary –
 an outrage he has asked us to fix. We need a tax code where everyone
 gets a fair shake and where everybody pays their fair share.</p>
 
-<p>[Traduzione] In questo momento, l&#8217;aliquota pagata da Warren Buffet è
-più bassa di quella della sua segretaria &#8211; un oltraggio che egli
+  <p>[Traduzione] In questo momento, l’aliquota pagata da Warren Buffet è
+più bassa di quella della sua segretaria – un oltraggio che egli
 stesso ci ha chiesto di riparare. Abbiamo bisogno di un sistema
-fiscale dove ciascuno faccia la sua parte.</p></blockquote>
+fiscale dove ciascuno faccia la sua parte.</p>
+</blockquote>
 
-<p>Greg Mankiw è adesso alle dipendenze di uno dei più accreditati avversari di Obama alle prossime elezioni presidenziali, essendo divenuto l&#8217;advisor economico di Mitt Romney. E&#8217; quindi abbastanza naturale che attacchi Obama.</p>
+<p>Greg Mankiw è adesso alle dipendenze di uno dei più accreditati avversari di Obama alle prossime elezioni presidenziali, essendo divenuto l’advisor economico di Mitt Romney. E’ quindi abbastanza naturale che attacchi Obama. </p>
 
-<p>Non ho gli strumenti per verificare l&#8217;affermazione di Obama sulla tassa marginale (o media?) pagata da Warren Buffet. Sicuramente non ho gli strumenti per verificare quante
-tasse paghi la sua segretaria. Ma è più interessante <strong>confrontare</strong><strong>la struttura di imposizione fiscale americana con quella italiana, visto che è opinione comune che il sistema fiscale statunitense sia poco progressivo rispetto a quelli europei.</strong></p>
+<p>Non ho gli strumenti per verificare l’affermazione di Obama sulla tassa marginale (o media?) pagata da Warren Buffet. Sicuramente non ho gli strumenti per verificare quante
+tasse paghi la sua segretaria. Ma è più interessante <strong>confrontare</strong><strong>la struttura di imposizione fiscale americana con quella italiana, visto che è opinione comune che il sistema fiscale statunitense sia poco progressivo rispetto a quelli europei.</strong> </p>
 
-<p>Partiamo dalla definizione di <em>quinti</em> della distribuzione. Dopo avere ordinato i redditi in senso crescente, dividere in &#8220;quinti&#8221; la distribuzione del reddito dei contribuenti significa proprio dividerla in cinque parti ciascuna contenente il 20% dei contribuenti. In pratica, il primo quinto contiene il 20% dei contribuenti più poveri e l&#8217;ultimo quinto il 20% dei contribuenti più ricchi. Per chi ama il linguaggio &#8220;tecnico&#8221;: il primo quinto contiene i redditi inferiori al 20-esimo quantile, il secondo quinto i redditi fra il 40-esimo e il 20-esimo, e così via.</p>
+<p>Partiamo dalla definizione di <em>quinti</em> della distribuzione. Dopo avere ordinato i redditi in senso crescente, dividere in “quinti” la distribuzione del reddito dei contribuenti significa proprio dividerla in cinque parti ciascuna contenente il 20% dei contribuenti. In pratica, il primo quinto contiene il 20% dei contribuenti più poveri e l’ultimo quinto il 20% dei contribuenti più ricchi. Per chi ama il linguaggio “tecnico”: il primo quinto contiene i redditi inferiori al 20-esimo quantile, il secondo quinto i redditi fra il 40-esimo e il 20-esimo, e così via. </p>
 
-<p>Purtroppo i dati sui redditi imponibili Irpef forniti dal <a href="http://www.finanze.gov.it/stat_dbNew2009/index.php">Ministero delle Finanze</a> riferiti al 2009 sono raggruppati per classi rigide ed è quindi difficile ottenere con precisione i quinti della distribuzione del reddito. Ho cercato di ricostruirli, ma si tenga presente che i &#8220;quinti&#8221; ottenuti sono delle crude approssimazioni e non contengono esattamente il 20% dei contribuenti. Nella mia approssimazione, al primo quinto (1q) appartiene il 21% dei contribuenti, al secondo (2q) il 18,8%, al terzo (3q) 25,6%, al quarto (4q) 18,8% e al quinto (5q) il 15,8%. Si noti come l&#8217;ultimo <em>quinto</em> pesi molto meno del 20%. Ne consegue che la contribuzione del reddito di questa parte della distribuzione risulterà inferiore a quella effettiva.</p>
+<p>Purtroppo i dati sui redditi imponibili Irpef forniti dal <a href="http://www.finanze.gov.it/stat_dbNew2009/index.php">Ministero delle Finanze</a> riferiti al 2009 sono raggruppati per classi rigide ed è quindi difficile ottenere con precisione i quinti della distribuzione del reddito. Ho cercato di ricostruirli, ma si tenga presente che i “quinti” ottenuti sono delle crude approssimazioni e non contengono esattamente il 20% dei contribuenti. Nella mia approssimazione, al primo quinto (1q) appartiene il 21% dei contribuenti, al secondo (2q) il 18,8%, al terzo (3q) 25,6%, al quarto (4q) 18,8% e al quinto (5q) il 15,8%. Si noti come l’ultimo <em>quinto</em> pesi molto meno del 20%. Ne consegue che la contribuzione del reddito di questa parte della distribuzione risulterà inferiore a quella effettiva. </p>
 
 <hr />
-
 <div>
-    <table border="2" frame="VOID" rules="NONE" cellspacing="0">
-    <colgroup>
-    <col width="58" />
-    <col width="135" />
-    <col width="168" />
-    <col width="112" />
-    <col width="139" />
-    <col width="85" /></colgroup>
-    <tbody>
-    <tr>
-    <td align="LEFT" width="58" height="22"><strong><br />
-    </strong></td>
-    <td align="LEFT" width="135"><strong><br />
-    </strong></td>
-    <td align="LEFT" width="168"><strong><br />
-    </strong></td>
-    <td align="LEFT" width="112"><strong><br />
-    </strong></td>
-    <td align="LEFT" width="139"><strong><br />
-    </strong></td>
-    <td align="LEFT" width="85"><strong><br />
-    </strong></td>
-    </tr>
-    <tr>
-    <td align="RIGHT" height="23"><strong>Quinti</strong></td>
-    <td align="RIGHT"><strong>Reddito Tot.</strong></td>
-    <td align="RIGHT"><strong>Reddito Medio (A)</strong></td>
-    <td align="RIGHT"><strong>Irpef Tot.</strong></td>
-    <td align="RIGHT"><strong>Irpef Media (B)</strong></td>
-    <td align="RIGHT"><strong>(A)/(B)</strong></td>
-    </tr>
-    <tr>
-    <td align="RIGHT" height="22"><em>1q</em></td>
-    <td align="RIGHT">23.584.730</td>
-    <td align="RIGHT">€ 2.700</td>
-    <td align="RIGHT">4.655.815</td>
-    <td align="RIGHT">€ 533</td>
-    <td align="RIGHT">19,74%</td>
-    </tr>
-    <tr>
-    <td align="RIGHT" height="22"><em>2q</em></td>
-    <td align="RIGHT">69.408.165</td>
-    <td align="RIGHT">€ 8.888</td>
-    <td align="RIGHT">14.767.235</td>
-    <td align="RIGHT">€ 1,891</td>
-    <td align="RIGHT">21,28%</td>
-    </tr>
-    <tr>
-    <td align="RIGHT" height="22"><em>3q</em></td>
-    <td align="RIGHT">170.793.805</td>
-    <td align="RIGHT">€ 16.043</td>
-    <td align="RIGHT">38.524.912</td>
-    <td align="RIGHT">€ 3,619</td>
-    <td align="RIGHT">22,56%</td>
-    </tr>
-    <tr>
-    <td align="RIGHT" height="22"><em>4q</em></td>
-    <td align="RIGHT">186.477.762</td>
-    <td align="RIGHT">€ 23.918</td>
-    <td align="RIGHT">44.141.167</td>
-    <td align="RIGHT">€ 5,662</td>
-    <td align="RIGHT">23,67%</td>
-    </tr>
-    <tr>
-    <td align="RIGHT" height="22"><em>5q</em></td>
-    <td align="RIGHT">335.257.651</td>
-    <td align="RIGHT">€ 51.296</td>
-    <td align="RIGHT">100.526.571</td>
-    <td align="RIGHT">€ 15,381</td>
-    <td align="RIGHT">29,98%</td>
-    </tr>
-    </tbody>    
-    <caption>Tavola 1: Distribuzione reddito contribuenti per quinti. <em>Nota:</em> Reddito Totale e Irpef Totale pagata sono in migliaia di Euro. Dati: Dipartimento delle Finanze. <em>Elaborazione dell&#8217;autore</em>.
-    </caption>
-    </table>
+	<table border="2" frame="VOID" rules="NONE" cellspacing="0">
+	<colgroup>
+	<col width="58" />
+	<col width="135" />
+	<col width="168" />
+	<col width="112" />
+	<col width="139" />
+	<col width="85" /></colgroup>
+	<tbody>
+	<tr>
+	<td align="LEFT" width="58" height="22"><strong><br />
+	</strong></td>
+	<td align="LEFT" width="135"><strong><br />
+	</strong></td>
+	<td align="LEFT" width="168"><strong><br />
+	</strong></td>
+	<td align="LEFT" width="112"><strong><br />
+	</strong></td>
+	<td align="LEFT" width="139"><strong><br />
+	</strong></td>
+	<td align="LEFT" width="85"><strong><br />
+	</strong></td>
+	</tr>
+	<tr>
+	<td align="RIGHT" height="23"><strong>Quinti</strong></td>
+	<td align="RIGHT"><strong>Reddito Tot.</strong></td>
+	<td align="RIGHT"><strong>Reddito Medio (A)</strong></td>
+	<td align="RIGHT"><strong>Irpef Tot.</strong></td>
+	<td align="RIGHT"><strong>Irpef Media (B)</strong></td>
+	<td align="RIGHT"><strong>(A)/(B)</strong></td>
+	</tr>
+	<tr>
+	<td align="RIGHT" height="22"><em>1q</em></td>
+	<td align="RIGHT">23.584.730</td>
+	<td align="RIGHT">€ 2.700</td>
+	<td align="RIGHT">4.655.815</td>
+	<td align="RIGHT">€ 533</td>
+	<td align="RIGHT">19,74%</td>
+	</tr>
+	<tr>
+	<td align="RIGHT" height="22"><em>2q</em></td>
+	<td align="RIGHT">69.408.165</td>
+	<td align="RIGHT">€ 8.888</td>
+	<td align="RIGHT">14.767.235</td>
+	<td align="RIGHT">€ 1,891</td>
+	<td align="RIGHT">21,28%</td>
+	</tr>
+	<tr>
+	<td align="RIGHT" height="22"><em>3q</em></td>
+	<td align="RIGHT">170.793.805</td>
+	<td align="RIGHT">€ 16.043</td>
+	<td align="RIGHT">38.524.912</td>
+	<td align="RIGHT">€ 3,619</td>
+	<td align="RIGHT">22,56%</td>
+	</tr>
+	<tr>
+	<td align="RIGHT" height="22"><em>4q</em></td>
+	<td align="RIGHT">186.477.762</td>
+	<td align="RIGHT">€ 23.918</td>
+	<td align="RIGHT">44.141.167</td>
+	<td align="RIGHT">€ 5,662</td>
+	<td align="RIGHT">23,67%</td>
+	</tr>
+	<tr>
+	<td align="RIGHT" height="22"><em>5q</em></td>
+	<td align="RIGHT">335.257.651</td>
+	<td align="RIGHT">€ 51.296</td>
+	<td align="RIGHT">100.526.571</td>
+	<td align="RIGHT">€ 15,381</td>
+	<td align="RIGHT">29,98%</td>
+	</tr>
+	</tbody>	
+	<caption>Tavola 1: Distribuzione reddito contribuenti per quinti. <em>Nota:</em> Reddito Totale e Irpef Totale pagata sono in migliaia di Euro. Dati: Dipartimento delle Finanze. <em>Elaborazione dell&#8217;autore</em>.
+	</caption>
+	</table>
 </div>
-
-
 <hr />
+<p>&lt;/br&gt;</p>
 
-<p></br></p>
+<p>La Tavola 1 contiene le stesse informazioni che Mankiw cita riguardo agli Stati Uniti. </p>
 
-<p>La Tavola 1 contiene le stesse informazioni che Mankiw cita riguardo agli Stati Uniti.</p>
-
-<p><strong>Il livello di progressività del sistema italiano risulta inferiore a quello degli Stati Uniti</strong>. La differenza fra il contributo medio dell&#8217;ultimo quinto (29,98%) e del quinto centrale (22,56%) è soltanto di 7,42 punti percentuali, nettamente inferiore agli 11 punti percentuali del caso statunitense.</p>
+<p><strong>Il livello di progressività del sistema italiano risulta inferiore a quello degli Stati Uniti</strong>. La differenza fra il contributo medio dell’ultimo quinto (29,98%) e del quinto centrale (22,56%) è soltanto di 7,42 punti percentuali, nettamente inferiore agli 11 punti percentuali del caso statunitense. </p>
 
 <p>Ancora più grande è la differenza fra i due sistemi quando si considera il quinto più povero e il quinto meno povero. In Italia la differenza è di 10,24 punti percentuali (19,74% contro 29,98%), negli Stati Uniti di 20,6 punti percentuali (4,5% verso 25,1%). Spero che questi semplici calcoli contribuiscano al dibattito su una riforma del fisco veramente equa.</p>
 
@@ -705,18 +722,19 @@ tasse paghi la sua segretaria. Ma è più interessante <strong>confrontare</stro
     <updated>2011-09-08T12:39:59+02:00</updated>
     <id>http://gragusa.org/blog/sulle-tasse-dei-dipendenti-italiani</id>
     <content type="html"><![CDATA[<p>Mi è stato chiesto come cambierebbero <a href="http://www.gragusa.org/blog/2011/09/sulle-tasse-dei-dipendenti-italiani/">i grafici del post
-precedente</a> se invece di considerare tutti i contribuenti si considerassero solo i lavoratori dipendenti.</p>
+precedente</a> se invece di considerare tutti i contribuenti si considerassero solo i lavoratori dipendenti. </p>
 
 <p>Ecco qui i grafici che confrontano la distribuzione di tutti i contribuenti con la distribuzione dei dipendenti (Grafico 1) e la progressività del sistema di imposizione
-(Grafico 2). Ho poco da commentare se non il fatto che i lavoratori dipendenti che guadagnano relativamente poco sono tassati relativamente più dei non dipendenti che guadagnano poco. Questo ha a che fare con la non-linearità delle deduzioni e detrazioni per chi esercita attività in proprio. Bisogna anche considerare il diverso peso che hanno le contribuzione pensionistiche sui due tipi di contribuenti.</p>
+(Grafico 2). Ho poco da commentare se non il fatto che i lavoratori dipendenti che guadagnano relativamente poco sono tassati relativamente più dei non dipendenti che guadagnano poco. Questo ha a che fare con la non-linearità delle deduzioni e detrazioni per chi esercita attività in proprio. Bisogna anche considerare il diverso peso che hanno le contribuzione pensionistiche sui due tipi di contribuenti. </p>
 
-<p><img class="center" src="http://gragusa.org/img/Graph4.png" title="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph4.png" title="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" /></p>
 
 <p>Grafico 1. Percentuale di contribuenti in ciascuna classe di reddito sul totale dei contribuenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze</p>
 
-<p><img class="center" src="http://gragusa.org/img/Graph51.png" title="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph51.png" title="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" alt="&#34;Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze&#34;" /></p>
 
 <p>Grafico 2. Progressività del sistema fiscale per tutti i contribuenti e per i solo dipendenti. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze</p>
+
 ]]></content>
   </entry>
   
@@ -725,50 +743,47 @@ precedente</a> se invece di considerare tutti i contribuenti si considerassero s
     <link href="http://gragusa.org/blog/sulle-tasse-degli-italiani/"/>
     <updated>2011-09-07T18:03:06+02:00</updated>
     <id>http://gragusa.org/blog/sulle-tasse-degli-italiani</id>
-    <content type="html"><![CDATA[<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <content type="html"><![CDATA[<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-
 
 <p>Ricchezza e reddito sono diventati temi centrali nel dibattito che ha
 accompagnato, e probabilmente accompagnerà, la fase di definizione
-della manovra.</p>
+della manovra. </p>
 
-<p>Di reddito si è parlato quando nella manovra 1.0, cioè nella prima versione, era stato introdotto il contributo di solidarietà per redditi superiori ai 90.000 euro. Di patrimoni e ricchezza si è discusso a corredo dell&#8217;ipotesi dell&#8217;introduzione di tassa patrimoniale.</p>
+<p>Di reddito si è parlato quando nella manovra 1.0, cioè nella prima versione, era stato introdotto il contributo di solidarietà per redditi superiori ai 90.000 euro. Di patrimoni e ricchezza si è discusso a corredo dell’ipotesi dell’introduzione di tassa patrimoniale.</p>
 
 <p>Recentemente, il Ministero del Tesoro, <a href="http://www.finanze.it/export/finanze/index.htm">Dipartimento delle Finanze</a> ha rilasciato le statistiche sulle dichiarazioni dei redditi del 2009. Le statistiche possono essere scaricate
-<a href="http://www.finanze.gov.it/stat_dbNew2009/index.php">qui</a>.</p>
+<a href="http://www.finanze.gov.it/stat_dbNew2009/index.php">qui</a>. </p>
 
-<p>Il <strong>Grafico 1</strong> mostra le classi di reddito e la numerosità di ciascuna classe, utilizzando i dati su tutti i contribuenti. La numerosità delle classi è riportata in migliaia. Sono 2 milioni i contribuenti che hanno dichiarano meno di 1.000 euro. Sono invece 574.000 i contribuenti con reddito nullo o inferiore a zero.</p>
+<p>Il <strong>Grafico 1</strong> mostra le classi di reddito e la numerosità di ciascuna classe, utilizzando i dati su tutti i contribuenti. La numerosità delle classi è riportata in migliaia. Sono 2 milioni i contribuenti che hanno dichiarano meno di 1.000 euro. Sono invece 574.000 i contribuenti con reddito nullo o inferiore a zero. </p>
 
-<p>La <strong>classe modale</strong> è [15000, 20000] con circa 6.8 milioni di dichiaranti. La <strong>classe mediana</strong> è [12000,15000]. E&#8217; abbastanza evidente come la numerosità delle classi si riduca velocemente all&#8217;aumentare del reddito. Gli individui che dichiarano un reddito superiore ai 50.000 euro sono 1.846.968, il 4% dei 41.523.054 contribuenti. Sono 71,989 le dichiarazioni con reddito complessivo superiore a 200.000 euro.</p>
+<p>La <strong>classe modale</strong> è [15000, 20000] con circa 6.8 milioni di dichiaranti. La <strong>classe mediana</strong> è [12000,15000]. E’ abbastanza evidente come la numerosità delle classi si riduca velocemente all’aumentare del reddito. Gli individui che dichiarano un reddito superiore ai 50.000 euro sono 1.846.968, il 4% dei 41.523.054 contribuenti. Sono 71,989 le dichiarazioni con reddito complessivo superiore a 200.000 euro. </p>
 
-<p>Con i dati a disposizione possiamo studiare la <strong>progressività</strong> (realizzata) del sistema di imposizione fiscale sui redditi.</p>
+<p>Con i dati a disposizione possiamo studiare la <strong>progressività</strong> (realizzata) del sistema di imposizione fiscale sui redditi. </p>
 
-<p>Il Grafico 2 mostra il rapporto fra la frazione della somma dei redditi di ogni classe sul totale e la frazione di imposta pagata sul totale di imposta. Se <em>T<sub>i</sub></em> indica l&#8217;imposta pagata dalla classe <em>i</em>, <em>i=1,&#8230;,n</em>, e <em>Y<sub>i</sub></em> denota il reddito della stessa classe, sull&#8217;asse delle ordinate è rappresentata la seguente quantità</p>
+<p>Il Grafico 2 mostra il rapporto fra la frazione della somma dei redditi di ogni classe sul totale e la frazione di imposta pagata sul totale di imposta. Se <em>T<sub>i</sub></em> indica l’imposta pagata dalla classe <em>i</em>, <em>i=1,…,n</em>, e <em>Y<sub>i</sub></em> denota il reddito della stessa classe, sull’asse delle ordinate è rappresentata la seguente quantità</p>
 
-<div>   
-    \[TR_i=\frac{Y_i}{\sum_{i=1}^n Y_i}/\frac{T_i}{\sum_{i=1}^n T_i}.\] 
+<div>	
+	\[TR_i=\frac{Y_i}{\sum_{i=1}^n Y_i}/\frac{T_i}{\sum_{i=1}^n T_i}.\]	
 </div>
 
-
 <p>In un sistema di imposizione progressivo, <em>TR</em> è decrescente. In un sistema regressivo è
-crescente. In un sistema di tassazione proporzionale è costante ed uguale ad uno. Classi di reddito associate a valori di <em>TR</em> <strong>maggiori</strong> (minori) di 1 contribuiscono al totale delle imposte <strong>meno</strong> (più) che proporzionalmente. Si noti, che questa è la progressività del sistema di imposizione fiscale sul reddito. La progressività del sistema nel suo complesso dovrebbe tenere conto anche dell&#8217;IVA.</p>
+crescente. In un sistema di tassazione proporzionale è costante ed uguale ad uno. Classi di reddito associate a valori di <em>TR</em> <strong>maggiori</strong> (minori) di 1 contribuiscono al totale delle imposte <strong>meno</strong> (più) che proporzionalmente. Si noti, che questa è la progressività del sistema di imposizione fiscale sul reddito. La progressività del sistema nel suo complesso dovrebbe tenere conto anche dell’IVA. </p>
 
-<p>Come mostrato dal <strong>Grafico 2</strong>, i contribuenti con redditi inferiori ai 35.000 euro contribuiscono meno che proporzionalmente. (Questa affermazione si riferisce all&#8217;aggregato della classe. E&#8217; chiaramente possibile che alcuni contribuenti con redditi fra 29.000 e 35.000 euro contribuiscano più che proporzionalmente.) I dati sulle detrazioni dell&#8217;abitazione principale ci permettono di dire qualcosa anche sulla distribuzione della ricchezza immobiliare dei dichiaranti. Il 40.8% (16.792.335) dei
-contribuenti ha dedotto spese per abitazione principale. Visto che in Italia sono circa 33 milioni le unità abitative, circa il 50% risultano essere &#8220;prime case&#8221;.</p>
+<p>Come mostrato dal <strong>Grafico 2</strong>, i contribuenti con redditi inferiori ai 35.000 euro contribuiscono meno che proporzionalmente. (Questa affermazione si riferisce all’aggregato della classe. E’ chiaramente possibile che alcuni contribuenti con redditi fra 29.000 e 35.000 euro contribuiscano più che proporzionalmente.) I dati sulle detrazioni dell’abitazione principale ci permettono di dire qualcosa anche sulla distribuzione della ricchezza immobiliare dei dichiaranti. Il 40.8% (16.792.335) dei
+contribuenti ha dedotto spese per abitazione principale. Visto che in Italia sono circa 33 milioni le unità abitative, circa il 50% risultano essere “prime case”. </p>
 
 <p>Il <strong>Grafico 3</strong> mostra la frazione di contribuenti che chiede le deduzioni rispetto alla numerosità della classe.</p>
 
-<p><img class="center" src="http://gragusa.org/img/Graph12.png" title="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph12.png" title="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" /></p>
 
-<p>Grafico 1. Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#8221;</p>
+<p>Grafico 1. Numero contribuenti per classi di reddito. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.”</p>
 
-<p><img class="center" src="http://gragusa.org/img/Graph21.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p><img class="center" src="http://gragusa.org/img/Graph21.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" /></p>
 
 <p>Grafico 2. Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.</p>
 
-<p><img class="cenetr" src="http://gragusa.org/img/Graph3.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;"></p>
+<p><img class="cenetr" src="http://gragusa.org/img/Graph3.png" title="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" alt="&#34;Progressività del sistema fiscale. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.&#34;" /></p>
 
 <p>Grafico 3. Rapporto fra numero di deduzioni per abitazione principale e numerosità della classe. Dichiarazioni dei redditi, 2009. Fonte: Dipartimento delle Finanze.</p>
 ]]></content>
@@ -779,7 +794,7 @@ contribuenti ha dedotto spese per abitazione principale. Visto che in Italia son
     <link href="http://gragusa.org/blog/battaglia-dei-sessi-poveri-uomini/"/>
     <updated>2011-09-06T17:34:55+02:00</updated>
     <id>http://gragusa.org/blog/battaglia-dei-sessi-poveri-uomini</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://gragusa.org/img/graph.png"></p>
+    <content type="html"><![CDATA[<p><img class="center" src="http://gragusa.org/img/graph.png" /></p>
 
 <p><em>Andamento Occupazione, US</em></p>
 ]]></content>
@@ -791,9 +806,8 @@ contribuenti ha dedotto spese per abitazione principale. Visto che in Italia son
     <updated>2011-09-02T06:56:41+02:00</updated>
     <id>http://gragusa.org/blog/investimenti-diretti</id>
     <content type="html"><![CDATA[<iframe width="400" height="325" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="http://www.google.com/publicdata/embed?ds=wb-wdi&amp;ctype=l&amp;strail=false&amp;nselm=h&amp;met_y=bx_klt_dinv_cd_wd&amp;scale_y=lin&amp;ind_y=false&amp;rdim=country&amp;idim=country:ITA:ESP:GBR:USA:FRA:CHN:MEX&amp;ifdim=country&amp;tstart=652226400000&amp;tend=1283378400000&amp;hl=en&amp;dl=en&amp;icfg&amp;uniSize=0.035&amp;iconSize=0.5">
-    <br />
+	<br />
 </iframe>
-
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[pil | Giuseppe Ragusa]]></title>
   <link href="http://gragusa.org/blogs/pil/atom.xml" rel="self"/>
   <link href="http://gragusa.org/"/>
-  <updated>2016-03-13T18:28:33+01:00</updated>
+  <updated>2016-03-13T18:36:43+01:00</updated>
   <id>http://gragusa.org/</id>
   <author>
     <name><![CDATA[Giuseppe Ragusa]]></name>
@@ -18,58 +18,59 @@
     <link href="http://gragusa.org/blog/istat-e-i-grafici-del-pil/"/>
     <updated>2011-09-26T10:33:10+02:00</updated>
     <id>http://gragusa.org/blog/istat-e-i-grafici-del-pil</id>
-    <content type="html"><![CDATA[<p><em>Su <a href="lavoce.info">lavoce.info</a> del 22 Settembre 2011 è stato pubblicato un <a href="http://www.lavoce.info/articoli/pagina1002563.html">articolo</a> a firma di Ludovico Poggi dal titolo "L'ISTAT si (rifà) il trucco". Il titolo gioca sulla rinnovata veste grafica del sito Istat per puntare l'indice contro un presunto trucco statistico perpetrato dall'Istituto di Statistica.</em></p>
+    <content type="html"><![CDATA[<p><em>Su <a href="lavoce.info">lavoce.info</a> del 22 Settembre 2011 è stato pubblicato un <a href="http://www.lavoce.info/articoli/pagina1002563.html">articolo</a> a firma di Ludovico Poggi dal titolo “L’ISTAT si (rifà) il trucco”. Il titolo gioca sulla rinnovata veste grafica del sito Istat per puntare l’indice contro un presunto trucco statistico perpetrato dall’Istituto di Statistica.</em></p>
 
-<p>Il nuovo www.istat.it è stato lanciato qualche settimana fa. La vesta grafica è moderna e rappresenta un notevole salto di qualità rispetto al vecchio sito. Una delle funzioni del nuovo sito permette di ottenere grafici temporali <em>on-demand</em> di alcune variabili macroeconomiche di particolare importanza. Queste variabili sono:</p>
+<p>Il nuovo www.istat.it è stato lanciato qualche settimana fa. La vesta grafica è moderna e rappresenta un notevole salto di qualità rispetto al vecchio sito. Una delle funzioni del nuovo sito permette di ottenere grafici temporali <em>on-demand</em> di alcune variabili macroeconomiche di particolare importanza. Queste variabili sono: </p>
 
 <ol>
-<li>PIL;</li>
-<li>prezzi al consumo;</li>
-<li>prezzi alla produzione;</li>
-<li>produzione industriale;</li>
-<li>numero di occupati;</li>
-<li>tasso di disoccupazione;</li>
-<li>retribuzioni;</li>
-<li>indice vendite commerciali al dettaglio.</li>
+  <li>PIL; </li>
+  <li>prezzi al consumo; </li>
+  <li>prezzi alla produzione; </li>
+  <li>produzione industriale; </li>
+  <li>numero di occupati; </li>
+  <li>tasso di disoccupazione; </li>
+  <li>retribuzioni; </li>
+  <li>indice vendite commerciali al dettaglio.</li>
 </ol>
 
-
-<p>L'articolo de lavoce.info fa notare che se viene richiesto il grafico del prodotto interno lordo, il grafico prodotto mostra il Pil in variazioni percentuali tendenziali. [Il grafico del PIL come ottenuto dall'interfaccia Istat è riportato di seguito.]</p>
+<p>L’articolo de lavoce.info fa notare che se viene richiesto il grafico del prodotto interno lordo, il grafico prodotto mostra il Pil in variazioni percentuali tendenziali. [Il grafico del PIL come ottenuto dall’interfaccia Istat è riportato di seguito.] </p>
 
 <hr />
 
 <p><img class="center" src="/img/Screen-shot-2011-09-22-at-9.54.42-PM.png"></p>
 
-<p><em>Grafico del PIL come ottenuto dal sito www.istat.it [25 Settembre 2011"]</em></p>
+<p><em>Grafico del PIL come ottenuto dal sito www.istat.it [25 Settembre 2011”]</em></p>
 
 <hr />
 
-<p><strong>Dove sta il trucco?</strong> Il grafico potrebbe dare l'impressione che il PIL sia tornato ai livelli pre-crisi dopo aver toccato il minimo nel primo trimestre 2009. Questa interpretazione della rappresentazione grafica è errata. Un rapido sguardo all'andamento del Pil in livelli è sufficiente per accorgersi che il Pil è ancora ben lungi dall'essere tornato ai livelli pre-crisi. Per esempio, il valore del Pil nel secondo trimestre 2011 era di circa il 5% più basso rispetto al suo valore nel primo trimestre 2008.</p>
+<p><strong>Dove sta il trucco?</strong> Il grafico potrebbe dare l’impressione che il PIL sia tornato ai livelli pre-crisi dopo aver toccato il minimo nel primo trimestre 2009. Questa interpretazione della rappresentazione grafica è errata. Un rapido sguardo all’andamento del Pil in livelli è sufficiente per accorgersi che il Pil è ancora ben lungi dall’essere tornato ai livelli pre-crisi. Per esempio, il valore del Pil nel secondo trimestre 2011 era di circa il 5% più basso rispetto al suo valore nel primo trimestre 2008. </p>
 
-<p><img class="center" src="/img/pil-lavoce.jpg" title="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;" alt="&#34;Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.&#34;"></p>
+<p><img class="center" src="/img/pil-lavoce.jpg" title="“Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.”" ></p>
 
 <p><em>Pil trimestrale a valori concatenati e destagionalizzati. Valori espressi in milioni di euro.</em></p>
 
-<p><strong>Ma è veramente un trucco?</strong> Iniziamo col dire il grafico riporta correttamente la dicitura "variazioni % tendenziali". Infatti, se di trucco si tratta, riguarda la scelta di plottare le variazioni tendenziali e non i livelli. Enrico Giovannini, presidente dell'Istat, ha replicato in un <a href="http://www.lavoce.info/articoli/pagina1002568.html">post</a> sempre su lavoce.info lamentandosi dell'articolo di Poggi perchè "tende a far credere al lettore che l’Istat abbia scelto il grafico del tasso di variazione invece che quello in livello per fare <em>trucchi</em>". Giovannini continua:</p>
+<p><strong>Ma è veramente un trucco?</strong> Iniziamo col dire il grafico riporta correttamente la dicitura “variazioni % tendenziali”. Infatti, se di trucco si tratta, riguarda la scelta di plottare le variazioni tendenziali e non i livelli. Enrico Giovannini, presidente dell’Istat, ha replicato in un <a href="http://www.lavoce.info/articoli/pagina1002568.html">post</a> sempre su lavoce.info lamentandosi dell’articolo di Poggi perchè “tende a far credere al lettore che l’Istat abbia scelto il grafico del tasso di variazione invece che quello in livello per fare <em>trucchi</em>”. Giovannini continua:</p>
 
-<blockquote><p>Dovendo scegliere un solo grafico riguardante il PIL per l’home page,
+<blockquote>
+  <p>Dovendo scegliere un solo grafico riguardante il PIL per l’home page,
 si è ritenuto opportuno concentrare l’attenzione sul dato sintetico
 più significativo, cioè sul tasso di variazione tendenziale, più che
-sul livello assoluto.</p></blockquote>
+sul livello assoluto.</p>
+</blockquote>
 
-<p>La scelta del tasso tendenziale è stata effettuata perché ritenuta migliore rispetto alle alternative. Bisogna allora chiedersi se la variazione tendenziale fornisca il dato sintetico più informativo.</p>
+<p>La scelta del tasso tendenziale è stata effettuata perché ritenuta migliore rispetto alle alternative. Bisogna allora chiedersi se la variazione tendenziale fornisca il dato sintetico più informativo. </p>
 
-<p><strong>Tassi e livelli.</strong> Prima di pronunciarci sull'<em>information content</em>, sarà bene spiegare cos'è la variazione tendenziale. Ho infatti il sospetto che pochi (parlo dei non addetti ai lavori) sappiano cosa "tendenziale" stia a significare.</p>
+<p><strong>Tassi e livelli.</strong> Prima di pronunciarci sull’<em>information content</em>, sarà bene spiegare cos’è la variazione tendenziale. Ho infatti il sospetto che pochi (parlo dei non addetti ai lavori) sappiano cosa “tendenziale” stia a significare. </p>
 
-<p><strong>Il tasso di variazione (trimestrale) tendenziale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il suo valore <em>nello stesso trimestre dell'anno precedente.</em> Quindi la diminuzione del 6.7% nel
+<p><strong>Il tasso di variazione (trimestrale) tendenziale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il suo valore <em>nello stesso trimestre dell’anno precedente.</em> Quindi la diminuzione del 6.7% nel
 primo trimestre 2009 non è rispetto al quarto trimestre 2008, ma al
-primo trimestre 2008. Nel primo trimestre 2010 il grafico è nell'area
+primo trimestre 2008. Nel primo trimestre 2010 il grafico è nell’area
 positiva, perché queste variazioni sono rispetto ai trimestri del 2009,
-l'anno nero della crisi. Si possono naturalmente considerare le
+l’anno nero della crisi. Si possono naturalmente considerare le
 variazioni trimestre su trimestre; in questo caso parliamo di variazioni
-percentuali congiunturali.</p>
+percentuali congiunturali. </p>
 
-<p><strong>Il tasso di variazione trimestrale congiunturale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il valore della stessa <em>nel trimestre immediatamente precedente</em>. Molto probabilmente è questo il tasso a cui molto sono più abituati a pensare. Visto che né lavoce.info né l'Istat hanno pubblicato un grafico delle variazioni congiunturali del Pil, ho provveduto a crearne uno che allego qui di seguito.</p>
+<p><strong>Il tasso di variazione trimestrale congiunturale</strong> è definito come il tasso di variazione fra il valore di una variabile nel trimestre in questione e il valore della stessa <em>nel trimestre immediatamente precedente</em>. Molto probabilmente è questo il tasso a cui molto sono più abituati a pensare. Visto che né lavoce.info né l’Istat hanno pubblicato un grafico delle variazioni congiunturali del Pil, ho provveduto a crearne uno che allego qui di seguito. </p>
 
 <p><img class="center" src="/img/pil_cong.png"></p>
 
@@ -78,13 +79,13 @@ percentuali congiunturali.</p>
 <p><strong>Quale dato sintetico contiene più informazione?</strong> Una statistica è più informativa se contiene più informazioni sui dati che si stanno analizzando. Per esempio, se abbiamo a disposizione un campione di osservazioni, la media campionaria è meno informativa della
 distribuzione di frequenza. La distribuzione di frequenza è un dato sintetico più ricco della media: possiamo sempre risalire alle media campionaria avendo a disposizione le frequenze, ma non è possibile fare il contrario.</p>
 
-<p>In modo analogo, il grafico delle variazioni, siano esse tendenziali o congiunturali, non ci permette di risalire ai livelli. Sapere che il Pil è cresciuto dell'1% fra il primo trimestre 2009 e il primo trimestre 2008 non fornisce alcuna informazione sul livello del Pil nei due trimestri in questione. Al contrario, la conoscenza dei livelli di una
-variabile nei trimestri consente di risalire alle variazioni (sia tendenziali sia congiunturali).</p>
+<p>In modo analogo, il grafico delle variazioni, siano esse tendenziali o congiunturali, non ci permette di risalire ai livelli. Sapere che il Pil è cresciuto dell’1% fra il primo trimestre 2009 e il primo trimestre 2008 non fornisce alcuna informazione sul livello del Pil nei due trimestri in questione. Al contrario, la conoscenza dei livelli di una
+variabile nei trimestri consente di risalire alle variazioni (sia tendenziali sia congiunturali). </p>
 
-<p><strong>Ne consegue che è il grafico in livelli ad essere il "dato sintetico più informativo".</strong> (In realtà un grafico temporale non è di per sé un dato, ma una sua rappresentazione pittorica.) E' vero che la statistica è l'arte di sintetizzare dati complessi mediante indicatori facilmente intellegibili, ma è altrettanto vero che le possibilità odierne consentono di rilassare il <em>trade-off</em> fra sintesi e completezza.</p>
+<p><strong>Ne consegue che è il grafico in livelli ad essere il “dato sintetico più informativo”.</strong> (In realtà un grafico temporale non è di per sé un dato, ma una sua rappresentazione pittorica.) E’ vero che la statistica è l’arte di sintetizzare dati complessi mediante indicatori facilmente intellegibili, ma è altrettanto vero che le possibilità odierne consentono di rilassare il <em>trade-off</em> fra sintesi e completezza. </p>
 
-<p><strong>L'Istat dovrebbe consentire all'utente di scegliere le modalità di rappresentazione sintetica delle informazioni. In assenza di questa scelta, il grafico di
-<em>default</em> dovrebbe essere il grafico in livelli.</strong></p>
+<p><strong>L’Istat dovrebbe consentire all’utente di scegliere le modalità di rappresentazione sintetica delle informazioni. In assenza di questa scelta, il grafico di
+<em>default</em> dovrebbe essere il grafico in livelli.</strong> </p>
 
 <p>A proposito di completezza, allego qui sotto una tavola con i dati sul PIL in livelli,
 in variazioni tendenziali e variazioni congiunturali. (Valori concatenati a prezzi 2000).</p>
@@ -96,54 +97,57 @@ in variazioni tendenziali e variazioni congiunturali. (Valori concatenati a prez
     <link href="http://gragusa.org/blog/pil-ed-economia-sommersa/"/>
     <updated>2011-09-14T17:23:35+02:00</updated>
     <id>http://gragusa.org/blog/pil-ed-economia-sommersa</id>
-    <content type="html"><![CDATA[<p><em>L'impatto dell'economia sommersa sui conti pubblici è importante per le scelte di politica economica. Il dato dell'ISTAT secondo cui circa il 17% del nostro PIL è "sommerso" e quindi sfugge all'erario è spesso male interpretato. Infatti, il PIL ufficiale italiano comprende già la quota
-di prodotto derivante dall'economia sommersa.</em></p>
+    <content type="html"><![CDATA[<p><em>L’impatto dell’economia sommersa sui conti pubblici è importante per le scelte di politica economica. Il dato dell’ISTAT secondo cui circa il 17% del nostro PIL è “sommerso” e quindi sfugge all’erario è spesso male interpretato. Infatti, il PIL ufficiale italiano comprende già la quota
+di prodotto derivante dall’economia sommersa.</em>  </p>
 
-<p>Quando si parla di evasione fiscale si citano spesso i recenti dati ISTAT per i quali il valore dell'economia sommersa è stimato per il 2008 fra 255 e 275 miliardi (Fonte:
+<p>Quando si parla di evasione fiscale si citano spesso i recenti dati ISTAT per i quali il valore dell’economia sommersa è stimato per il 2008 fra 255 e 275 miliardi (Fonte:
 <a href="http://www.istat.it/it/files/2011/01/testointegrale20100713.pdf?title=La+misura+dell'economia+sommersa+-+13/lug/2010+-+testointegrale20100713.pdf">ISTAT</a>).</p>
 
-<p>Un altro modo di mettere esporre questi dati è di dire che l'economia sommersa rappresenta circa il 17% del PIL. Per esempio, Antonio Vanuzzo di linkiesta <a href="http://www.linkiesta.it/nella-lotta-all-evasione-i-numeri-non-tornano#ixzz1XvwvTUaq">scrive</a> recentemente che</p>
+<p>Un altro modo di mettere esporre questi dati è di dire che l’economia sommersa rappresenta circa il 17% del PIL. Per esempio, Antonio Vanuzzo di linkiesta <a href="http://www.linkiesta.it/nella-lotta-all-evasione-i-numeri-non-tornano#ixzz1XvwvTUaq">scrive</a> recentemente che</p>
 
-<blockquote><p>...<strong>le <a href="http://www.istat.it/salastampa/comunicati/non_calendario/20100713_00/testointegrale20100713.pdf">ultime cifre</a></strong>dell’ISTAT
-sull'economia sommersa stimano che, nel 2008, "il valore aggiunto
-prodotto nell'area del sommerso economico risulta compreso tra un
+<blockquote>
+  <p>…<strong>le <a href="http://www.istat.it/salastampa/comunicati/non_calendario/20100713_00/testointegrale20100713.pdf">ultime cifre</a></strong>dell’ISTAT
+sull’economia sommersa stimano che, nel 2008, “il valore aggiunto
+prodotto nell’area del sommerso economico risulta compreso tra un
 minimo di 255 miliardi di euro e un massimo di 275 miliardi di euro,
-pari rispettivamente al 16,3 per cento e al 17,5 per cento del Pil".</p></blockquote>
+pari rispettivamente al 16,3 per cento e al 17,5 per cento del Pil”.</p>
+</blockquote>
 
-<p>E' facile essere tratti in inganno e concludere che questo 17% non faccia parte del PIL e che di conseguenza l'eliminazione del sommerso genererebbe meccanicamente un aumento del PIL di 17 punti percentuali.</p>
+<p>E’ facile essere tratti in inganno e concludere che questo 17% non faccia parte del PIL e che di conseguenza l’eliminazione del sommerso genererebbe meccanicamente un aumento del PIL di 17 punti percentuali. </p>
 
-<p>Non è così. Infatti, quello che l'ISTAT intende dire è che circa il 17% del PIL ufficiale è attribuibile al sommerso. Per chiarezza:</p>
+<p>Non è così. Infatti, quello che l’ISTAT intende dire è che circa il 17% del PIL ufficiale è attribuibile al sommerso. Per chiarezza: </p>
 
 <ul>
-<li>Il <strong>PIL 2008, il dato ufficiale rilasciato dall'ISTAT,</strong>è stato di
+  <li>Il <strong>PIL 2008, il dato ufficiale rilasciato dall’ISTAT,</strong>è stato di
 <strong>1.567</strong> <strong>miliardi di euro</strong> (per la precisione 1.567.761.400
 euro).</li>
-<li>La parte del <strong>PIL ufficiale attribuibile all'economia sommersa</strong> è
+  <li>La parte del <strong>PIL ufficiale attribuibile all’economia sommersa</strong> è
 compresa fra 250 e 275 miliardi.</li>
-<li>250 miliardi rappresentano il <strong>16.3%</strong> di 1.567.761.400</li>
-<li>275 miliardi sono il <strong>17.5%</strong> di 1.567.761.400.</li>
+  <li>250 miliardi rappresentano il <strong>16.3%</strong> di 1.567.761.400</li>
+  <li>275 miliardi sono il <strong>17.5%</strong> di 1.567.761.400.</li>
 </ul>
 
+<p>Del PIL italiano fa parte il sommerso da molti anni—la prima revisione dei dati in questo senso avvenne nel 1987. E non è solo l’ISTAT a compiere questi aggiustamenti. Il metodo con cui il sommerso è calcolato dall’ISTAT segue standard internazionali seguiti da tutti i centri di statistica di tutti i paesi OCSE. </p>
 
-<p>Del PIL italiano fa parte il sommerso da molti anni---la prima revisione dei dati in questo senso avvenne nel 1987. E non è solo l'ISTAT a compiere questi aggiustamenti. Il metodo con cui il sommerso è calcolato dall'ISTAT segue standard internazionali seguiti da tutti i centri di statistica di tutti i paesi OCSE.</p>
+<p>Un recupero del sommerso, almeno fino alla quota calcolata dall’ISTAT, non avrebbe alcun effetto diretto sulla contabilità nazionale. L’emersione del sommerso avrebbe un effetto sulle
+grandezze macroeconomiche per mezzo della riduzione del deficit e dell’eventuale aumento del gettito. E se il gettito derivante dall’emersione fosse utilizzato per alleggerire la pressione fiscale, ci
+si potrebbe anche aspettare un aumento (indiretto) del PIL. Come stimato dalla <a href="http://www.lavoce.info/articoli/pagina1002540.html">lavoce.info</a> a seguito della manovra, la pressione fiscale salirà al 44.5%. La pressione fiscale sul PIL al netto della componente economia sommersa potrebbe arrivare al 52%. </p>
 
-<p>Un recupero del sommerso, almeno fino alla quota calcolata dall'ISTAT, non avrebbe alcun effetto diretto sulla contabilità nazionale. L'emersione del sommerso avrebbe un effetto sulle
-grandezze macroeconomiche per mezzo della riduzione del deficit e dell'eventuale aumento del gettito. E se il gettito derivante dall'emersione fosse utilizzato per alleggerire la pressione fiscale, ci
-si potrebbe anche aspettare un aumento (indiretto) del PIL. Come stimato dalla <a href="http://www.lavoce.info/articoli/pagina1002540.html">lavoce.info</a> a seguito della manovra, la pressione fiscale salirà al 44.5%. La pressione fiscale sul PIL al netto della componente economia sommersa potrebbe arrivare al 52%.</p>
+<p>P.S.: Ho trovato questa bella <a href="http://www.felicebelisario.it/2011/08/19/con-la-lotta-seria-all´evasione-fiscale-si-puo´-uscire-dalla-crisi/">dichiarazione</a> del Senatore dell’IdV <a href="http://www.senato.it/leg/16/BGT/Schede/Attsen/00022864.htm">Felice Belisario</a> che mostra come sia facile equivocare:</p>
 
-<p>P.S.: Ho trovato questa bella <a href="http://www.felicebelisario.it/2011/08/19/con-la-lotta-seria-all%C2%B4evasione-fiscale-si-puo%C2%B4-uscire-dalla-crisi/">dichiarazione</a> del Senatore dell'IdV <a href="http://www.senato.it/leg/16/BGT/Schede/Attsen/00022864.htm">Felice Belisario</a> che mostra come sia facile equivocare:</p>
-
-<blockquote><p>La Corte dei Conti, il 28 giugno scorso, aveva ripreso un dato
-dell'Istat secondo il quale, nel 2008, ultimo dato disponibile,
+<blockquote>
+  <p>La Corte dei Conti, il 28 giugno scorso, aveva ripreso un dato
+dell’Istat secondo il quale, nel 2008, ultimo dato disponibile,
 l´evasione fiscale valeva oltre il 17 per cento dei Pil. Con la crisi
 e il ridimensionamento del Pil, probabilmente, questa cifra oggi è
-ulteriormente aumentata. So che un po' di evasione è fisiologica in
+ulteriormente aumentata. So che un po’ di evasione è fisiologica in
 tutti i Paesi, ma se solo riuscissimo a raggiungere i livelli europei
 porteremmo a casa almeno una decina di punti di Pil. Con quei miliardi
 si potrebbero evitare ulteriori tagli agli enti locali, si potrebbe
-rilanciare la produzione e l'occupazione con strumenti come la
+rilanciare la produzione e l’occupazione con strumenti come la
 fiscalità di vantaggio, si potrebbe addirittura ridurre il debito
-pubblico che è la vera sciagura economica del Paese.</p></blockquote>
+pubblico che è la vera sciagura economica del Paese.</p>
+</blockquote>
 ]]></content>
   </entry>
   
