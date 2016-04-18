@@ -459,8 +459,8 @@ Giuseppe Brandi    Monday         11:30-12:30
   <li><a href="files/practice03.html">Practice 03</a></li>
   <li><a href="files/practice04.html">Practice 04</a></li>
   <li><a href="files/practice05.html">Practice 05</a></li>
-  <li>Practice 06 </li>
-  <li>Practice 07 </li>
+  <li><a href="files/practice06.html">Practice 06</a></li>
+  <li><a href="files/practice07.html">Practice 07</a></li>
   <li>Practice 08 </li>
 </ul>
 
@@ -475,39 +475,26 @@ Giuseppe Brandi    Monday         11:30-12:30
 <p><a href="http://www.R-project.org"><strong>R Project Site</strong></a>: The R Project’s homepage 
  with Documentation, Downloading R, FAQs, more (subset given below)       </p>
 
-<p><a href="http://cran.R-project.org/doc/manuals/R-intro.pdf"><strong>An Introduction to R</strong></a> (the most      <br />
- up-to-date version of the Intro notes)                                   </p>
+<p><a href="http://cran.R-project.org/doc/manuals/R-intro.pdf"><strong>An Introduction to R</strong></a> (the most up-to-date version of the Intro notes)                                   </p>
 
 <ul>
-  <li><a href="http://cran.r-project.org/">R CRAN SITE (downloads, documentation,                            <br />
-and more)</a>\                              </li>
-  <li><a href="http://cran.r-project.org/doc/FAQ/R-FAQ.html">FAQs</a> (please read  <br />
-before posting a question!)\                                         </li>
-  <li><a href="http://cran.r-project.org/web/packages">Packages</a> (contributed    <br />
-packages for R)\                                                     </li>
-  <li>R reference card [<a href="http://cran.r-project.org/doc/contrib/refcard.pdf">pdf (59k,                                      <br />
-1 pg)</a>] (J     <br />
-Baron)\                                                              </li>
-  <li>Writing R extensions [<a href="http://cran.r-project.org/doc/manuals/R-exts.pdf">pdf (425k;                                 <br />
-69 pgs)</a>]       <br />
-(Explanations of writing packages and calling C from R)              </li>
+  <li><a href="http://cran.r-project.org/">R CRAN SITE (downloads, documentation, and more)</a></li>
+  <li><a href="http://cran.r-project.org/doc/FAQ/R-FAQ.html">FAQs</a> </li>
+  <li><a href="http://cran.r-project.org/web/packages">Packages</a> (contributed packages for R)</li>
+  <li>R reference card [<a href="http://cran.r-project.org/doc/contrib/refcard.pdf">pdf (59k, 1 pg)</a>] (J Baron)</li>
 </ul>
 
 <p><!-- -->                                                                 </p>
 
 <ul>
-  <li>Using R for data analysis and graphics [<a href="http://cran.r-project.org/doc/contrib/usingR.pdf">pdf (693k;               <br />
-112 pgs)</a>]      <br />
-(JH Maindonald)                                                      </li>
+  <li>Using R for data analysis and graphics [<a href="http://cran.r-project.org/doc/contrib/usingR.pdf">pdf (693k; 112 pgs)</a>] (JH Maindonald)                                                      </li>
 </ul>
 
-<p>### Books                                                                </p>
+<h3 id="books">Books</h3>
 
 <ul>
-  <li>WN Venables, DM Smith and the R Development Core Team (2004) <a href="http://www.network-theory.co.uk/R/manual/">An   <br />
-introduction to R</a>.       </li>
-  <li>P Dalgaard (2002) <a href="http://www.amazon.com/exec/obidos/ASIN/0387954759/karlwbroman">Introductory statistics with                    <br />
-R</a>,</li>
+  <li>WN Venables, DM Smith and the R Development Core Team (2004) <a href="http://www.network-theory.co.uk/R/manual/">An introduction to R</a>.       </li>
+  <li>P Dalgaard (2002) <a href="http://www.amazon.com/exec/obidos/ASIN/0387954759/karlwbroman">Introductory statistics with R</a>,</li>
 </ul>
 
 <h2 id="the-ase-package">The <code>ase</code> package</h2>
@@ -516,18 +503,19 @@ R</a>,</li>
 routines and data used in this class (hint: <code>ase</code> stands for Applied
 Statistics and Econometrics).</p>
 
-<p>These are the steps to install <code>ase</code> 
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;figcaption&gt;<span></span>&lt;/figcaption&gt;&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<p>These are the steps to install <code>ase</code> </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
 <span class="line-number">5</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class="R"><span class="line">update.packages<span class="p">(</span>ask<span class="o">=</span><span class="bp">F</span><span class="p">,</span> checkBuilt <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span> <span class="c1">## This will take same time </span>
+</pre></td><td class="code"><pre><code class="R"><span class="line">update.packages<span class="p">(</span>ask<span class="o">=</span><span class="bp">F</span><span class="p">,</span> checkBuilt <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span> <span class="c1">## This will take same time </span>
 </span><span class="line">                                          <span class="c1">## and requires an internet connection </span>
 </span><span class="line">install.packages<span class="p">(</span><span class="s">&quot;devtools&quot;</span><span class="p">)</span>
 </span><span class="line"><span class="kn">library</span><span class="p">(</span>devtools<span class="p">)</span>
 </span><span class="line">devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">&quot;gragusa/ase&quot;</span><span class="p">)</span>
-</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>If all the above steps were successful, you should be able to load the
 package and use it. </p>
@@ -571,10 +559,9 @@ package and use it. </p>
 </pre></td><td class="code"><pre><code class="R"><span class="line">data<span class="p">(</span>package<span class="o">=</span><span class="s">&quot;ase&quot;</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>These are  datasets frequently used during lectures and review sessions</p>
+<!-- These are  datasets frequently used during lectures and review sessions -->
 
-<ul>
-  <li><a href="files/CEOSAL1.dta">CEO compensation</a> 
+<!-- - [CEO compensation](files/CEOSAL1.dta)  -->
 <!-- - [Sleep Data](files/sleep75.dta) -->
 <!-- - [Birthweight](files/BirthWeight.dta) -->
 <!-- - [Smoking](files/Smoking.dta) -->
@@ -590,8 +577,7 @@ package and use it. </p>
 <!-- - [Guns](files/Guns.dta) -->
 <!-- - [WAGE2](files/WAGE2.dta)  -->
 <!-- - [Fertility](files/fertility.dta) -->
-<!-- - [Fertil2](files/FERTIL2.dta) --></li>
-</ul>
+<!-- - [Fertil2](files/FERTIL2.dta) -->
 
 <!--  LocalWords:  econometrics
  -->

@@ -1,0 +1,539 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Float",
+				"float64"
+			],
+			[
+				"spb",
+				"sprandbool"
+			],
+			[
+				"Dp50",
+				"Dp5010"
+			],
+			[
+				"p90",
+				"p9050"
+			],
+			[
+				"Dp9",
+				"Dp9050"
+			],
+			[
+				"julia",
+				"julia-readline"
+			],
+			[
+				"foot",
+				"footnote	tex"
+			],
+			[
+				"vartheta",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"varthet",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"varthe",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"varth",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"ups",
+				"upsilon	latex-mathsymbols"
+			],
+			[
+				"vart",
+				"vartheta	latex-mathsymbols"
+			],
+			[
+				"empty",
+				"emptyset	latex-mathsymbols"
+			],
+			[
+				"usepa",
+				"usepackage{package}	latex-document"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"snippe",
+				"Snippet: Insert knitr Markdown chunk"
+			],
+			[
+				"snippet:",
+				"Snippet: New Beamer"
+			],
+			[
+				"snipp",
+				"Snippet: ggplot2 graph"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"r-b",
+				"R-Box Application"
+			],
+			[
+				"an",
+				"ANF: New File"
+			],
+			[
+				"R-bo",
+				"R-Box Application"
+			],
+			[
+				"afn",
+				"ANF: New File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"bra:hi",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"bra",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insert",
+				"InsertDate: Show Panel"
+			],
+			[
+				"synta:ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"latexing:cl",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"latexing: ",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"latext",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"togll",
+				"Toggle Block Comment"
+			],
+			[
+				"iju",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"IJULI",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"ijuli",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"open i",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"updat",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"fold",
+				"LaTeXing: Fold Section"
+			],
+			[
+				"LaT",
+				"LaTeXing: Fold Section"
+			],
+			[
+				"snippet n",
+				"Snippet: New Article"
+			],
+			[
+				"pdf ",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"snippet f",
+				"Snippet: Figure"
+			],
+			[
+				"fra",
+				"Snippet: Beamer: Frame Two Columns (Figure and Table)"
+			],
+			[
+				"chun",
+				"Snippet: Insert knitr Rnw chunk"
+			],
+			[
+				"frame",
+				"Snippet: Beamer: Frame Two Columns (Figure and List)"
+			],
+			[
+				"set kni",
+				"Set Syntax: LaTeXing Beamer (Knitr)"
+			],
+			[
+				"bib",
+				"Set Syntax: BibTeX"
+			],
+			[
+				"maker",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"pdf",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"R app",
+				"R Application Switch"
+			],
+			[
+				"LaTeXing: ",
+				"LaTeXing: Changelog"
+			],
+			[
+				"fram",
+				"Snippet: Beamer: Simple Frame"
+			],
+			[
+				"snippet ",
+				"Snippet: Insert knitr Rnw chunk"
+			],
+			[
+				"snippet:n",
+				"Snippet: New Beamer"
+			],
+			[
+				"app",
+				"R Application Switch"
+			],
+			[
+				"origami ri",
+				"Origami: Create Pane with File on the Right"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"n",
+				"ANF: New File"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"prev",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gragusa/Dropbox/web/octopress3/source",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase"
+	],
+	"file_history":
+	[
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase/index.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/ase/final.markdown",
+		"/Users/gragusa/Downloads/ABC-time-series-11-11-2014.tex",
+		"/Users/gragusa/Dropbox/web/octopress3/source/research/index.markdown",
+		"/Users/gragusa/scratch/ase_old/ase/dataset/Wooldridge/WAGE2.DES",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/thesis/index.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/index.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/thesis.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/index.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/_posts/2011-09-02-investimenti-diretti.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/_posts/2011-09-20-il-default-nella-storia.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/et/files/weak_instrument.m",
+		"/Users/gragusa/Dropbox/web/octopress3/source/index.html",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gragusa/Dropbox/teaching/et/problem_set/ps_2.tex",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/Enhanced-R/Enhanced-R.sublime-settings",
+		"/Users/gragusa/scratch/uu.Rmd",
+		"/Users/gragusa/scratch/uu.R",
+		"/Users/gragusa/scratch/uu.tex",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/bh_core.sublime-settings",
+		"/Users/gragusa/scratch/tmp.css",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/R-Box/R-Box.sublime-settings",
+		"/Users/gragusa/scratch/rr.R",
+		"/Users/gragusa/Dropbox/web/octopress3/sass/custom/_screen.scss",
+		"/Users/gragusa/Dropbox/web/octopress3/source/teaching/eief_review/index.markdown",
+		"/Users/gragusa/Dropbox/web/octopress3/source/_includes/custom/head.html",
+		"/Users/gragusa/Dropbox/scratch/readme.md",
+		"/Users/gragusa/advanced_econometrics.sublime-project",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/advanced_econometrics.sublime-project",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/bookadv.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap6.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap3-linmod.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap1-meas.tex",
+		"/Users/gragusa/Dropbox/teaching/books/advanced/chap2-asym.tex",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/User/Sublime-IJulia.sublime-settings",
+		"/Users/gragusa/Dropbox/mypapers/wishart/code/myplot.svg",
+		"/Users/gragusa/Dropbox/scratch/README.md",
+		"/Users/gragusa/Dropbox/scratch/configure_flags",
+		"/Users/gragusa/Dropbox/scratch/Ipopt-3.11.7/Ipopt/contrib/RInterface/src/Makevars",
+		"/Users/gragusa/Google Drive/Ipopt-3.11.5/ThirdParty/HSL/INSTALL.HSL",
+		"/Users/gragusa/scratch/beamerexample-lecture-print-version.tex",
+		"/Users/gragusa/scratch/pavia-article.tex",
+		"/Users/gragusa/scratch/Rep/replication_employment/R/create-dta-files.R",
+		"/Users/gragusa/Downloads/citations.enw",
+		"/Users/gragusa/Dropbox/mypapers/projection/projectionET-revision-140314.tex",
+		"/Users/gragusa/Downloads/mise.csv",
+		"/Users/gragusa/scratch/uu.jl",
+		"/Users/gragusa/Dropbox/Extract_Government",
+		"/Volumes/OS X 10.9 Install Disk - 10.9.1/DataRescueWorkspace/Recovered Files/T33842.txt",
+		"/Users/gragusa/Dropbox/system/Sublime Text 3/Packages/IJulia/Sublime-IJulia.sublime-settings",
+		"/Users/gragusa/Dropbox/mypapers/projection/projectionET-revision-140126.tex",
+		"/Users/gragusa/Dropbox/mypapers/projection/projectionET-revision-140120.tex",
+		"/Users/gragusa/Dropbox/mypapers/projection/sect.tex",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/SublimeJulia/SublimeJulia.sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/sublimerepl.py",
+		"/Users/gragusa/Documents/Package Control Messages.mdown",
+		"/Users/gragusa/scratch/junk.rnw",
+		"/Users/gragusa/scratch/untitled.R",
+		"/Users/gragusa/scratch/junk.R",
+		"/Users/gragusa/Documents/st3.mdown",
+		"/Users/gragusa/scratch/jex.tex",
+		"/Users/gragusa/scratch/junk.tex",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/Enhanced-R/Enhanced-R.sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/User/LaTeXing.sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/User/ggp.sublime-snippet",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/Users/gragusa/Library/Application Support/Sublime Text 3/Packages/User/Markdown (Standard).sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ORALE",
+			"frac1",
+			"angino",
+			"MAT",
+			"Ê",
+			"the ex",
+			"the existence",
+			"orliczb",
+			"orlicz",
+			"gragusa",
+			"gutter",
+			"reader.que",
+			"start",
+			"\\n >",
+			"_loop",
+			"output",
+			".write",
+			"begin",
+			"empty",
+			"filter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"project": "gragusa.github.com.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 297.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
