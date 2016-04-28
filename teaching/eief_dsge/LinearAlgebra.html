@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+
+
+  <script src type="text/javascript"></script>
+
+  
+  
+  <script type="text/javascript">
+    var fileref=document.createElement('script')
+    fileref.setAttribute("type","text/javascript")
+    fileref.setAttribute("src", "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    document.getElementsByTagName("head")[0].appendChild(fileref)
+  </script>
+  
+  <style type="text/css">
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(http://fonts.gstatic.com/s/raleway/v9/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(http://fonts.gstatic.com/s/raleway/v9/xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  }
+  html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  body {
+    margin: 0;
+  }
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+  }
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  [hidden],
+  template {
+    display: none;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+  abbr[title] {
+    border-bottom: 1px dotted;
+  }
+  b,
+  strong {
+    font-weight: bold;
+  }
+  dfn {
+    font-style: italic;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  mark {
+    background: #ff0;
+    color: #000;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  img {
+    border: 0;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  figure {
+    margin: 1em 40px;
+  }
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
+  pre {
+    overflow: auto;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+  }
+  button {
+    overflow: visible;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button,
+  html input[type="button"], /* 1 */
+  input[type="reset"],
+  input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+  }
+  button[disabled],
+  html input[disabled] {
+    cursor: default;
+  }
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  input {
+    line-height: normal;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  }
+  legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+  }
+  textarea {
+    overflow: auto;
+  }
+  optgroup {
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td,
+  th {
+    padding: 0;
+  }
+  
+  
+  /*
+  * Skeleton V2.0.4
+  * Copyright 2014, Dave Gamache
+  * www.getskeleton.com
+  * Free to use under the MIT license.
+  * http://www.opensource.org/licenses/mit-license.php
+  * 12/29/2014
+  */
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+  .column,
+  .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; }
+  @media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; }
+  }
+  @media (min-width: 550px) {
+    .container {
+      width: 80%; }
+    .column,
+    .columns {
+      margin-left: 4%; }
+    .column:first-child,
+    .columns:first-child {
+      margin-left: 0; }
+  
+    .one.column,
+    .one.columns                    { width: 4.66666666667%; }
+    .two.columns                    { width: 13.3333333333%; }
+    .three.columns                  { width: 22%;            }
+    .four.columns                   { width: 30.6666666667%; }
+    .five.columns                   { width: 39.3333333333%; }
+    .six.columns                    { width: 48%;            }
+    .seven.columns                  { width: 56.6666666667%; }
+    .eight.columns                  { width: 65.3333333333%; }
+    .nine.columns                   { width: 74.0%;          }
+    .ten.columns                    { width: 82.6666666667%; }
+    .eleven.columns                 { width: 91.3333333333%; }
+    .twelve.columns                 { width: 100%; margin-left: 0; }
+  
+    .one-third.column               { width: 30.6666666667%; }
+    .two-thirds.column              { width: 65.3333333333%; }
+  
+    .one-half.column                { width: 48%; }
+  
+    /* Offsets */
+    .offset-by-one.column,
+    .offset-by-one.columns          { margin-left: 8.66666666667%; }
+    .offset-by-two.column,
+    .offset-by-two.columns          { margin-left: 17.3333333333%; }
+    .offset-by-three.column,
+    .offset-by-three.columns        { margin-left: 26%;            }
+    .offset-by-four.column,
+    .offset-by-four.columns         { margin-left: 34.6666666667%; }
+    .offset-by-five.column,
+    .offset-by-five.columns         { margin-left: 43.3333333333%; }
+    .offset-by-six.column,
+    .offset-by-six.columns          { margin-left: 52%;            }
+    .offset-by-seven.column,
+    .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+    .offset-by-eight.column,
+    .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+    .offset-by-nine.column,
+    .offset-by-nine.columns         { margin-left: 78.0%;          }
+    .offset-by-ten.column,
+    .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+    .offset-by-eleven.column,
+    .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+  
+    .offset-by-one-third.column,
+    .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+    .offset-by-two-thirds.column,
+    .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+  
+    .offset-by-one-half.column,
+    .offset-by-one-half.columns     { margin-left: 52%; }
+  
+  }
+  html {
+    font-size: 62.5%; }
+  body {
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222; }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  h1 { font-size: 3.6rem; line-height: 1.2;  letter-spacing: -.1rem;}
+  h2 { font-size: 3.4rem; line-height: 1.25; letter-spacing: -.1rem; }
+  h3 { font-size: 3.2rem; line-height: 1.3;  letter-spacing: -.1rem; }
+  h4 { font-size: 2.8rem; line-height: 1.35; letter-spacing: -.08rem; }
+  h5 { font-size: 2.4rem; line-height: 1.5;  letter-spacing: -.05rem; }
+  h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+  
+  p {
+    margin-top: 0; }
+  a {
+    color: #1EAEDB; }
+  a:hover {
+    color: #0FA0CE; }
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box; }
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  .button:focus,
+  button:focus,
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0; }
+  .button.button-primary,
+  button.button-primary,
+  input[type="submit"].button-primary,
+  input[type="reset"].button-primary,
+  input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0; }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB; }
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box; }
+  /* Removes awkward default styles on some inputs for iOS */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px; }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #33C3F0;
+    outline: 0; }
+  label,
+  legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600; }
+  fieldset {
+    padding: 0;
+    border-width: 0; }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline; }
+  label > .label-body {
+    display: inline-block;
+    margin-left: .5rem;
+    font-weight: normal; }
+  ul {
+    list-style: circle inside; }
+  ol {
+    list-style: decimal inside; }
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0; }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin: 1.5rem 0 1.5rem 3rem;
+    font-size: 90%; }
+  li {
+    margin-bottom: 1rem; }
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1; }
+  th:first-child,
+  td:first-child {
+    padding-left: 0; }
+  th:last-child,
+  td:last-child {
+    padding-right: 0; }
+  button,
+  .button {
+    margin-bottom: 1rem; }
+  input,
+  textarea,
+  select,
+  fieldset {
+    margin-bottom: 1.5rem; }
+  pre,
+  blockquote,
+  dl,
+  figure,
+  table,
+  p,
+  ul,
+  ol,
+  form {
+    margin-bottom: 2.5rem; }
+  .u-full-width {
+    width: 100%;
+    box-sizing: border-box; }
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box; }
+  .u-pull-right {
+    float: right; }
+  .u-pull-left {
+    float: left; }
+  hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1; }
+  .container:after,
+  .row:after,
+  .u-cf {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+  code {
+    padding: 2px 4px;
+    font-size: 90%;
+  
+    background-color: #f9f2f4;
+    border-radius: 4px;
+  }
+  
+  @media (min-width: 400px) {}
+  @media (min-width: 550px) {}
+  @media (min-width: 750px) {}
+  @media (min-width: 1000px) {}
+  @media (min-width: 1200px) {}
+  
+  h1.title {margin-top : 20px}
+  img {max-width : 100%%}
+  </style>
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+<body>
+<div class="container">
+        <div class="row">
+            <div class="col-md-12 twelve columns">
+
+
+
+<h1 id="linear-algebra-in-julia">Linear Algebra in Julia</h1>
+<p>The linear algebra facilities in <a href="http://julialang.org">Julia</a> are a superset of the base facilities in <a href="http://www.R-project.org">R</a> and Matlab/Octave. A vector is considered as a column vector for purposes of linear algebra. Its transpose is a 1<span class="math inline">\(\times\)</span>n matrix.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; v1 = collect(<span class="fl">1</span>:<span class="fl">6</span>); <span class="co"># 1:6 is a Range object. `collect` makes it a Array{Int64,1}</span>
+
+<span class="fl">6</span>-element <span class="dt">Array</span>{<span class="dt">Int64</span>,<span class="fl">1</span>}:
+ <span class="fl">1</span>
+ <span class="fl">2</span>
+ <span class="fl">3</span>
+ <span class="fl">4</span>
+ <span class="fl">5</span>
+ <span class="fl">6</span>
+julia&gt; typeof(v1)
+<span class="dt">Array</span>{<span class="dt">Int64</span>,<span class="fl">1</span>}</code></pre></div>
+<p>As in <code>Matlab</code>, the dimension of an array is obtained by using <code>size</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; size(v1)  <span class="co"># size always returns a tuple</span>
+(<span class="fl">6</span>,)</code></pre></div>
+<p>The <code>lenght</code> of an array is obtained by <code>length</code> which always return an <code>Int</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; length(v1)
+<span class="fl">6</span></code></pre></div>
+<p><code>reshape</code> change the size of an array. The new size is passed as the second argument using a <code>tuple</code>. For instance, the following code reshape a vector into a <span class="math inline">\(3\times 2\)</span> matrix.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; m1 = reshape(collect(<span class="fl">1</span>:<span class="fl">6</span>),(<span class="fl">3</span>,<span class="fl">2</span>))
+<span class="fl">3</span>x2 <span class="dt">Array</span>{<span class="dt">Int64</span>,<span class="fl">2</span>}:
+ <span class="fl">1</span>  <span class="fl">4</span>
+ <span class="fl">2</span>  <span class="fl">5</span>
+ <span class="fl">3</span>  <span class="fl">6</span></code></pre></div>
+<p>Because <code>size</code> returns a tuple the number of rows and columns can be assigned in one statement. A common idiom is</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; m,n = size(m1)
+(<span class="fl">3</span>,<span class="fl">2</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">println(<span class="st">&quot;Number of rows = $m and number of columns = $n&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="dt">Number</span> of rows = <span class="fl">3</span> and number of columns = <span class="fl">2</span></code></pre></div>
+<p>As in <code>R</code> and <code>matlab</code>, matrices and higher-dimensional arrays are stored in <em>column-major</em> ordering. This means that is much faster to recurse an array along the row dimension. More on this later.</p>
+<p>Transpose is indicated by <code>'</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; m1'
+<span class="fl">2</span>x3 <span class="dt">Array</span>{<span class="dt">Int64</span>,<span class="fl">2</span>}:
+ <span class="fl">1</span>  <span class="fl">2</span>  <span class="fl">3</span>
+ <span class="fl">4</span>  <span class="fl">5</span>  <span class="fl">6</span></code></pre></div>
+<p>The <code>*</code> operator applied to arrays denotes matrix multiplication. Element-wise multiplication is indicated by <code>.*</code>. In general a prefix <code>.</code> to an operator makes it behave element-wise. Constructors of arrays with specific content include <code>ones()</code>, <code>zeros()</code> and <code>eye()</code> (the identity matrix). These work as in <code>Matlab</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">m1 * ones(<span class="fl">2</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; eye(<span class="fl">3</span>)
+<span class="fl">3</span>x3 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ <span class="fl">1.0</span>  <span class="fl">0.0</span>  <span class="fl">0.0</span>
+ <span class="fl">0.0</span>  <span class="fl">1.0</span>  <span class="fl">0.0</span>
+ <span class="fl">0.0</span>  <span class="fl">0.0</span>  <span class="fl">1.0</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">eye(<span class="fl">3</span>,<span class="fl">4</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">ones(<span class="dt">Int</span>,(<span class="fl">2</span>,<span class="fl">3</span>))</code></pre></div>
+<p><code>hcat</code> and <code>vcat</code> work as in <code>Matlab</code> and they can be used to bind columns and rows of two arrays, respectively.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">m2 = hcat(ones(<span class="fl">3</span>),collect(-<span class="fl">1</span>.:<span class="fl">1</span>.))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">vcat([<span class="fl">1</span>:<span class="fl">3</span>;],ones(<span class="fl">2</span>))</code></pre></div>
+<p>In some circumstances you can omit the <code>*</code> in a multiplication.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">m22 = m2'm2</code></pre></div>
+<p>The <code>Julia</code> expression <code>X'X</code> is evaluated using only one copy of <code>X</code> and will always produce a symmetric matrix. In other languages, <code>X'X</code> makes two copies of the matrix and they have special syntax for one copy product. For instance, in <code>R</code> the function <code>crossprod</code> must be called to do this. (Be careful, in <code>Julia</code> there is an operation called a <em>cross product</em> but it is the cross product from Physics.)</p>
+<h2 id="solving-linear-systems-of-equations">Solving linear systems of equations</h2>
+<p>Consider the system of linear equation <span class="math display">\[Ax = b.\]</span> This system can be solved by using the backslash operator, <code>\</code>, <code>A\b</code>.</p>
+<p>Consider the following model <span class="math display">\[
+y = X\beta + u
+\]</span> where <span class="math inline">\(y\)</span> is <span class="math inline">\(n\times 1\)</span>, <span class="math inline">\(X\)</span> is <span class="math inline">\(n\times k\)</span>, and <span class="math inline">\(\beta\)</span> is a <span class="math inline">\(k\times 1\)</span> vector to be estimated.</p>
+<p>We will generate this data according to a normal linear model.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">n = <span class="fl">100</span>; k = <span class="fl">2</span>
+u = randn(n)
+X = randn(n, k)
+b = [<span class="fl">0.0</span>, <span class="fl">1.0</span>]
+Y = X*b + u</code></pre></div>
+<p>The (ordinary) least-squares estimates of <span class="math inline">\(\beta\)</span> is the solution to the system of linear equation <span class="math display">\[
+X'X\beta = X'Y.
+\]</span> Using the backlash operator</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; bhat = X'X\X'Y
+<span class="fl">2</span>-element <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">1</span>}:
+ <span class="fl">0.00985275</span>
+ <span class="fl">1.12844</span>   </code></pre></div>
+<p>Although the elements of <code>bhat</code> are the least squares estimate of <span class="math inline">\(\beta\)</span>, these estimates can be obtained without the need to do pre-multiplicaiton.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; bhat2 = X\Y
+<span class="fl">2</span>-element <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">1</span>}:
+ <span class="fl">0.00985275</span>
+ <span class="fl">1.12844</span>   </code></pre></div>
+<p>With a rectangular left-hand side <code>\</code> denotes a least-squares solution.</p>
+<p>Note that <code>bhat</code> and <code>bhat2</code> are a bit different because of numerical imprecision in the computation.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; bhat.==bhat2
+
+<span class="fl">2</span>-element BitArray{<span class="fl">1</span>}:
+ false
+ false
+julia&gt; bhat-bhat2
+<span class="fl">2</span>-element <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">1</span>}:
+ -<span class="fl">2.60209e-17</span>
+ -<span class="fl">6.66134e-16</span></code></pre></div>
+<p>Testing for element-wise equality is done by using <code>.==</code> and we see that the test fails due to the small differences. This difference is of the same order of the next representable floating-point number which can be interpreted as the error arising from rounding in floating point arithmetic.(This number is of course machine dependent. On the machine on which I am writing this is <code>e-16</code>). To test equality that takes into account machine error use <code>isapprox</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; isapprox(bhat, bhat2) 
+true</code></pre></div>
+<h2 id="factorizations">Factorizations</h2>
+<p>Those who haven't studied numerical linear algebra assume that a linear system of equations is solved as <span class="math display">\[x^* = A^{-1}b\]</span>. In practice it is almost never necessary to evaluate the inverse of a matrix. Instead the matrix is factored into a product of other matrices that have desirable properties such as being triangular.</p>
+<p>Such factorizations include the <em>singular value decomposition (SVD)</em>, the <em>QR decomposition</em> (with or without pivoting), the <em>Cholesky factorization</em> (with or without pivoting) for a positive-semidefinite symmetric matrix, the <em>LU factorization</em> and the <em>Eigen decomposition</em>. The names of the constructors of the decomposition usually end in <code>fact</code>.</p>
+<p>Although one rarely needs the inverse of a general matrix, it is sometimes useful to get the inverse of the matrix represented by the Cholesky factorization. This is feasible because the factor is triangular and determining the inverse of a triangular matrix is easier than doing so for a general matrix. Suppose we want to estimate the variance of <span class="math inline">\(\hat{\beta}\)</span>. The estimate is <span class="math display">\[\widehat{Var(\hat{\beta})}
+= \hat{\sigma}^2 (X'X)^{-1},\quad \hat{\sigma}^2 = \frac{1}{n-k}
+(Y-X\hat{\beta})'(Y-X\hat{\beta}).\]</span></p>
+<p>The estimate of <span class="math inline">\(\sigma^2\)</span> can be obtained using <code>sum2abs</code> which is an efficient method to calculate the sum of squares of a vector.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; sigma2 = sumabs2(Y-X*bhat)/(n-k)
+<span class="fl">0.898698612581014</span></code></pre></div>
+<p>It remains to calculate the inverse $X'X. We can do this from the Cholesky decomposition of <span class="math inline">\(X'X\)</span>.</p>
+<p><em>Definition.(Cholesky decomposition)</em> If <span class="math inline">\(A \in \mathbb{R}^{n\times n}\)</span> is a positive definite matrix, the Cholesky decomposition factors <span class="math inline">\(A\)</span> into a lower triangular matrix and its transpose <span class="math display">\[A = LL',\]</span> or equivalently using an upper triangular matrix <span class="math inline">\(U=L'\)</span> as <span class="math display">\[A=U'U.\]</span></p>
+<p>Consider the Cholesky decomposition of <span class="math inline">\(X'X\)</span></p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; XXchol = cholfact(X'X);Base.LinAlg.Cholesky{<span class="dt">Float64</span>,<span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}} with factor:
+
+<span class="fl">2</span>x2 UpperTriangular{<span class="dt">Float64</span>,<span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}}:
+ <span class="fl">10.4528</span>  -<span class="fl">0.280955</span>
+  <span class="fl">0.0</span>      <span class="fl">9.74095</span> </code></pre></div>
+<p><code>XXchol</code> is of type <code>Cholesky</code>. We can extract the lower triangular matrix by</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; XXchol[:L]
+<span class="fl">2</span>x2 LowerTriangular{<span class="dt">Float64</span>,<span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}}:
+ <span class="fl">10.4528</span>    <span class="fl">0.0</span>    
+ -<span class="fl">0.280955</span>  <span class="fl">9.74095</span></code></pre></div>
+<p>Similarly, the upper triangular</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; XXchol[:U]
+<span class="fl">2</span>x2 UpperTriangular{<span class="dt">Float64</span>,<span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}}:
+ <span class="fl">10.4528</span>  -<span class="fl">0.280955</span>
+  <span class="fl">0.0</span>      <span class="fl">9.74095</span> </code></pre></div>
+Now, the inverse of a matrix <span class="math inline">\(A\)</span> is the solution of the following linear system of equations <span class="math display">\[AX = I\]</span> where <span class="math inline">\(I\)</span> denotes the identity matrix, or in terms of the Cholesky decomposition
+\begin{align*}
+R'B &amp;=&amp; I \\
+R'X &amp;=&amp; B  
+\end{align*}
+<p>which can be efficiently solved due to triangularity of <span class="math inline">\(R\)</span>.</p>
+<p>In Julia, to obtain a Cholesky based inverse we simply use <code>inv</code> on the Cholesky factor.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; Varhat2 = inv(XXchol).*sigma2
+<span class="fl">2</span>x2 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ <span class="fl">0.00823204</span>   <span class="fl">0.000254574</span>
+ <span class="fl">0.000254574</span>  <span class="fl">0.00947134</span> </code></pre></div>
+<p>The Cholesky factor has also other methods that are useful.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; det(XXchol)    <span class="co"># determinant of X'X</span>
+
+<span class="fl">10367.415458614012</span>
+julia&gt; logdet(XXchol) <span class="co"># log-determinant of X'X</span>
+<span class="fl">9.246423037625172</span></code></pre></div>
+<p>Given the Cholesky factorization we can back-out the original matrix by using <code>full</code></p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; XXf = full(XXchol)
+<span class="fl">2</span>x2 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ <span class="fl">109.262</span>    -<span class="fl">2.93677</span>
+  -<span class="fl">2.93677</span>  <span class="fl">94.9651</span> </code></pre></div>
+<p>Due to numerical rounding errors <code>XXf</code> won't be strictly equal to <code>X'X</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; XXf.==X'X
+
+<span class="fl">2</span>x2 BitArray{<span class="fl">2</span>}:
+  true  false
+ false  false
+julia&gt; isapprox(XXf, X'X)
+true</code></pre></div>
+<h3 id="the-qr-decomposition">The QR decomposition</h3>
+<p><em>Definition.(QR decomposition)</em> Any real square matrix <span class="math inline">\(A\)</span> may be decomposed as <span class="math inline">\($A = QR\)</span> where <span class="math inline">\(Q\)</span> is an orthoganl matrix, that is, <span class="math inline">\(Q'Q = I\)</span> and <span class="math inline">\(R\)</span> is an upper triangular matrix. If <span class="math inline">\(A\)</span> is invertible, then the factorization is unique if the diagonal elements of <span class="math inline">\(R\)</span> are restricted to be positive.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">XXqr = qrfact(X'X)</code></pre></div>
+<p>The following functions are available for the <code>QR</code> objects: <code>size</code>, and <code>\</code>. When <code>A</code> is rectangular, <code>\</code> will return a least squares solution and if the solution is not unique, the one with smallest norm is returned.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; size(XXqr)
+
+(<span class="fl">2</span>,<span class="fl">2</span>)
+julia&gt; XXqr\X'Y
+<span class="fl">2</span>-element <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">1</span>}:
+ <span class="fl">0.00985275</span>
+ <span class="fl">1.12844</span>   </code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; XXqr[:R]
+
+<span class="fl">2</span>x2 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ -<span class="fl">109.301</span>   <span class="fl">5.48729</span>
+    <span class="fl">0.0</span>    <span class="fl">94.8519</span> 
+julia&gt; XXqr[:Q]       <span class="co"># Implicit representation</span>
+
+<span class="fl">2</span>x2 Base.LinAlg.QRCompactWYQ{<span class="dt">Float64</span>,<span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}}:
+ -<span class="fl">0.999639</span>   <span class="fl">0.0268686</span>
+  <span class="fl">0.0268686</span>  <span class="fl">0.999639</span> 
+julia&gt; full(XXqr[:Q]) <span class="co"># Matrix representation</span>
+<span class="fl">2</span>x2 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ -<span class="fl">0.999639</span>   <span class="fl">0.0268686</span>
+  <span class="fl">0.0268686</span>  <span class="fl">0.999639</span> </code></pre></div>
+<p>Notice that the least squares problem becomes <span class="math display">\[ X'X\beta = X'Y \implies QR\beta = X'Y \implies R\beta = Q'(X'Y) \implies
+\hat{\beta} = R^{-1} Q'(X'Y)\]</span></p>
+<h3 id="the-svd">The SVD</h3>
+<p>The singular value decomposition represents <code>X</code> as <code>U*S*V'</code> where <code>U</code> and <code>V</code> are orthogonal and <code>S</code> is diagonal. It is related to the eigen decomposition in that the eigen decomposition of <code>X'X</code> is <code>V*S*S*V'</code>. The eigenvalues of <code>X'X</code> are the squares of the singular values of <code>X</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3 = svdfact(m3)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3[:U]</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3[:V]</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3[:S]  <span class="co"># vector of singular values</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3[:Vt]</code></pre></div>
+<p>This is the <em>thin</em> SVD. If you want the full matrix <code>U</code> use</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3 = svdfact(m3; thin=false)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3[:U]</code></pre></div>
+<h3 id="the-eigen-decomposition">The eigen decomposition</h3>
+<p>The <code>eigfact</code> function has a special method for real symmetric matrices</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">ef3 = eigfact(m33)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">ef3[:values]</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">abs2(sv3[:S])  <span class="co"># same as the eigenvalues but in the opposite order</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">ef3[:vectors]</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sv3[:V]    <span class="co"># same as the eigenvectors of m33 with permuted rows and columns</span></code></pre></div>
+<p>For general matrices we must allow for complex eigenvalues and eigenvectors. If all the eigenvalues and eigenvectors are real they are returned as such</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">eigfact(reshape([<span class="fl">1</span>:<span class="fl">9</span>;],(<span class="fl">3</span>,<span class="fl">3</span>)))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">eigfact([<span class="fl">0</span> <span class="fl">1</span>;-<span class="fl">1</span> <span class="fl">0</span>])</code></pre></div>
+<h3 id="the-lu-factorization">The LU factorization</h3>
+<p>The LU factorization is the most general direct factorization. It is related to Gaussian elimination.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">lu4 = lufact(reshape([<span class="fl">1</span>:<span class="fl">9</span>;],(<span class="fl">3</span>,<span class="fl">3</span>)))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">lu4[:L]  <span class="co"># unit lower triangular factor</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">lu4[:U] <span class="co"># upper triangular factor.  Note that it is singular.</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">lu4[:p]  <span class="co"># permutation vector</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">lu4[:P]  <span class="co"># permutation matrix</span></code></pre></div>
+<h2 id="extracting-submatrices">Extracting submatrices</h2>
+<p>As in <code>R</code> elements or subarrays are extracted with using indices. To indicate all values of a given index use <code>:</code></p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">m2[:,<span class="fl">2</span>]</code></pre></div>
+<p>There are two alternatives to indexing, the use of <code>sub</code> or <code>slice</code>.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sub(m2,:,<span class="fl">2</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">slice(m2, :, <span class="fl">2</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">sub(m2, <span class="fl">2</span>, :)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">slice(m2, <span class="fl">2</span>, :)</code></pre></div>
+<p>The difference between <code>sub</code> and <code>slice</code> is that <code>slice</code> always drops singleton dimensions whereas <code>sub</code> only drops trailing singleton dimensions.</p>
+<p>Both <code>sub</code> and <code>slice</code> return views into the original array. That is, they do not copy. At present using indices produces a copy but that will change.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">pointer(m2)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">pointer(m2[:,<span class="fl">1</span>])</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">pointer(sub(m2, :, <span class="fl">1</span>))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">pointer(slice(m2, <span class="fl">1</span>, :))</code></pre></div>
+<p>To convert a matrix or higher-order array to a vector use <code>vec</code></p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">vec(m2)</code></pre></div>
+<p>The result of an indexing operation is a copy of the elements from the array.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">v2 = m2[:,<span class="fl">2</span>]
+v2[<span class="fl">2</span>] = <span class="fl">999</span>.</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">m2</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">v2</code></pre></div>
+<p>The <code>sub</code> function produces an array view which accesses the actual elements in the original array.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">v2 = sub(m2,:,<span class="fl">2</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">v2[<span class="fl">2</span>] = <span class="fl">1</span>.</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">m2</code></pre></div>
+<p>The <code>sub</code> function is preferred over explicit indexing if you need a subarray that you are not going to modify (<code>sub</code> does not create unnecessary copies) and for when you really do want to change the elements of a subarray.</p>
+<h2 id="underlying-numerical-codes">Underlying numerical codes</h2>
+<p>Most linear algebra in <code>Julia</code> is performed on <code>Matrix{Float64}</code> objects using the LAPACK and BLAS software. By default <code>Julia</code> is compiled against OpenBLAS, an accelerated multi-threaded BLAS that also provides accelerated versions of some of the LAPACK functions. For example the LU decomposition and solutions of linear systems using LU are accelerated because they constitute the LAPACK benchmark. <code>Julia</code> can also be compiled with Intel's MKL (Math Kernel Library) BLAS, when they are available, to give accelerated performance. Understandably these are tuned for best performance on Intel processors.</p>
+<p>Julia provides thin wrappers around many LAPACK and BLAS routines if you want maximal control. These mimic the BLAS and LAPACK routines without the annoyingly redundant arguments. Note that many internal linear algebra functions provide mutating versions.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; whos(BLAS)                          BLAS    <span class="fl">230</span> KB     Module
+                          asum   <span class="fl">4898</span> bytes  <span class="dt">Function</span>
+                         axpy!   <span class="fl">9667</span> bytes  <span class="dt">Function</span>
+                     blascopy!   <span class="fl">4134</span> bytes  <span class="dt">Function</span>
+                           dot   <span class="fl">4645</span> bytes  <span class="dt">Function</span>
+                          dotc   <span class="fl">2911</span> bytes  <span class="dt">Function</span>
+                          dotu   <span class="fl">2911</span> bytes  <span class="dt">Function</span>
+                          gbmv   <span class="fl">5485</span> bytes  <span class="dt">Function</span>
+                         gbmv!   <span class="fl">7237</span> bytes  <span class="dt">Function</span>
+                          gemm   <span class="fl">5469</span> bytes  <span class="dt">Function</span>
+                         gemm!     <span class="fl">13</span> KB     <span class="dt">Function</span>
+                          gemv   <span class="fl">5003</span> bytes  <span class="dt">Function</span>
+                         gemv!     <span class="fl">14</span> KB     <span class="dt">Function</span>
+                          ger!   <span class="fl">7440</span> bytes  <span class="dt">Function</span>
+                          hemm   <span class="fl">2266</span> bytes  <span class="dt">Function</span>
+                         hemm!   <span class="fl">4716</span> bytes  <span class="dt">Function</span>
+                          hemv   <span class="fl">2134</span> bytes  <span class="dt">Function</span>
+                         hemv!   <span class="fl">4564</span> bytes  <span class="dt">Function</span>
+                          her!   <span class="fl">2703</span> bytes  <span class="dt">Function</span>
+                         her2k   <span class="fl">2663</span> bytes  <span class="dt">Function</span>
+                        her2k!   <span class="fl">4389</span> bytes  <span class="dt">Function</span>
+                          herk   <span class="fl">2364</span> bytes  <span class="dt">Function</span>
+                         herk!   <span class="fl">4064</span> bytes  <span class="dt">Function</span>
+                         iamax   <span class="fl">3946</span> bytes  <span class="dt">Function</span>
+                          nrm2   <span class="fl">4898</span> bytes  <span class="dt">Function</span>
+                          sbmv   <span class="fl">2339</span> bytes  <span class="dt">Function</span>
+                         sbmv!   <span class="fl">3231</span> bytes  <span class="dt">Function</span>
+                          scal    <span class="fl">564</span> bytes  <span class="dt">Function</span>
+                         scal!   <span class="fl">3514</span> bytes  <span class="dt">Function</span>
+                          symm   <span class="fl">4434</span> bytes  <span class="dt">Function</span>
+                         symm!   <span class="fl">9321</span> bytes  <span class="dt">Function</span>
+                          symv   <span class="fl">4146</span> bytes  <span class="dt">Function</span>
+                         symv!   <span class="fl">8349</span> bytes  <span class="dt">Function</span>
+                          syr!   <span class="fl">5307</span> bytes  <span class="dt">Function</span>
+                         syr2k   <span class="fl">1386</span> bytes  <span class="dt">Function</span>
+                        syr2k!   <span class="fl">8673</span> bytes  <span class="dt">Function</span>
+                          syrk   <span class="fl">1330</span> bytes  <span class="dt">Function</span>
+                         syrk!      <span class="fl">9</span> KB     <span class="dt">Function</span>
+                          trmm   <span class="fl">2548</span> bytes  <span class="dt">Function</span>
+                         trmm!     <span class="fl">10</span> KB     <span class="dt">Function</span>
+                          trmv   <span class="fl">2236</span> bytes  <span class="dt">Function</span>
+                         trmv!   <span class="fl">5750</span> bytes  <span class="dt">Function</span>
+                          trsm   <span class="fl">2548</span> bytes  <span class="dt">Function</span>
+                         trsm!   <span class="fl">8371</span> bytes  <span class="dt">Function</span>
+                          trsv   <span class="fl">2236</span> bytes  <span class="dt">Function</span>
+                         trsv!   <span class="fl">5654</span> bytes  <span class="dt">Function</span></code></pre></div>
+<p>Operations like <code>A'B</code> and <code>A\b</code> call functions with names like <code>Ac_mul_B</code> and <code>A_ldiv_B</code>. There are mutating versions of these functions. The <code>Ac</code> denotes <code>A'</code> which, in general, is the conjugate transpose of <code>A</code>. For complex <code>A</code> there is a distinction between <code>A'</code>, the conjugate transpose, and <code>A.'</code>, the transpose. Usually you want <code>A'</code>. For real matrices <code>A'</code> and <code>A.'</code> are the same.</p>
+<h2 id="special-matrix-types">Special Matrix types</h2>
+<p>Notice that the type of <code>XXchol[:U]</code> from the first Cholesky example is</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">typeof(cholfact(XXchol)[:U])</code></pre></div>
+<p>Many operations can be steamlined if it is known that one of the operands is a triangular matrix or, even more specific, a unit triangular matrices. There are also special types for <code>Symmetric</code> and <code>Diagonal</code> matrices. Ongoing work will incorporate these matrix types more deeply into the <code>Julia</code> system.</p>
+<h2 id="sparse-matrices">Sparse Matrices</h2>
+<p>Sparse matrices and sparse vectors are available in the base <code>Julia</code> system but their description will need to wait for another time.</p>
+<p><code>julia ?sparse</code></p>
+
+<HR />
+<div class="footer"><p>
+Published from <a href="LinearAlgebraJulia.md">LinearAlgebraJulia.md</a> using
+<a href="http://github.com/mpastell/Weave.jl">Weave.jl</a> 0.1.2 on 2016-04-27.
+<p></div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

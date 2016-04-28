@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+
+
+  <script src type="text/javascript"></script>
+
+  
+  
+  <script type="text/javascript">
+    var fileref=document.createElement('script')
+    fileref.setAttribute("type","text/javascript")
+    fileref.setAttribute("src", "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    document.getElementsByTagName("head")[0].appendChild(fileref)
+  </script>
+  
+  <style type="text/css">
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Raleway Light'), local('Raleway-Light'), url(http://fonts.gstatic.com/s/raleway/v9/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(http://fonts.gstatic.com/s/raleway/v9/xkvoNo9fC8O2RDydKj12b_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  }
+  html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  body {
+    margin: 0;
+  }
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+  }
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  [hidden],
+  template {
+    display: none;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+  abbr[title] {
+    border-bottom: 1px dotted;
+  }
+  b,
+  strong {
+    font-weight: bold;
+  }
+  dfn {
+    font-style: italic;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  mark {
+    background: #ff0;
+    color: #000;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  img {
+    border: 0;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  figure {
+    margin: 1em 40px;
+  }
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
+  pre {
+    overflow: auto;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+  }
+  button {
+    overflow: visible;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button,
+  html input[type="button"], /* 1 */
+  input[type="reset"],
+  input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+  }
+  button[disabled],
+  html input[disabled] {
+    cursor: default;
+  }
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  input {
+    line-height: normal;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  }
+  legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+  }
+  textarea {
+    overflow: auto;
+  }
+  optgroup {
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td,
+  th {
+    padding: 0;
+  }
+  
+  
+  /*
+  * Skeleton V2.0.4
+  * Copyright 2014, Dave Gamache
+  * www.getskeleton.com
+  * Free to use under the MIT license.
+  * http://www.opensource.org/licenses/mit-license.php
+  * 12/29/2014
+  */
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+  .column,
+  .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; }
+  @media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; }
+  }
+  @media (min-width: 550px) {
+    .container {
+      width: 80%; }
+    .column,
+    .columns {
+      margin-left: 4%; }
+    .column:first-child,
+    .columns:first-child {
+      margin-left: 0; }
+  
+    .one.column,
+    .one.columns                    { width: 4.66666666667%; }
+    .two.columns                    { width: 13.3333333333%; }
+    .three.columns                  { width: 22%;            }
+    .four.columns                   { width: 30.6666666667%; }
+    .five.columns                   { width: 39.3333333333%; }
+    .six.columns                    { width: 48%;            }
+    .seven.columns                  { width: 56.6666666667%; }
+    .eight.columns                  { width: 65.3333333333%; }
+    .nine.columns                   { width: 74.0%;          }
+    .ten.columns                    { width: 82.6666666667%; }
+    .eleven.columns                 { width: 91.3333333333%; }
+    .twelve.columns                 { width: 100%; margin-left: 0; }
+  
+    .one-third.column               { width: 30.6666666667%; }
+    .two-thirds.column              { width: 65.3333333333%; }
+  
+    .one-half.column                { width: 48%; }
+  
+    /* Offsets */
+    .offset-by-one.column,
+    .offset-by-one.columns          { margin-left: 8.66666666667%; }
+    .offset-by-two.column,
+    .offset-by-two.columns          { margin-left: 17.3333333333%; }
+    .offset-by-three.column,
+    .offset-by-three.columns        { margin-left: 26%;            }
+    .offset-by-four.column,
+    .offset-by-four.columns         { margin-left: 34.6666666667%; }
+    .offset-by-five.column,
+    .offset-by-five.columns         { margin-left: 43.3333333333%; }
+    .offset-by-six.column,
+    .offset-by-six.columns          { margin-left: 52%;            }
+    .offset-by-seven.column,
+    .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+    .offset-by-eight.column,
+    .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+    .offset-by-nine.column,
+    .offset-by-nine.columns         { margin-left: 78.0%;          }
+    .offset-by-ten.column,
+    .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+    .offset-by-eleven.column,
+    .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+  
+    .offset-by-one-third.column,
+    .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+    .offset-by-two-thirds.column,
+    .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+  
+    .offset-by-one-half.column,
+    .offset-by-one-half.columns     { margin-left: 52%; }
+  
+  }
+  html {
+    font-size: 62.5%; }
+  body {
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222; }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  h1 { font-size: 3.6rem; line-height: 1.2;  letter-spacing: -.1rem;}
+  h2 { font-size: 3.4rem; line-height: 1.25; letter-spacing: -.1rem; }
+  h3 { font-size: 3.2rem; line-height: 1.3;  letter-spacing: -.1rem; }
+  h4 { font-size: 2.8rem; line-height: 1.35; letter-spacing: -.08rem; }
+  h5 { font-size: 2.4rem; line-height: 1.5;  letter-spacing: -.05rem; }
+  h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+  
+  p {
+    margin-top: 0; }
+  a {
+    color: #1EAEDB; }
+  a:hover {
+    color: #0FA0CE; }
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box; }
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  .button:focus,
+  button:focus,
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0; }
+  .button.button-primary,
+  button.button-primary,
+  input[type="submit"].button-primary,
+  input[type="reset"].button-primary,
+  input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0; }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB; }
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box; }
+  /* Removes awkward default styles on some inputs for iOS */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px; }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #33C3F0;
+    outline: 0; }
+  label,
+  legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600; }
+  fieldset {
+    padding: 0;
+    border-width: 0; }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline; }
+  label > .label-body {
+    display: inline-block;
+    margin-left: .5rem;
+    font-weight: normal; }
+  ul {
+    list-style: circle inside; }
+  ol {
+    list-style: decimal inside; }
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0; }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin: 1.5rem 0 1.5rem 3rem;
+    font-size: 90%; }
+  li {
+    margin-bottom: 1rem; }
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1; }
+  th:first-child,
+  td:first-child {
+    padding-left: 0; }
+  th:last-child,
+  td:last-child {
+    padding-right: 0; }
+  button,
+  .button {
+    margin-bottom: 1rem; }
+  input,
+  textarea,
+  select,
+  fieldset {
+    margin-bottom: 1.5rem; }
+  pre,
+  blockquote,
+  dl,
+  figure,
+  table,
+  p,
+  ul,
+  ol,
+  form {
+    margin-bottom: 2.5rem; }
+  .u-full-width {
+    width: 100%;
+    box-sizing: border-box; }
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box; }
+  .u-pull-right {
+    float: right; }
+  .u-pull-left {
+    float: left; }
+  hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1; }
+  .container:after,
+  .row:after,
+  .u-cf {
+    content: "";
+    display: table;
+    clear: both; }
+  
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+  code {
+    padding: 2px 4px;
+    font-size: 90%;
+  
+    background-color: #f9f2f4;
+    border-radius: 4px;
+  }
+  
+  @media (min-width: 400px) {}
+  @media (min-width: 550px) {}
+  @media (min-width: 750px) {}
+  @media (min-width: 1000px) {}
+  @media (min-width: 1200px) {}
+  
+  h1.title {margin-top : 20px}
+  img {max-width : 100%%}
+  </style>
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+<body>
+<div class="container">
+        <div class="row">
+            <div class="col-md-12 twelve columns">
+
+
+
+<h1 id="writing-julia-functions">Writing Julia Functions</h1>
+<p>One way of learning a programming language like Julia is to read programs written by experienced programmers in that language. One of the amazing aspects of Julia is that much of the Base system is written in Julia itself. One of the current () deficiencies of Julia is that the documentation, especially package documentation, is quite sparse and you often need to read the source of a function to understand its purpose.</p>
+<p>In these notes I am assuming the use of julia-0.4.3 or later.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">versioninfo()</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">Julia Version <span class="fl">0.4.3</span>
+Commit a2f713d (<span class="fl">2016</span>-<span class="fl">01</span>-<span class="fl">12</span> <span class="fl">21</span>:<span class="fl">37</span> UTC)
+Platform Info:
+  System: Darwin (x86_64-apple-darwin15<span class="fl">.2.0</span>)
+  CPU: Intel(R) Core(TM) i7-<span class="fl">3540</span>M CPU @ <span class="fl">3.00</span>GHz
+  WORD_SIZE: <span class="fl">64</span>
+  BLAS: libopenblas (USE64BITINT DYNAMIC_ARCH NO_AFFINITY Sandybridge)
+  LAPACK: libopenblas64_
+  LIBM: libopenlibm
+  LLVM: libLLVM-<span class="fl">3.3</span></code></pre></div>
+<h2 id="tools-for-examining-functions">Tools for examining functions</h2>
+<h3 id="method-signatures-and-sources">Method signatures and sources</h3>
+<p>Entering the name of a function in R returns the definition of the function. Entering the name of a function in Julia provides information on the number of methods defined for that generic. Remember that all Julia functions are generic functions.</p>
+<p>The <code>methods</code> function gives the signatures of the methods for the generic.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">methods(mean)</code></pre></div>
+<h3 id="the-which-macro">The <span class="citation">@which</span> macro</h3>
+<p>In addition to functions Julia provides macros. Writing macros is not a priority when you start but you should know about some of the macros that can be useful with regard to functions. A call to a macro always begins with the ````` character and parenthesis around the argument list are optional.</p>
+<p>For generics that have many methods (try <code>methods(*)</code>) it may not be obvious which method applies to a particular set of arguments. The ```<code>which</code> macro tells you which method will be used.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; @which mean([<span class="fl">1</span>:<span class="fl">10</span>;])
+
+mean(A::<span class="dt">AbstractArray</span>{T,N}) at statistics.jl:<span class="fl">19</span></code></pre></div>
+<p>In a REPL session the filenames will not be live links. You can use <code>@less mean([1:10;])</code> to view the source file at the indicated location.</p>
+<h2 id="other-useful-macros">Other useful macros</h2>
+<p>Two very useful macros for tuning the performance of your functions are <code>@time</code> and <code>@profile. Recent versions of the</code><span class="citation">@time</span>` tell you the elapsed time, the total number of bytes allocated and the proportion of the time spent in garbage collection.</p>
+<p>Note that the number of bytes allocated does not measure the increase in memory used by the process. Often objects are allocated, populated, used and freed within the course of a functions's execution.</p>
+<p>Also, bear in mind that the very short execution times are quite variable.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; mean(randn((<span class="fl">25</span>,<span class="fl">1</span>_000_000)),<span class="fl">1</span>)  <span class="co"># 1,000,000 replications of a normal sample of size 25</span>
+
+<span class="fl">1</span>x1000000 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ <span class="fl">0.150222</span>  <span class="fl">0.114079</span>  <span class="fl">0.00163843</span>  <span class="fl">0.25872</span>  …  -<span class="fl">0.248658</span>  <span class="fl">0.0189209</span>  <span class="fl">0.204043</span>  -<span class="fl">0.104107</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">@time mn25n = mean(randn(<span class="fl">25</span>,<span class="fl">1</span>_000_000),<span class="fl">1</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="fl">0.272140</span> seconds (<span class="fl">22</span> allocations: <span class="fl">198.365</span> MB, <span class="fl">6.47</span>% gc time)</code></pre></div>
+<p>The first time a particular function signature is called it will be slower, often much slower, than subsequent times. This is because the first call to a signature can cause a lot of compilation of methods.</p>
+<p>Another useful macro is <code>@profile</code>, especially when paired with the <code>view</code> function in the <code>ProfileView</code> package.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">@profile mean(randn(<span class="fl">25</span>,<span class="fl">1</span>_000_000),<span class="fl">1</span>);</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="co">#Pkg.add(&quot;ProfileView&quot;) </span>
+using ProfileView  
+ProfileView.view()</code></pre></div>
+<p>In a REPL session the bars in the image are live links to lines in the source code.</p>
+<h2 id="simulation-of-the-distribution-of-sample-statistics">Simulation of the distribution of sample statistics</h2>
+<p>An example I like to use for function creation is simulation of the distribution of sample statistics. For creating samples from various distributions we will use the <code>Distributions</code> package. For plotting we will use the <code>Plots</code> package which provide a bridge between the different plotting packages available in Julia.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="co"># Pkg.add(&quot;Distributions&quot;) # done previously</span>
+<span class="co"># Pkg.add(&quot;Plots&quot;) # done previously</span>
+<span class="co"># Pkg.add(&quot;Gadfly&quot;) # done previously</span>
+using Distributions, Gadfly</code></pre></div>
+<p>Consider simulating the means of samples of size 25 from a standard normal distribution. We know that the distribution of this sample statistic should be a normal with mean zero and standard deviation 5.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; <span class="co"># expect a value close to zero</span>
+mean(mn25n)
+
+-<span class="fl">5.546395058693986e-5</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; <span class="co"># expect a value close to 0.2</span>
+std(mn25n)
+
+<span class="fl">0.20006533568877286</span></code></pre></div>
+<p>The <code>randn</code> function for sampling from a normal distribution is in the <code>Base</code> module. For other distributions we use the Distributions package. Check the documentation for the Distributions package to see all the possibilities.</p>
+<p>To write a general function for simulating the distribution of sample statistics we need the distribution from which to sample, the sample size, the statistic to evaluate and the number of replications to perform. A distribution object encompasses both the distribution type and the parameters of the distribution.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; methods(TDist)
+<span class="fl">3</span>-element <span class="dt">Array</span>{<span class="dt">Any</span>,<span class="fl">1</span>}:
+ call(::<span class="dt">Type</span>{Distributions.TDist}, ν::<span class="dt">Real</span>) at /Users/gragusa/.julia/v0<span class="fl">.4</span>/Distributions/src/univariate/continuous/tdist.jl:<span class="fl">4</span>
+ call{T}(::<span class="dt">Type</span>{T}, arg) at essentials.jl:<span class="fl">56</span>                                                                                
+ call{T}(::<span class="dt">Type</span>{T}, args...) at essentials.jl:<span class="fl">57</span>                                                                            </code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; d = TDist(<span class="fl">5</span>)
+Distributions.TDist(ν=<span class="fl">5.0</span>)</code></pre></div>
+<p>A function to replicate N times the evaluation of the statistic, <span class="math inline">\(s\)</span>, on a sample of size <span class="math inline">\(n\)</span> from distribution d can be written</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="kw">function</span> sampstat(N::<span class="dt">Integer</span>,s::<span class="dt">Function</span>,n::<span class="dt">Integer</span>,d::Distribution)
+    samp = rand(d,n)   <span class="co"># simulate the first sample</span>
+    v1 = s(samp)       <span class="co"># evaluate the statistic</span>
+    res = <span class="dt">Array</span>(typeof(v1),(N,))  <span class="co"># create the result array</span>
+    res[<span class="fl">1</span>] = v1        <span class="co"># set the first element</span>
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span>:N
+        res[i] = s(rand(d,n))
+    <span class="kw">end</span>
+    res
+<span class="kw">end</span></code></pre></div>
+<p>Next we generate a large sample and check the timing</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">@time med20p = sampstat(<span class="fl">1</span>_000_000,median,<span class="fl">20</span>,d)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="fl">2.293812</span> seconds (<span class="fl">6.01</span> M allocations: <span class="fl">572.501</span> MB, <span class="fl">4.50</span>% gc time)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; med20p'
+<span class="fl">1</span>x1000000 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ -<span class="fl">0.242525</span>  -<span class="fl">0.740665</span>  <span class="fl">0.207524</span>  <span class="fl">0.0893182</span>  …  <span class="fl">0.49133</span>  <span class="fl">0.404303</span>  <span class="fl">0.146869</span>  <span class="fl">0.457729</span></code></pre></div>
+<p>We see that a large amount of storage is allocated and about 25% of the execution time is in garbage collection. Because the function is fairly simple we can guess that the allocation is taking place in the call to <code>rand</code>. For each of the 1,000,000 replications a new vector of 20 Int64 values is being allocated, populated, passed to the function <code>s</code> then released to be garbage collected later.</p>
+<p>Julia allows for <strong>mutating</strong> functions that change the value of one or more of their arguments. This may seem heretical to R programmers but it can be very useful. Tuning the performance of long-running functions often comes down to finding out where temporary storage is being allocated and avoiding doing that.</p>
+<p>By convention, the names of mutating functions end in <code>!</code> so <code>rand</code> allocates new storage whereas <code>rand!</code> uses storage passed to it. Fortunately the vector <code>samp</code> has already been allocated and we can reuse it.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; samp = rand(d,<span class="fl">100</span>)
+
+<span class="fl">100</span>-element <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">1</span>}:
+  <span class="fl">0.968957</span> 
+  <span class="fl">0.330172</span> 
+ -<span class="fl">0.608034</span> 
+ -<span class="fl">0.566565</span> 
+ -<span class="fl">0.0635153</span>
+  <span class="fl">0.75565</span>  
+ -<span class="fl">0.228519</span> 
+ -<span class="fl">1.02575</span>  
+ -<span class="fl">0.141528</span> 
+ -<span class="fl">2.11979</span>  
+  <span class="fl">1.54944</span>  
+ -<span class="fl">2.82906</span>  
+  <span class="fl">0.355108</span> 
+ -<span class="fl">0.656234</span> 
+  <span class="fl">1.13494</span>  
+ -<span class="fl">3.71903</span>  
+ -<span class="fl">0.0439336</span>
+ -<span class="fl">2.18042</span>  
+ -<span class="fl">0.114139</span> 
+  ⋮        
+ -<span class="fl">1.47518</span>  
+  <span class="fl">0.98356</span>  
+ -<span class="fl">0.489651</span> 
+  <span class="fl">1.58549</span>  
+  <span class="fl">1.37177</span>  
+ -<span class="fl">0.355539</span> 
+ -<span class="fl">0.296157</span> 
+  <span class="fl">1.0606</span>   
+  <span class="fl">0.0442144</span>
+  <span class="fl">0.0249609</span>
+  <span class="fl">1.10675</span>  
+  <span class="fl">0.710933</span> 
+ -<span class="fl">0.766021</span> 
+ -<span class="fl">0.104818</span> 
+ -<span class="fl">0.121374</span> 
+ -<span class="fl">0.325071</span> 
+  <span class="fl">0.518506</span> 
+  <span class="fl">0.243233</span> </code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">rand!(d,samp)'</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; samp'
+
+<span class="fl">1</span>x100 <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">2</span>}:
+ -<span class="fl">0.232836</span>  <span class="fl">2.7331</span>  <span class="fl">1.78327</span>  -<span class="fl">4.23921</span>  -<span class="fl">0.33418</span>  …  <span class="fl">0.574176</span>  <span class="fl">3.09862</span>  -<span class="fl">0.414185</span>  <span class="fl">3.0416</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="kw">function</span> sampstat1(N::<span class="dt">Integer</span>,s::<span class="dt">Function</span>,n::<span class="dt">Integer</span>,d::Distribution)
+    samp = rand(d,n)   <span class="co"># simulate the first sample</span>
+    v1 = s(samp)       <span class="co"># evaluate the statistic</span>
+    res = <span class="dt">Array</span>(typeof(v1),(N,))  <span class="co"># create the result array</span>
+    res[<span class="fl">1</span>] = v1        <span class="co"># set the first element</span>
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fl">2</span>:N
+        res[i] = s(rand!(d,samp))
+    <span class="kw">end</span>
+    res
+<span class="kw">end</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">n= <span class="fl">100</span>; s = median
+@time med20p1 = sampstat1(<span class="fl">1</span>_000_000,s,n,d)'</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="fl">9.112874</span> seconds (<span class="fl">5.01</span> M allocations: <span class="fl">1007.373</span> MB, <span class="fl">1.47</span>% gc time)</code></pre></div>
+<p>The reuse of the <code>samp</code> vector has helped to reduce the amount of storage allocated and the time spent in garbage collection but not substantially. A less obvious source of allocation is the <code>median</code> function. The non-mutating version must take a copy of the vector to do the (partial) sort evaluating the median. We don't need to preserve the sample because we are going to overwrite it in the next iteration anyway.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">@time med20p1 = sampstat1(<span class="fl">1</span>_000_000,median!,n,d)'</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="fl">8.876744</span> seconds (<span class="fl">4.00</span> M allocations: <span class="fl">152.581</span> MB, <span class="fl">0.33</span>% gc time)</code></pre></div>
+<p>We should, of course, check that the results are consistent by setting the random number generator seed and comparing the results from the two <code>sampstat</code> functions and the mutating and non-mutating <code>median</code> functions.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">srand(<span class="fl">1234321</span>)
+s1 = sampstat(<span class="fl">100</span>_000,median,n,d);
+srand(<span class="fl">1234321</span>)
+s2 = sampstat(<span class="fl">100</span>_000,median!,n,d);
+srand(<span class="fl">1234321</span>)
+s3 = sampstat1(<span class="fl">100</span>_000,median,n,d);
+srand(<span class="fl">1234321</span>)
+s4 = sampstat1(<span class="fl">100</span>_000,median!,n,d);
+all(s1 .== s2 .== s3 .== s4)</code></pre></div>
+<h2 id="plot-the-distribution">Plot the distribution</h2>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">plot(x=s3, Geom.histogram(bincount = <span class="fl">100</span>))</code></pre></div>
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgICAgeG1sbnM6Z2FkZmx5PSJodHRwOi8vd3d3LmdhZGZseWpsLm9yZy9ucyIKICAgICB2ZXJzaW9uPSIxLjIiCiAgICAgd2lkdGg9IjE1Mi40bW0iIGhlaWdodD0iMTAxLjZtbSIgdmlld0JveD0iMCAwIDE1Mi40IDEwMS42IgogICAgIHN0cm9rZT0ibm9uZSIKICAgICBmaWxsPSIjMDAwMDAwIgogICAgIHN0cm9rZS13aWR0aD0iMC4zIgogICAgIGZvbnQtc2l6ZT0iMy44OCIKPgo8ZyBjbGFzcz0icGxvdHJvb3QgeHNjYWxhYmxlIHlzY2FsYWJsZSIgaWQ9ImltZy02OThiMTRjZi0xIj4KICA8ZyBmb250LXNpemU9IjMuODgiIGZvbnQtZmFtaWx5PSInUFQgU2FucycsJ0hlbHZldGljYSBOZXVlJywnSGVsdmV0aWNhJyxzYW5zLXNlcmlmIiBmaWxsPSIjNTY0QTU1IiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjAwMCIgaWQ9ImltZy02OThiMTRjZi0yIj4KICAgIDx0ZXh0IHg9IjgzLjI2IiB5PSI4OS45OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9IjAuNmVtIj54PC90ZXh0PgogIDwvZz4KICA8ZyBjbGFzcz0iZ3VpZGUgeGxhYmVscyIgZm9udC1zaXplPSIyLjgyIiBmb250LWZhbWlseT0iJ1BUIFNhbnMgQ2FwdGlvbicsJ0hlbHZldGljYSBOZXVlJywnSGVsdmV0aWNhJyxzYW5zLXNlcmlmIiBmaWxsPSIjNkM2MDZCIiBpZD0iaW1nLTY5OGIxNGNmLTMiPgogICAgPHRleHQgeD0iMjEuMTEiIHk9IjgzLjMyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iMC42ZW0iPi0xLjA8L3RleHQ+CiAgICA8dGV4dCB4PSI1Mi4xOSIgeT0iODMuMzIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjZlbSI+LTAuNTwvdGV4dD4KICAgIDx0ZXh0IHg9IjgzLjI2IiB5PSI4My4zMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9IjAuNmVtIj4wLjA8L3RleHQ+CiAgICA8dGV4dCB4PSIxMTQuMzMiIHk9IjgzLjMyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iMC42ZW0iPjAuNTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE0NS40IiB5PSI4My4zMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9IjAuNmVtIj4xLjA8L3RleHQ+CiAgPC9nPgo8ZyBjbGlwLXBhdGg9InVybCgjaW1nLTY5OGIxNGNmLTQpIj4KICA8ZyBpZD0iaW1nLTY5OGIxNGNmLTUiPgogICAgPGcgcG9pbnRlci1ldmVudHM9InZpc2libGUiIG9wYWNpdHk9IjEiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMC4wMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMDAwIiBjbGFzcz0iZ3VpZGUgYmFja2dyb3VuZCIgaWQ9ImltZy02OThiMTRjZi02Ij4KICAgICAgPHJlY3QgeD0iMTkuMTEiIHk9IjUiIHdpZHRoPSIxMjguMjkiIGhlaWdodD0iNzcuMzIiLz4KICAgIDwvZz4KICAgIDxnIGNsYXNzPSJndWlkZSB5Z3JpZGxpbmVzIHhmaXhlZCIgc3Ryb2tlLWRhc2hhcnJheT0iMC41LDAuNSIgc3Ryb2tlLXdpZHRoPSIwLjIiIHN0cm9rZT0iI0QwRDBFMCIgaWQ9ImltZy02OThiMTRjZi03Ij4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE5LjExLDgwLjMxIEwgMTQ3LjQgODAuMzEiLz4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE5LjExLDY1LjY1IEwgMTQ3LjQgNjUuNjUiLz4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE5LjExLDUwLjk5IEwgMTQ3LjQgNTAuOTkiLz4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE5LjExLDM2LjMzIEwgMTQ3LjQgMzYuMzMiLz4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE5LjExLDIxLjY2IEwgMTQ3LjQgMjEuNjYiLz4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE5LjExLDcgTCAxNDcuNCA3Ii8+CiAgICA8L2c+CiAgICA8ZyBjbGFzcz0iZ3VpZGUgeGdyaWRsaW5lcyB5Zml4ZWQiIHN0cm9rZS1kYXNoYXJyYXk9IjAuNSwwLjUiIHN0cm9rZS13aWR0aD0iMC4yIiBzdHJva2U9IiNEMEQwRTAiIGlkPSJpbWctNjk4YjE0Y2YtOCI+CiAgICAgIDxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0yMS4xMSw1IEwgMjEuMTEgODIuMzIiLz4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTUyLjE5LDUgTCA1Mi4xOSA4Mi4zMiIvPgogICAgICA8cGF0aCBmaWxsPSJub25lIiBkPSJNODMuMjYsNSBMIDgzLjI2IDgyLjMyIi8+CiAgICAgIDxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0xMTQuMzMsNSBMIDExNC4zMyA4Mi4zMiIvPgogICAgICA8cGF0aCBmaWxsPSJub25lIiBkPSJNMTQ1LjQsNSBMIDE0NS40IDgyLjMyIi8+CiAgICA8L2c+CiAgICA8ZyBjbGFzcz0icGxvdHBhbmVsIiBpZD0iaW1nLTY5OGIxNGNmLTkiPgogICAgICA8ZyBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiIHN0cm9rZS13aWR0aD0iMC4zIiBpZD0iaW1nLTY5OGIxNGNmLTEwIj4KICAgICAgICA8ZyBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1vcGFjaXR5PSIwLjAwMCIgZmlsbD0iIzAwQkZGRiIgY2xhc3M9Imdlb21ldHJ5IiBpZD0iaW1nLTY5OGIxNGNmLTExIj4KICAgICAgICAgIDxyZWN0IHg9IjQ2Ljk1IiB5PSI4MC4yOSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMyIvPgogICAgICAgICAgPHJlY3QgeD0iNDcuNzYiIHk9IjgwLjMiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuMDEiLz4KICAgICAgICAgIDxyZWN0IHg9IjQ4LjU2IiB5PSI4MC4yOSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMyIvPgogICAgICAgICAgPHJlY3QgeD0iNDkuMzYiIHk9IjgwLjMxIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjAxIi8+CiAgICAgICAgICA8cmVjdCB4PSI1MC4xNyIgeT0iODAuMjkiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuMDMiLz4KICAgICAgICAgIDxyZWN0IHg9IjUwLjk3IiB5PSI4MC4yOSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMyIvPgogICAgICAgICAgPHJlY3QgeD0iNTEuNzgiIHk9IjgwLjI5IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjAzIi8+CiAgICAgICAgICA8cmVjdCB4PSI1Mi41OCIgeT0iODAuMjMiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuMDkiLz4KICAgICAgICAgIDxyZWN0IHg9IjUzLjM4IiB5PSI4MC4yNCIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wNyIvPgogICAgICAgICAgPHJlY3QgeD0iNTQuMTkiIHk9IjgwLjE0IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjE4Ii8+CiAgICAgICAgICA8cmVjdCB4PSI1NC45OSIgeT0iODAuMTciIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuMTUiLz4KICAgICAgICAgIDxyZWN0IHg9IjU1LjgiIHk9IjgwLjIiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuMTIiLz4KICAgICAgICAgIDxyZWN0IHg9IjU2LjYiIHk9Ijc5LjgyIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjUiLz4KICAgICAgICAgIDxyZWN0IHg9IjU3LjQiIHk9Ijc5LjgiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuNTEiLz4KICAgICAgICAgIDxyZWN0IHg9IjU4LjIxIiB5PSI3OS43MyIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC41OSIvPgogICAgICAgICAgPHJlY3QgeD0iNTkuMDEiIHk9Ijc5LjQxIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjkxIi8+CiAgICAgICAgICA8cmVjdCB4PSI1OS44MiIgeT0iNzkuNDIiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuODkiLz4KICAgICAgICAgIDxyZWN0IHg9IjYwLjYyIiB5PSI3OS4wMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMS4zMSIvPgogICAgICAgICAgPHJlY3QgeD0iNjEuNDIiIHk9Ijc4LjU4IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIxLjczIi8+CiAgICAgICAgICA8cmVjdCB4PSI2Mi4yMyIgeT0iNzcuODIiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjIuNDkiLz4KICAgICAgICAgIDxyZWN0IHg9IjYzLjAzIiB5PSI3Ny4zMiIgd2lkdGg9IjAuODUiIGhlaWdodD0iMi45OSIvPgogICAgICAgICAgPHJlY3QgeD0iNjMuODQiIHk9Ijc2LjM0IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIzLjk3Ii8+CiAgICAgICAgICA8cmVjdCB4PSI2NC42NCIgeT0iNzUuODYiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjQuNDYiLz4KICAgICAgICAgIDxyZWN0IHg9IjY1LjQ0IiB5PSI3NC42MyIgd2lkdGg9IjAuODUiIGhlaWdodD0iNS42OSIvPgogICAgICAgICAgPHJlY3QgeD0iNjYuMjUiIHk9IjczLjY0IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI2LjY3Ii8+CiAgICAgICAgICA8cmVjdCB4PSI2Ny4wNSIgeT0iNzAuOTciIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjkuMzQiLz4KICAgICAgICAgIDxyZWN0IHg9IjY3Ljg2IiB5PSI2OS4yNiIgd2lkdGg9IjAuODUiIGhlaWdodD0iMTEuMDYiLz4KICAgICAgICAgIDxyZWN0IHg9IjY4LjY2IiB5PSI2Ny4xMiIgd2lkdGg9IjAuODUiIGhlaWdodD0iMTMuMiIvPgogICAgICAgICAgPHJlY3QgeD0iNjkuNDYiIHk9IjY1LjIxIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIxNS4xIi8+CiAgICAgICAgICA8cmVjdCB4PSI3MC4yNyIgeT0iNjIuMzQiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjE3Ljk4Ii8+CiAgICAgICAgICA8cmVjdCB4PSI3MS4wNyIgeT0iNjAuODQiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjE5LjQ3Ii8+CiAgICAgICAgICA8cmVjdCB4PSI3MS44OCIgeT0iNTYuNTkiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjIzLjcyIi8+CiAgICAgICAgICA8cmVjdCB4PSI3Mi42OCIgeT0iNTUuNDkiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjI0LjgyIi8+CiAgICAgICAgICA8cmVjdCB4PSI3My40OSIgeT0iNTAuNDgiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjI5Ljg0Ii8+CiAgICAgICAgICA8cmVjdCB4PSI3NC4yOSIgeT0iNDYuMTkiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjM0LjEyIi8+CiAgICAgICAgICA8cmVjdCB4PSI3NS4wOSIgeT0iNDQuMyIgd2lkdGg9IjAuODUiIGhlaWdodD0iMzYuMDEiLz4KICAgICAgICAgIDxyZWN0IHg9Ijc1LjkiIHk9IjQwLjQ5IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIzOS44MiIvPgogICAgICAgICAgPHJlY3QgeD0iNzYuNyIgeT0iMzcuNTEiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjQyLjgiLz4KICAgICAgICAgIDxyZWN0IHg9Ijc3LjUxIiB5PSIzMi45MSIgd2lkdGg9IjAuODUiIGhlaWdodD0iNDcuNDEiLz4KICAgICAgICAgIDxyZWN0IHg9Ijc4LjMxIiB5PSIzMC4xNCIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTAuMTgiLz4KICAgICAgICAgIDxyZWN0IHg9Ijc5LjExIiB5PSIyNy45MSIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTIuNDEiLz4KICAgICAgICAgIDxyZWN0IHg9Ijc5LjkyIiB5PSIyNy42MyIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTIuNjgiLz4KICAgICAgICAgIDxyZWN0IHg9IjgwLjcyIiB5PSIyMy4xNiIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTcuMTYiLz4KICAgICAgICAgIDxyZWN0IHg9IjgxLjUzIiB5PSIyMy40NCIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTYuODgiLz4KICAgICAgICAgIDxyZWN0IHg9IjgyLjMzIiB5PSIyMi42NSIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTcuNjciLz4KICAgICAgICAgIDxyZWN0IHg9IjgzLjEzIiB5PSIyMi4yMiIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTguMDkiLz4KICAgICAgICAgIDxyZWN0IHg9IjgzLjk0IiB5PSIyMS41OSIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTguNzMiLz4KICAgICAgICAgIDxyZWN0IHg9Ijg0Ljc0IiB5PSIyNC4zMyIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTUuOTgiLz4KICAgICAgICAgIDxyZWN0IHg9Ijg1LjU1IiB5PSIyNC41MiIgd2lkdGg9IjAuODUiIGhlaWdodD0iNTUuNzkiLz4KICAgICAgICAgIDxyZWN0IHg9Ijg2LjM1IiB5PSIyOC43IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI1MS42MSIvPgogICAgICAgICAgPHJlY3QgeD0iODcuMTUiIHk9IjMwLjY4IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI0OS42MyIvPgogICAgICAgICAgPHJlY3QgeD0iODcuOTYiIHk9IjMyLjE1IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI0OC4xNyIvPgogICAgICAgICAgPHJlY3QgeD0iODguNzYiIHk9IjM2Ljk0IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI0My4zNyIvPgogICAgICAgICAgPHJlY3QgeD0iODkuNTciIHk9IjM5LjU1IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI0MC43NiIvPgogICAgICAgICAgPHJlY3QgeD0iOTAuMzciIHk9IjQxLjgxIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIzOC41MSIvPgogICAgICAgICAgPHJlY3QgeD0iOTEuMTciIHk9IjQ2Ljg3IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIzMy40NSIvPgogICAgICAgICAgPHJlY3QgeD0iOTEuOTgiIHk9IjQ5LjIiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjMxLjExIi8+CiAgICAgICAgICA8cmVjdCB4PSI5Mi43OCIgeT0iNTMuOTIiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjI2LjM5Ii8+CiAgICAgICAgICA8cmVjdCB4PSI5My41OSIgeT0iNTYiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjI0LjMxIi8+CiAgICAgICAgICA8cmVjdCB4PSI5NC4zOSIgeT0iNjAuMzMiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjE5Ljk5Ii8+CiAgICAgICAgICA8cmVjdCB4PSI5NS4xOSIgeT0iNjEuOTkiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjE4LjMzIi8+CiAgICAgICAgICA8cmVjdCB4PSI5NiIgeT0iNjQuMiIgd2lkdGg9IjAuODUiIGhlaWdodD0iMTYuMTEiLz4KICAgICAgICAgIDxyZWN0IHg9Ijk2LjgiIHk9IjY2LjMiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjE0LjAyIi8+CiAgICAgICAgICA8cmVjdCB4PSI5Ny42MSIgeT0iNjguOTgiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjExLjMzIi8+CiAgICAgICAgICA8cmVjdCB4PSI5OC40MSIgeT0iNzEuMjUiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjkuMDYiLz4KICAgICAgICAgIDxyZWN0IHg9Ijk5LjIyIiB5PSI3My4yMiIgd2lkdGg9IjAuODUiIGhlaWdodD0iNy4xIi8+CiAgICAgICAgICA8cmVjdCB4PSIxMDAuMDIiIHk9Ijc0LjEzIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI2LjE5Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMDAuODIiIHk9Ijc1LjA5IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI1LjIyIi8+CiAgICAgICAgICA8cmVjdCB4PSIxMDEuNjMiIHk9Ijc2LjI1IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSI0LjA2Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMDIuNDMiIHk9Ijc3LjEyIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIzLjIiLz4KICAgICAgICAgIDxyZWN0IHg9IjEwMy4yNCIgeT0iNzcuNTciIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjIuNzQiLz4KICAgICAgICAgIDxyZWN0IHg9IjEwNC4wNCIgeT0iNzguNjEiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjEuNyIvPgogICAgICAgICAgPHJlY3QgeD0iMTA0Ljg0IiB5PSI3OC42NCIgd2lkdGg9IjAuODUiIGhlaWdodD0iMS42NyIvPgogICAgICAgICAgPHJlY3QgeD0iMTA1LjY1IiB5PSI3OC45OCIgd2lkdGg9IjAuODUiIGhlaWdodD0iMS4zMyIvPgogICAgICAgICAgPHJlY3QgeD0iMTA2LjQ1IiB5PSI3OS40OSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC44MiIvPgogICAgICAgICAgPHJlY3QgeD0iMTA3LjI2IiB5PSI3OS42NiIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC42NiIvPgogICAgICAgICAgPHJlY3QgeD0iMTA4LjA2IiB5PSI3OS45MyIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4zOCIvPgogICAgICAgICAgPHJlY3QgeD0iMTA4Ljg2IiB5PSI3OS45MiIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC40Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMDkuNjciIHk9IjgwLjA0IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjI4Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMTAuNDciIHk9IjgwLjE3IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjE1Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMTEuMjgiIHk9IjgwLjE3IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjE1Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMTIuMDgiIHk9IjgwLjE3IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjE1Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMTIuODgiIHk9IjgwLjI3IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjA0Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMTMuNjkiIHk9IjgwLjI2IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjA2Ii8+CiAgICAgICAgICA8cmVjdCB4PSIxMTQuNDkiIHk9IjgwLjI5IiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjAzIi8+CiAgICAgICAgICA8cmVjdCB4PSIxMTUuMyIgeT0iODAuMyIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTE2LjEiIHk9IjgwLjMiIHdpZHRoPSIwLjg1IiBoZWlnaHQ9IjAuMDEiLz4KICAgICAgICAgIDxyZWN0IHg9IjExNi45IiB5PSI4MC4yOSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMyIvPgogICAgICAgICAgPHJlY3QgeD0iMTE3LjcxIiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTE4LjUxIiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTE5LjMyIiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTIwLjEyIiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTIwLjkyIiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTIxLjczIiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTIyLjUzIiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTIzLjM0IiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTI0LjE0IiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTI0Ljk1IiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTI1Ljc1IiB5PSI4MC4zMSIgd2lkdGg9IjAuODUiIGhlaWdodD0iMC4wMSIvPgogICAgICAgICAgPHJlY3QgeD0iMTI2LjU1IiB5PSI4MC4zIiB3aWR0aD0iMC44NSIgaGVpZ2h0PSIwLjAxIi8+CiAgICAgICAgPC9nPgogICAgICA8L2c+CiAgICA8L2c+CiAgPC9nPgo8L2c+CiAgPGcgY2xhc3M9Imd1aWRlIHlsYWJlbHMiIGZvbnQtc2l6ZT0iMi44MiIgZm9udC1mYW1pbHk9IidQVCBTYW5zIENhcHRpb24nLCdIZWx2ZXRpY2EgTmV1ZScsJ0hlbHZldGljYScsc2Fucy1zZXJpZiIgZmlsbD0iIzZDNjA2QiIgaWQ9ImltZy02OThiMTRjZi0xMiI+CiAgICA8dGV4dCB4PSIxOC4xMSIgeT0iODAuMzEiIHRleHQtYW5jaG9yPSJlbmQiIGR5PSIwLjM1ZW0iPjA8L3RleHQ+CiAgICA8dGV4dCB4PSIxOC4xMSIgeT0iNjUuNjUiIHRleHQtYW5jaG9yPSJlbmQiIGR5PSIwLjM1ZW0iPjEuMMOXMTDCszwvdGV4dD4KICAgIDx0ZXh0IHg9IjE4LjExIiB5PSI1MC45OSIgdGV4dC1hbmNob3I9ImVuZCIgZHk9IjAuMzVlbSI+Mi4ww5cxMMKzPC90ZXh0PgogICAgPHRleHQgeD0iMTguMTEiIHk9IjM2LjMzIiB0ZXh0LWFuY2hvcj0iZW5kIiBkeT0iMC4zNWVtIj4zLjDDlzEwwrM8L3RleHQ+CiAgICA8dGV4dCB4PSIxOC4xMSIgeT0iMjEuNjYiIHRleHQtYW5jaG9yPSJlbmQiIGR5PSIwLjM1ZW0iPjQuMMOXMTDCszwvdGV4dD4KICAgIDx0ZXh0IHg9IjE4LjExIiB5PSI3IiB0ZXh0LWFuY2hvcj0iZW5kIiBkeT0iMC4zNWVtIj41LjDDlzEwwrM8L3RleHQ+CiAgPC9nPgo8L2c+CjxkZWZzPgogIDxjbGlwUGF0aCBpZD0iaW1nLTY5OGIxNGNmLTQiPgogIDxwYXRoIGQ9Ik0xOS4xMSw1IEwgMTQ3LjQgNSAxNDcuNCA4Mi4zMiAxOS4xMSA4Mi4zMiIgLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt /> </p>
+<h2 id="syntax-of-function-actually-method-definitions">Syntax of function (actually method) definitions</h2>
+<p>We have seen that a method is defined by a block of the form</p>
+<pre><code>function &lt;functionname&gt;(arg1::Type1,arg2::Type2,...,argn::Typen)
+   ...
+end</code></pre>
+<p>The type annotations are optional. Obviously when you are defining methods that are distinguished by the types of their arguments you use them. Other times you may want to use them to validate the arguments. In <code>sampstat</code> the argument <code>s</code> is applied as a function so it should be a function. The argument <code>d</code> is passed to <code>rand</code> or <code>rand!</code> and it could be something other than a Distribution but we want a Distribution here. It wouldn't make sense for <code>n</code> and <code>N</code> to be other than integers as they represent sizes. The <code>Integer</code> type is an abstract type with several subtypes.</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; typeof(<span class="dt">Integer</span>)
+DataType</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; subtypes(<span class="dt">Integer</span>)
+<span class="fl">4</span>-element <span class="dt">Array</span>{<span class="dt">Any</span>,<span class="fl">1</span>}:
+ BigInt  
+ <span class="dt">Bool</span>    
+ <span class="dt">Signed</span>  
+ <span class="dt">Unsigned</span></code></pre></div>
+<p>Those coming to Julia with a background in strongly typed languages (C, C++, Java) tend to overspecify the argument types. Generally I use argument type declarations when I want to distinguish methods and to validate the argument types. To validate the types of the actual arguments. In Julia I specify the types that I want in the argument list. If other types are passed the evaluation of the function fails to find an appropriate method.</p>
+<p>The value of a function evaluation is the last object evaluated. There is also a <code>return</code> directive which can be useful in short-circuiting evaluation.</p>
+<p>A method that consists of a single expression can be written with an <code>=</code> sign. For example, the <code>insupport</code> generic checks whether a value <code>x</code> is in the support of a distribution <code>d</code>. The method for the Binomial type is <code>julia insupport(d::Binomial, x::Real) = isinteger(x) &amp;&amp; 0 &lt;= x &lt;= d.size</code> If we want to check for all of a vector's elements being in the support we could write</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia"><span class="kw">function</span> vsupport(d::Binomial,v::<span class="dt">Vector</span>)
+    <span class="kw">for</span> el <span class="kw">in</span> v
+        insupport(el) || <span class="kw">return</span> false
+    <span class="kw">end</span>
+    true
+<span class="kw">end</span></code></pre></div>
+<p>Doing things this way if you have a million values to check and the second one fails you don't bother checking the rest.</p>
+<p>An short anonymous function can be written with the &quot;stabby lambda syntax&quot;. To apply the logit transform to a vector of values in (0,1) we could write</p>
+<div class="sourceCode"><pre class="sourceCode julia"><code class="sourceCode julia">julia&gt; μ = rand(<span class="fl">10</span>);
+
+<span class="fl">10</span>-element <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">1</span>}:
+ <span class="fl">0.715679</span>
+ <span class="fl">0.757121</span>
+ <span class="fl">0.969904</span>
+ <span class="fl">0.185209</span>
+ <span class="fl">0.460513</span>
+ <span class="fl">0.957225</span>
+ <span class="fl">0.958056</span>
+ <span class="fl">0.484397</span>
+ <span class="fl">0.805794</span>
+ <span class="fl">0.372153</span>
+julia&gt; η = map(p -&gt; log(p/(<span class="fl">1</span>-p)), μ);
+<span class="fl">10</span>-element <span class="dt">Array</span>{<span class="dt">Float64</span>,<span class="fl">1</span>}:
+  <span class="fl">0.923129</span> 
+  <span class="fl">1.13696</span>  
+  <span class="fl">3.47279</span>  
+ -<span class="fl">1.48144</span>  
+ -<span class="fl">0.158278</span> 
+  <span class="fl">3.10809</span>  
+  <span class="fl">3.12857</span>  
+ -<span class="fl">0.0624314</span>
+  <span class="fl">1.42291</span>  
+ -<span class="fl">0.52299</span>  </code></pre></div>
+
+<HR />
+<div class="footer"><p>
+Published from <a href="Functions.md">Functions.md</a> using
+<a href="http://github.com/mpastell/Weave.jl">Weave.jl</a> 0.1.2 on 2016-04-27.
+<p></div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
