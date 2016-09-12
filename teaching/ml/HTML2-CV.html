@@ -355,8 +355,8 @@ k &lt;- 5
 set.seed(123)
 y &lt;- forestfires$area
 ii &lt;- sample(rep(1:k, length= n))
-pr1 &lt;- pr2  &lt;- numeric(length(y))
-
+pr1 &lt;- pr2  &lt;- array(0, k)
+mspe1 &lt;- mspe2 &lt;- array(0, k)
 
   for (j in 1:k){
     hold &lt;- (ii == j)
@@ -366,12 +366,11 @@ pr1 &lt;- pr2  &lt;- numeric(length(y))
     reg1 &lt;- lm(area~temp, data=forestfires[train,] ) 
     
     pr1[hold] &lt;- predict(reg2, newdata= forestfires[hold,]) 
-    pr2[hold] &lt;- predict(reg1, newdata= forestfires[hold,]) }
-  
-mean((pr1 - y)^2)</code></pre>
-<pre><code>## [1] 4153.418</code></pre>
-<pre class="r"><code>mean((pr2 - y)^2)</code></pre>
-<pre><code>## [1] 4033.522</code></pre>
+    pr2[hold] &lt;- predict(reg1, newdata= forestfires[hold,]) 
+    
+  mspe1[j] &lt;- mean((pr1 - y)^2, na.rm = TRUE)
+  mspe2[j] &lt;- mean((pr2 - y)^2, na.rm = TRUE)
+}</code></pre>
 <div id="exercise" class="section level2">
 <h2>Exercise</h2>
 <ul>
