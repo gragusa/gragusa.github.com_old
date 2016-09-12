@@ -352,10 +352,11 @@ GCV(\hat{Y}) =  \frac{1}{N}{\frac{\sum (y_i - \hat{f}(x_i))}{(1 - trace(S)/N)}}
 
 n &lt;- nrow(forestfires)
 k &lt;- 5
+set.seed(123)
 y &lt;- forestfires$area
 ii &lt;- sample(rep(1:k, length= n))
 pr1 &lt;- pr2  &lt;- numeric(length(y))
-set.seed(123)
+
 
   for (j in 1:k){
     hold &lt;- (ii == j)
@@ -368,9 +369,9 @@ set.seed(123)
     pr2[hold] &lt;- predict(reg1, newdata= forestfires[hold,]) }
   
 mean((pr1 - y)^2)</code></pre>
-<pre><code>## [1] 4133.163</code></pre>
+<pre><code>## [1] 4153.418</code></pre>
 <pre class="r"><code>mean((pr2 - y)^2)</code></pre>
-<pre><code>## [1] 4035.906</code></pre>
+<pre><code>## [1] 4033.522</code></pre>
 <div id="exercise" class="section level2">
 <h2>Exercise</h2>
 <ul>
